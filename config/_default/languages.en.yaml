@@ -1,0 +1,30 @@
+---
+languageCode: en
+languageName: English
+displayName: EN
+isoCode: en
+weight: 1
+rtl: false
+
+title: Mircea Anton
+logo: images/logo-icon.avif # Icon in navbar
+description: My awesome website
+copyright: Copyright © Anton Mircea-Pavel, 2022
+
+dateFormat: 2 January 2006
+
+author:
+  name: Mircea-Pavel Anton
+  image: images/logo.avif
+  headline: DevOps engineer by day, drummer & gym rat by night
+  bio: I meme, therefore I am.
+  links:
+    - email: mailto:contact@mirceanton.com
+    - github: https://github.com/mirceanton
+    # - gitlab: https://gitlab.com/mirceanton
+    - instagram: https://instagram.com/_mirceanton
+    - linkedin: https://linkedin.com/in/mirceanton
+    # - youtube: https://youtube.com/in/mirceanton
+    # - patreon: https://patreon.com/mirceanton
+    # - reddit: https://reddit.com/u/mikeanth
+    # - steam: https://steamcommunity.com/profiles/mikeanth

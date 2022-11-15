@@ -1,0 +1,46 @@
+<form name="contact" class="" action="/thank-you/" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="contact" />
+
+  <!-- Text input-->
+  <div>
+    <label class="min-w-full" for="Name"></label>
+
+    <div>
+      <input id="contact-form-name" name="Name" type="text" placeholder="Name" class="min-w-full m-2 bg-mute"
+        required="true" autocomplete="off">
+    </div>
+  </div>
+
+  <!-- Text input-->
+  <div>
+    <label for="Email"></label>
+
+    <div>
+      <input id="contact-form-email" name="Email" type="email" placeholder="Email Address"
+        class="min-w-full m-2 bg-mute" required="true" autocomplete="off">
+    </div>
+  </div>
+
+  <!-- Text input-->
+  <div>
+    <label for="Subject"></label>
+
+    <div>
+      <input id="contact-form-subject" name="Subject" type="text" placeholder="Subject" class="min-w-full m-2 bg-mute"
+        required="" autocomplete="off">
+    </div>
+  </div>
+
+  <!-- Textarea -->
+  <div>
+    <label for=""></label>
+
+    <textarea class="min-w-full m-2 bg-mute" id="contact-form-message" name="Message" placeholder="What's up?"
+      rows="8"></textarea>
+  </div>
+
+  <!-- Button -->
+  <div class="">
+    <button type="submit" value="Submit" id="Form-submit" class="min-w-full m-2 py-2 contact-button">Submit</button>
+  </div>
+</form>
