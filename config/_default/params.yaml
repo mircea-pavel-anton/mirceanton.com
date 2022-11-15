@@ -1,0 +1,114 @@
+---
+# -- Theme Options --
+# These options control how the theme functions and allow you to
+# customise the display of your website.
+#
+# Refer to the theme docs for more details about each of these parameters.
+# https://nunocoracao.github.io/blowfish/docs/configuration/#theme-parameters
+
+colorScheme: dark # blowfish | avocado | fire | forest | princess | neon | bloody | terminal | marvel | noir | autumn | congo | slate
+defaultAppearance: dark # light | dark
+autoSwitchAppearance: true
+
+enableSearch: true
+enableCodeCopy: true
+
+# mainSections: ["section1", "section2"]
+# robots: ""
+
+header:
+  layout: fixed # basic | fixed
+
+footer:
+  showMenu: false
+  showCopyright: true
+  showThemeAttribution: false
+  showAppearanceSwitcher: true
+  showScrollToTop: true
+
+homepage:
+  layout: background # page | profile | hero | card | background | custom
+  homepageImage: images/cover.png # used in: hero, card
+  showRecent: true
+  showRecentItems: 5
+  showMoreLink: true
+  showMoreLinkDest: /posts
+  cardView: false
+  cardViewScreenWidth: false
+  layoutBackgroundBlur: true # used in: background
+
+article:
+  showDate: true
+  showViews: false
+  showLikes: false
+  showDateUpdated: true
+  showAuthor: true
+  showHero: true
+  heroStyle: big # basic | big | background
+  layoutBackgroundBlur: true # only used when heroStyle equals background
+  showBreadcrumbs: true
+  showDraftLabel: true
+  showEdit: false
+  # editURL: "https://github.com/username/repo/"
+  editAppendPath: true
+  seriesOpened: false
+  showHeadingAnchors: true
+  showPagination: true
+  invertPagination: false
+  showReadingTime: true
+  showTableOfContents: true
+  showTaxonomies: true
+  showAuthorsBadges: true
+  showWordCount: true
+  showSummary: true
+  sharingLinks: 
+    - linkedin
+    - twitter
+    - reddit
+    - facebook
+    - email
+
+list:
+  showHero: true
+  heroStyle: background # valid options: basic, big, background
+  showBreadcrumbs: false
+  showSummary: false
+  showViews: false
+  showLikes: false
+  showTableOfContents: false
+  showCards: true
+  groupByYear: true
+  cardView: false
+  cardViewScreenWidth: false
+
+sitemap:
+  excludedKinds: []
+
+taxonomy:
+  showTermCount: true
+
+# firebase:
+#   apiKey: "XXXXXX"
+#   authDomain: "XXXXXX"
+#   projectId: "XXXXXX"
+#   storageBucket: "XXXXXX"
+#   messagingSenderId: "XXXXXX"
+#   appId: "XXXXXX"
+#   measurementId: "XXXXXX"
+
+# fathomAnalytics:
+#   site: "ABC12345"
+#   domain: "llama.yoursite.com"
+
+# buymeacoffee:
+#   identifier: ""
+#   globalWidget: true
+#   globalWidgetMessage: "Hello"
+#   globalWidgetColor: "#FFDD00"
+#   globalWidgetPosition: "Right"
+
+# verification:
+#   google: ""
+#   bing: ""
+#   pinterest: ""
+#   yandex: ""
