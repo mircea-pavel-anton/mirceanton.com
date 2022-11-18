@@ -28,7 +28,7 @@ footer:
 
 homepage:
   layout: background # page | profile | hero | card | background | custom
-  homepageImage: images/cover.png # used in: hero, card
+  # homepageImage: images/cover.png # used in: hero, card
   showRecent: true
   showRecentItems: 5
   showMoreLink: true
