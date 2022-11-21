@@ -18,3 +18,7 @@ showViews: false
 showLikes: false
 showAuthor: false
 ---
+
+## How can I help you?
+
+{{< netlify_contact_form >}}

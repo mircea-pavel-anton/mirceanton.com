@@ -8,7 +8,7 @@
 
 colorScheme: dark # blowfish | avocado | fire | forest | princess | neon | bloody | terminal | marvel | noir | autumn | congo | slate
 defaultAppearance: dark # light | dark
-autoSwitchAppearance: true
+autoSwitchAppearance: false
 
 enableSearch: true
 enableCodeCopy: true
@@ -23,7 +23,7 @@ footer:
   showMenu: false
   showCopyright: true
   showThemeAttribution: false
-  showAppearanceSwitcher: true
+  showAppearanceSwitcher: false
   showScrollToTop: true
 
 homepage:
