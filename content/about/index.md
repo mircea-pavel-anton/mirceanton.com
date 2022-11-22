@@ -54,7 +54,7 @@ What started with "*computers are interesting*", ended up with building custom s
 
 {{< /timeline >}}
 
-{{< timeline title="BSc in Systems Engineering" subtitle="University of Automatic Control and Computer Science" period="Sep 2022 - Current" >}}
+{{< timeline title="BSc in Systems Engineering" subtitle="University of Automatic Control and Computer Science" period="Sep 2018 - Jun 2022" >}}
 
 - Developed software in Python to automatically grade student assignments, considerably speeding up the homework verification process
 - Set up CI/CD pipelines via GitLab Runners to ensure the quality of the developed software
