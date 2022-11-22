@@ -39,8 +39,8 @@ homepage:
 
 article:
   showDate: true
-  showViews: false
-  showLikes: false
+  showViews: true
+  showLikes: true
   showDateUpdated: true
   showAuthor: true
   showHero: true
@@ -48,8 +48,8 @@ article:
   layoutBackgroundBlur: true # only used when heroStyle equals background
   showBreadcrumbs: true
   showDraftLabel: true
-  showEdit: false
-  # editURL: "https://github.com/username/repo/"
+  showEdit: true
+  editURL: https://github.com/mirceanton/mirceanton.com/tree/main/content
   editAppendPath: true
   seriesOpened: false
   showHeadingAnchors: true
@@ -61,7 +61,7 @@ article:
   showAuthorsBadges: true
   showWordCount: true
   showSummary: true
-  sharingLinks: 
+  sharingLinks:
     - linkedin
     - twitter
     - reddit
