@@ -7,7 +7,7 @@ weight: 1
 rtl: false
 
 title: Mircea Anton
-logo: images/logo.webp # Icon in navbar
+logo: images/logo-icon.avif # Icon in navbar
 description: My awesome website
 copyright: Copyright © Anton Mircea-Pavel, 2022
 
@@ -15,7 +15,7 @@ dateFormat: 2 January 2006
 
 author:
   name: Mircea-Pavel Anton
-  image: images/logo.webp
+  image: images/logo.avif
   headline: DevOps engineer by day, drummer & gym rat by night
   bio: I meme, therefore I am.
   links:

@@ -11,8 +11,7 @@
                     <a href="{{ "" | relLangURL }}" class="flex">
                         <span class="sr-only">{{ .Site.Title | markdownify | emojify }}</span>
 
-                        <img src="{{ $logo.RelPermalink }}" width="{{ div $logo.Width 1 }}"
-                            height="{{ div $logo.Height 1 }}"
+                        <img src="{{ $logo.RelPermalink }}"
                             class="h-12 w-12 object-scale-down object-left nozoom"
                             alt="{{ .Site.Title }}" />
 
