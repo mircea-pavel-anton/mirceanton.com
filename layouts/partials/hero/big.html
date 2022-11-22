@@ -1,0 +1,10 @@
+{{- $featured := .Resources.GetMatch "*feature*" -}}
+{{- if not $featured }}{{ $featured = .Resources.GetMatch "{*cover*,*thumbnail*}" }}{{ end -}}
+{{- with $featured -}}
+    <div class="wrapper">
+        <video autoplay loop muted playsinline style="background-size: cover; overflow: hidden; width: auto; min-width: 100%">
+            <source src="{{ .RelPermalink }}" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+{{- end -}}
