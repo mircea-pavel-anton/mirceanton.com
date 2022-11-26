@@ -3,8 +3,9 @@ title: PiPDU Project Overview
 description: "Devember DevLog #0: piPDU"
 slug: devember-2022-introduction
 
-series:
-  - Devember 2022
+series: [ Devember 2022 ]
+series_order: 0
+
 tags:
   - DIY
   - Raspberry Pi
