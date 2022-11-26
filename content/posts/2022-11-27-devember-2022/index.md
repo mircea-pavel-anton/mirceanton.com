@@ -10,14 +10,14 @@ tags:
   - Arduino
 
 author: "Mircea-Pavel Anton"
-date: "2022-11-27"
+date: "2022-10-28"
 ---
 
-> I, Mircea Anton, will participate to the next Devember. My Devember project will be “PiPDU”. I promise I will program for my Devember for at least an hour, every day of the next December. I will also write a ~~daily~~ weekly public devlog and will make the produced code publicly available on the internet. No matter what, I will keep my promise.
+> I, Mircea Anton, will participate in the next Devember. My Devember project will be “PiPDU”. I promise I will program for my Devember for at least an hour, every day of the next December. I will also write a ~~daily~~ weekly public devlog and will make the produced code publicly available on the internet. No matter what, I will keep my promise.
 
 ## What is a piPDU
 
-If the name is not suggestive enough, piPDU is a smart PDU, powered by Raspberry Pi and Arduino. I intend to build it and mount in my Home Lab rack, all by the end of December (hopefully before Christmas, but we'll see about that 😅).
+If the name is not suggestive enough, piPDU is a smart PDU, powered by Raspberry Pi and Arduino. I intend to build it and mount it in my Home Lab rack, all by the end of December (hopefully before Christmas, but we'll see about that 😅).
 
 ## Why am I building this
 
@@ -25,36 +25,69 @@ I was inspired by projects such as the TinyPilot and the PiKVM and I want to con
 
 The problem I am solving with this project is twofold:
 
-1. I want to be able to see the power consumption for each of my servers, individually. To do that, I don't want to use a Kill-a-watt and crawl behind my server rack. I want the data to be displayed in a webpage.
-2. I want to be able to turn devices on and off remotely, without crawling to the back of the server rack to pull plugs out. Ideally, I want a webpage which I can visit to toggle individual plugs.
+1. I want to be able to see the power consumption for each of my servers. To do that, I don't want to use a Kill-a-watt and crawl behind my server rack. I want to display the data on a webpage.
+2. I want to be able to turn devices on and off without crawling to the back of the server rack to pull plugs out. I want a webpage that I can visit to toggle individual plugs.
 
 ## What are the goals of the project
 
 At the end of this project, I will have 2 boxes that I can mount on my rack. One will be the PDU itself while the other will be a controller.
 
-The first of the two boxes, the PDU itself, will have 16 power plugs on it, which I will be able to turn on and off by sending some API requests to a specific address, as well as monitor the power consumption on each plug individually.  
-Additionally, this box will also host a small web page which will show the power consumption for each socket in real time as well as a button to turn that socket on and off.
+The reason I am building them as 2 separate components is for mounting flexibility. I want to mount the PDU in the back of the rack, somewhere in the middle, height-wise. The controller I will mount in the topmost slot, in the front of the rack, for ease of access.
 
-The second box, the controller, will have 16 buttons on it and an LCD display. Each button will be controlling one of the outlets on the server and the LCD display will be used to show stats. There are two possible actions to be triggered by the buttons:
+### The PDU
+
+The PDU is a 5U box with 16 Schuko plugs on it. Inside, there will be a Raspberry Pi Zero which will host a small webpage and an API server, and an Arduino to interface with the sensors.
+
+The API server has two main functionalities:
+
+- It provides endpoints to allow me to toggle each plug on and off.
+- It exposes the power consumption for each plug, in real-time.
+
+The webpage will be a simple front-end for the functionality exposed by the API.
+
+To get the reading for the consumption of each power plug, there will be 16 current sensors inside. Since I will need a large amount of digital and analog pins, I decided to add an Arduino Mega to the mix.
+
+The Raspberry and Arduino will communicate over a serial connection. The Arduino will send the readings from the current sensors to the Raspberry. The Pi will then expose these readings via the API.  
+In the other direction, the Raspberry will send the Arduino commands received via API calls to turn relays on and off.
+
+### The Controller
+
+The controller is a 2U box with 16 buttons, 16 LEDs, and an LCD display on the front plate. The buttons will toggle the outlets on and off, the LEDs will show the status, and the LCD will display stats.
+
+There are 2 possible actions for each button:
 
 - a short press will show the current power consumption for the associated plug on the LCD
-- a long press will toggle that socket on/off on the PDU;
+- a long press will toggle that socket on/off on the PDU
 
-Additionally, each button will have a status LED to show whether or not the socket is on or off.
+I chose to use arcade-style buttons for the controller since they have built-in LEDs. Their circular shape makes it easy to drill holes for them in the front plate.  
+For the LCD, I picked the 2004 model since I had one lying around.
 
-The reason I am making them as 2 separate boxes is that I want to mount the PDU itself on the back of my rack, somewhere in the middle (height-wise) while the controller will be mounted at the top on the front of my rack, for easy access.
+Inside this box will be another Raspberry Pi Zero and Arduino Uno. The Arduino will connect to the buttons and LEDs as well as the LCD display. The Raspberry will be sending out API requests to the API server hosted on the PDU.
 
-### The piPDU Server
-<!-- todo add image here? -->
-In my current configuration, the server itself will be a 5U box that is going to have 16 Schuko plugs on it.  
-Each plug will be wired to both a current sensor and a relay. Since that requires 16 Analog inputs to get the reading from each current sensor, as well as 16 digital pins to control the relays, I will use an Arduino mega to interface with all these components.
+There will be a serial connection between the two. The Raspberry will receive event notifications (button presses) from the Arduino. Based on which button was pressed and for how long, it will send the appropriate API request.  
+In the case of a long press, it will query the API for the power consumption of that outlet and send it to the Arduino to display it on the LCD.  
+In the case of a short press, it will send an API request to toggle the state of that outlet.
 
-To expose everything over a REST API, I will add a Raspberry Pi zero which will host the web server. It will communicate with the Arduino over I2C and it will serve as an interface to all the sensors and relays. There will be API endpoints for each plug to turn them on and off, while the metrics themselves will be exposed over WebSockets for real-time communication (probably).
+## Conclusion
 
-### The piPDU Controller
-<!-- todo add image here? -->
-The piPDU controller will be a 2U box with 16 arcade buttons mounted on it alongside a 2004 LCD display.
+I am hopefully aiming to achieve all of this by the 24th of December so that I have everything done by Christmas time.
 
-I chose arcade buttons because they have an LED built-in I can use for status indicators and, due to their circular shape, drilling holes in a 2U plate should be easy. For the display, I went with a 2004 LCD, for no reason other than I already had one lying around.   All these components will wired to a raspberry pi zero which will be sending out API requests to the server to control the PDU.
+In the first week, I expect to get the hardware part done. I am planning to get both the cases built and the circuits put together.
 
-The internals for this one are much simpler. It is just going to be a Raspberry Pi Zero connected to the buttons and the LCD directly that will send out API requests to the server.
+In the second week, I am planning to finish the PDU box. This involves:
+
+- the Arduino code to read the data from the sensors
+- the Arduino code to turn relays on and off
+- the flask application for the Raspberry to host the API server
+- the code to ensure serial communication between the 2 boards
+
+In the third week, I will finish up the controller component, which involves:
+
+- the Arduino code to interact with the buttons
+- the Arduino code to interact with the LCD display
+- the python script for the Raspberry to send API requests
+- the code to ensure serial communication between the 2 boards
+
+This is a high-level overview of the project I hope to accomplish this month.
+
+I hereby challenge you as well to a Devember project! Pick something you've been wanting to work on/tinker with for a while and go at it! Create/Learn something and share it with the community along the way!
