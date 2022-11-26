@@ -1,7 +1,6 @@
 ---
-title: PiPDU Project Overview
-description: "Devember DevLog #0: piPDU"
-slug: devember-2022-introduction
+title: Devember 2022 Project Overview
+description: In this blog post, I am making my pledge to follow the Devember coding challenge and going over the project I have planned out.
 
 series: [ Devember 2022 ]
 series_order: 0
