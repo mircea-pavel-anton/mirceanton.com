@@ -1,9 +1,10 @@
 ---
-title: Devember 2022 DevLog Introduction
-description:
+title: PiPDU Project Overview
+description: "Devember DevLog #0: piPDU"
 slug: devember-2022-introduction
 
-series: devember-2022
+series:
+  - Devember 2022
 tags:
   - DIY
   - Raspberry Pi
@@ -89,5 +90,7 @@ In the third week, I will finish up the controller component, which involves:
 - the code to ensure serial communication between the 2 boards
 
 This is a high-level overview of the project I hope to accomplish this month.
+
+---
 
 I hereby challenge you as well to a Devember project! Pick something you've been wanting to work on/tinker with for a while and go at it! Create/Learn something and share it with the community along the way!
