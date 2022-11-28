@@ -11,7 +11,7 @@ tags:
   - Arduino
 
 author: "Mircea-Pavel Anton"
-date: "2022-10-28"
+date: "2022-11-28"
 ---
 
 > I, Mircea Anton, will participate in the next Devember. My Devember project will be “PiPDU”. I promise I will program for my Devember for at least an hour, every day of the next December. I will also write a ~~daily~~ weekly public devlog and will make the produced code publicly available on the internet. No matter what, I will keep my promise.
