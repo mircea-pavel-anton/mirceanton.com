@@ -22,7 +22,7 @@ Wow, what a week it's been on the PiPDU project! I've had some major successes a
 
 On **Monday**, I started off the week by fixing up the controller's front plate. I cheated on the start date and asked my dad to drill the 16 holes for the arcade buttons and the cutout for the LCD display. The edges were a tiny bit rough, but I decided to touch it up a bit with a black sharpie and it ended up looking much better if I do say so myself! After contouring the holes, I mounted the buttons and got them all lined up nicely.
 
-Next up was the soldering! I dusted off dads old soldering iron (and I do mean old... I am pretty sure it's older than me), I soldered the wires for the LED matrix and made sure they were all secure by adding some heat-shrink to every (perfectly executed and with definitely an appropriate amount of solder) joint. Phew, that was a busy day! 🔨
+Next up was the soldering! I dusted off dads old, and I do mean old, soldering iron (I am pretty sure it's older than me) and got to work. I soldered the wires for the LED matrix and made sure they were all secure by adding some heat-shrink to every (perfectly executed and with definitely an appropriate amount of solder) joint. Phew, that was a busy day! 🔨
 
 **Tuesday** was quite a short and slow day with more of the same. - I connected the i2c controller to the LCD display and then mounted the display on the front plate. \**chef's kiss*\* A perfect fit! Finally, I soldered the wires for the button matrix and called it a day.
 
