@@ -16,13 +16,15 @@ date: "2022-12-05"
 
 ## Things never go as planned... do they?
 
-Wow, what a week it's been on the PiPDU project! I've had some major successes and a few frustrating setbacks, but overall I'm feeling pretty good about the progress I've made. For those who don't know, the PiPDU is a little gizmo I'm building to make it easy to remotely control the power to my home server rack. It'll let me turn devices on and off from anywhere, as well as keep an eye on their power usage. My plan was to finish up the cases and circuits for both the server and controller this week, but as usual, things didn't quite go as planned. 😬
+Wow, what a week it's been on the PiPDU project! I've had some major successes and a few frustrating setbacks, but overall I'm feeling pretty good about the progress I've made. My plan was to finish up the cases and circuits for both the server and controller this week, but as usual, things didn't quite go as planned. 😬
+
+For those who don't know, the PiPDU is a little gizmo I'm building to make it easy to remotely control the power to my home server rack. It'll let me turn devices on and off from anywhere, as well as keep an eye on their power usage.
 
 ## First Week Summary
 
-On **Monday**, I started off the week by fixing up the controller's front plate. I cheated on the start date and asked my dad to drill the 16 holes for the arcade buttons and the cutout for the LCD display. The edges were a tiny bit rough, but I decided to touch it up a bit with a black sharpie and it ended up looking much better if I do say so myself! After contouring the holes, I mounted the buttons and got them all lined up nicely.
+On **Monday**, I started off the week by fixing up the controller's front plate. I cheated on the start date and asked my dad to drill the 16 holes for the arcade buttons and the cutout for the LCD display last weekend. The edges were a tad bit rough, so I decided to touch 'em up a bit with a black sharpie and it ended up looking much better if I do say so myself! After contouring the holes, I mounted the buttons and got them all lined up nicely.
 
-Next up was the soldering! I dusted off dads old, and I do mean old, soldering iron (I am pretty sure it's older than me) and got to work. I soldered the wires for the LED matrix and made sure they were all secure by adding some heat-shrink to every (perfectly executed and with definitely an appropriate amount of solder) joint. Phew, that was a busy day! 🔨
+Next up was the soldering! I dusted off dads old, and I do mean old, soldering iron (I am pretty sure it's older than me) and got to work. I soldered the wires for the LED matrix and made sure they were all secure by adding some heat-shrink to every (perfectly executed and with definitely an appropriate amount of solder) joint.
 
 **Tuesday** was quite a short and slow day with more of the same. - I connected the i2c controller to the LCD display and then mounted the display on the front plate. \**chef's kiss*\* A perfect fit! Finally, I soldered the wires for the button matrix and called it a day.
 
@@ -48,4 +50,4 @@ Then, I added a `GET` endpoint to the same `/api/v1/sockets/<number>` path to re
 
 ## Conclusion
 
-All in all, it's been a great week on the PiPDU project. I'm really happy with the progress I've made even though none of it was in the areas it was planned to be. I'm excited to move forward with the next steps. In the coming week, I plan to work on the case and code for the controller (oh, the irony). The order for the missing components is already placed and I hope it will arrive on time for me to wire up the buttons and LEDs, mount them to the front plate and have the hardware in place to start doing some work on the code.
+All in all, it's been a great week on the PiPDU project. I'm really happy with the progress I've made even though none of it was in the areas it was planned to be in. I'm excited to move forward with the next steps. In the coming week, I plan to work on the case and code for the controller (oh, the irony). The order for the missing components is already placed and I hope it will arrive on time for me to wire up the buttons and LEDs, mount them to the front plate and have the hardware in place to start doing some work on the code.
