@@ -22,15 +22,33 @@ For those who don't know, the PiPDU is a little gizmo I'm building to make it ea
 
 ## First Week Summary
 
-On **Monday**, I started off the week by fixing up the controller's front plate. I cheated on the start date and asked my dad to drill the 16 holes for the arcade buttons and the cutout for the LCD display last weekend. The edges were a tad bit rough, so I decided to touch 'em up a bit with a black sharpie and it ended up looking much better if I do say so myself! After contouring the holes, I mounted the buttons and got them all lined up nicely.
+On **Monday**, I started off the week by fixing up the controller's front plate. I cheated on the start date and asked my dad to drill the 16 holes for the arcade buttons and the cutout for the LCD display last weekend. The edges were a tad bit rough, so I decided to touch 'em up a bit with a black sharpie and it ended up looking much better if I do say so myself!
+
+![The controller frontplate](img/frontplate.webp)
+
+After contouring the holes, I mounted the buttons and got them all lined up nicely.
+
+![The frontplate with the buttons mounted](img/buttons-mounted.webp)
 
 Next up was the soldering! I dusted off dads old, and I do mean old, soldering iron (I am pretty sure it's older than me) and got to work. I soldered the wires for the LED matrix and made sure they were all secure by adding some heat-shrink to every (perfectly executed and with definitely an appropriate amount of solder) joint.
 
-**Tuesday** was quite a short and slow day with more of the same. - I connected the i2c controller to the LCD display and then mounted the display on the front plate. \**chef's kiss*\* A perfect fit! Finally, I soldered the wires for the button matrix and called it a day.
+**Tuesday** was quite a short and slow day with more of the same. - I connected the i2c controller to the LCD display and then mounted the display on the front plate. \**chef's kiss*\* A perfect fit!
+
+![The COMBOVER](img/combover.webp)
+
+Finally, I soldered the wires for the button matrix and called it a day.
+
+![The wiring spaghetti monster](img/spaghetti-side.webp)
 
 **Wednesday** was when things started to get a little tricky. I realized that some of the arcade buttons I bought were a bit different. I noticed that their housing was a different color back on Monday as well, but I thought nothing of it, as I specifically ordered ones with 5V LEDs. BOY WAS I WRONG... Apparently, 3 of the buttons I was using had 12v LEDs, which wasn't going to work with the rest of the system. I spent the day trying to figure out a solution that would not involve tearing out all the buttons (thus undoing all the work I did in the previous days), but eventually, I hit a bit of a roadblock and wasn't sure how to proceed. 😕
 
+![The buttons](img/buttons.webp)
+
+If you look closely, you can see in this image that one of the buttons has a grey housing on the inside while the others are black.
+
 **Thursday** was a bit of a change of pace - instead of working on the controller, I decided to focus on the server component. I set up a prototype by connecting the Arduino Mega to the relay board and, using an old PC PSU that I gutted, powered everything. I wrote some code that lets me control the relays and reads data from the analog sensors (which are not connected yet, but some "placeholder" code is there just in case 😅).
+
+![The abomination of a circuit](img/abomination.webp)
 
 The code was set up to run the two jobs in pseudo-multithreading via some handy tutorial I found online. One of the jobs listens for commands on the serial connection while the other polls the sensors and prints the data back. For now, I was sending commands manually from my computer over the USB connection to the Arduino and using the serial monitor to test everything out, but it all seemed good.
 
