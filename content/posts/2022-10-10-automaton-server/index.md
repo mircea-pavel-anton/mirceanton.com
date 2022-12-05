@@ -9,6 +9,8 @@ cover:
   image: gifs/the-machines-have-taken-over.gif
   caption: <a href="https://giphy.com/abbeyluck">©️ Abbety Luck</a>
 
+draft: true
+
 tags:
   - Ansible
   - Automation
