@@ -13,7 +13,7 @@ author: "Mircea-Pavel Anton"
 date: "2022-12-06"
 ---
 
-Today I took the Certified Kubernetes Administrator (CKA) exam and am pleased to report that I think I did quite well! 🎉🎉🎉
+Yesterday, I took the Certified Kubernetes Administrator (CKA) exam and am pleased to report that I think I did quite well! 🎉🎉🎉
 
 ## 📝 The Exam Difficulty
 
@@ -36,4 +36,4 @@ From the technical side, my advice is to have a decent external webcam with a lo
 
 ## 💡 Conclusion
 
-To sum this all up, I am happy to have successfully passed the CKA exam and wholeheartedly recommend the KodeKloud course in tandem with the killer.sh mock exam to anyone interested in getting this certification.
+To sum this all up, I am happy to have successfully passed the CKA exam with a score of 95 and wholeheartedly recommend the KodeKloud course in tandem with the killer.sh mock exam to anyone interested in getting this certification.
