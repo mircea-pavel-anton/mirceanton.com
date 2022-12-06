@@ -40,7 +40,7 @@ What started with "*computers are interesting*", ended up with building custom s
 
 ## Certifications
 
-<div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-items: left; margin: 0; padding: 0;">
+<div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around; align-items: left; margin: 0; padding: 0;">
 <a href="https://www.credly.com/badges/7019331e-ca92-4b13-9605-2946e71ff1ca/public_url">
   {{< figure src="badges/CKA.webp" caption="December 2022" class="w-24 p-0 mt-3 mb-0" default="true" >}}
 </a>
