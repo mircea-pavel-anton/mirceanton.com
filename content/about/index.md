@@ -42,9 +42,7 @@ What started with "*computers are interesting*", ended up with building custom s
 
 <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-items: left; margin: 0; padding: 0;">
 {{< figure src="badges/LFCS.webp" caption="October 2022" class="w-24 p-0 mt-3 mb-0" default="true" >}}
-</div>
 
-<div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-items: left; margin: 0; padding: 0;">
 {{< figure src="badges/CKA.webp" caption="December 2022" class="w-24 p-0 mt-3 mb-0" default="true" >}}
 </div>
 
