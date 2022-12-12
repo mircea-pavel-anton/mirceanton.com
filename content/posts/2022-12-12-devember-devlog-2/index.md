@@ -26,8 +26,6 @@ On Monday I actually had my CKA certification exam around noon and then I decide
 
 ### Tuesday
 
-{{< lead >}}F**k you and I'll see you tomorrow! {{< /lead>}}
-
 Tuesday was both a funny and frustrating day. In the first part of the day I worked on soldering some DC jacks to that gutted out psu so that I can properly wire things up to it instead of taking the "trust me, I'm an engineer" approach.
 
 Later in the day, the order for the missing components came in and you'll never guess what happened. All 16 of the 12V arcade buttons I ordered ended up having 5V LEDs instead 🙃. That means that the 12V PSU, the transistors and most of the other things that were part of that order are now useless for this project... GREAT!
@@ -60,7 +58,9 @@ On saturday I set up the circuit for the controller component on a breadboard. I
 
 ### Sunday
 
-Today was a productive day in terms of coding for the controller project. I started off slowly by creating some of the "supporting infrastructure" for the code. I firstly set up a Singleton class for the Configuration object and decided on a structure for the `config.yaml` file.
+{{< figure src="img/fe_vs_be.webp" caption="" >}}
+
+While I do not have much to show visually for today, it was still a productive day at least in terms of coding. I started off slowly by creating some of the "supporting infrastructure" for the code. I firstly set up a Singleton class for the Configuration object and decided on a structure for the `config.yaml` file.
 
 Next, I refactored all the code related to the LCD display in another Singleton class. I intend to implement only 2 public methods for this class. One of the functions should put the display in an "idle" state, which will just show maybe the "PiPDU" text alongside the overall power consumption for all of the sockets as well as todays' date. The second one should put the display in an "info" state to show information specific to a particular socket after a button was pressed.
 
