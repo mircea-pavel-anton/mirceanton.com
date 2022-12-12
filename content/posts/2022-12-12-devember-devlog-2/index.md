@@ -14,8 +14,6 @@ author: "Mircea-Pavel Anton"
 date: "2022-12-12"
 ---
 
-Introduction:
-
 Hello and welcome to my Devember devlog for the 2nd week of December. This week I switched gears a bit from last week. Instead of continuing to work on the Server component, I decided to start coding up the Controller as well, to get an initial prototype going. Despite having to take a couple of days off to study for some exams, I believe I made some decent progress.
 
 ## Second Week Review
@@ -25,6 +23,8 @@ Hello and welcome to my Devember devlog for the 2nd week of December. This week 
 On Monday I actually had my CKA certification exam around noon and then I decided to take the rest of the day off to catch up on some other aspects of life as well. While no progress on Devember has been made today, I still think it was a productive day as I managed to get my CKA and also to decompress a bit.
 
 ### Tuesday
+
+{{< figure src="img/this_is_fun.webp" caption="Me, December 2022, colorized" >}}
 
 Tuesday was both a funny and frustrating day. In the first part of the day I worked on soldering some DC jacks to that gutted out psu so that I can properly wire things up to it instead of taking the "trust me, I'm an engineer" approach.
 
