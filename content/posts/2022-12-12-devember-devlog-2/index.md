@@ -16,38 +16,50 @@ date: "2022-12-12"
 
 Introduction:
 
-Hello and welcome to my Devember devlog for the week of December 12th. This week, I continued work on my project, a custom controller for a Raspberry Pi-powered power distribution unit (PDU). I made some good progress this week, despite having to take a day off to study for an exam. In this devlog, I'll be sharing what I worked on this week and the progress I made.
+Hello and welcome to my Devember devlog for the 2nd week of December. This week I switched gears a bit from last week. Instead of continuing to work on the Server component, I decided to start coding up the Controller as well, to get an initial prototype going. Despite having to take a couple of days off to study for some exams, I believe I made some decent progress.
 
-Monday:
+## Second Week Review
 
-I had a busy day today, as I took the day off to prepare for and take my CKA exam. I didn't get around to working on my Devember project, but I'm feeling pretty good about the exam. I spent the day studying and reviewing the material, and I'm feeling confident that I did well on the exam. I'm looking forward to getting back to work on my Devember project tomorrow and continuing my progress.
+### Monday
 
-Tuesday:
+On Monday I actually had my CKA certification exam around noon and then I decided to take the rest of the day off to catch up on some other aspects of life as well. While no progress on Devember has been made today, I still think it was a productive day as I managed to get my CKA and also to decompress a bit.
 
-Today, I spent most of the day working on modding the gutted out psu for my controller. I started by adding DC jacks to it, which will allow me to power the controller with a standard power supply rather than having to rely on a custom solution. This was a bit of a challenge, as I had to carefully measure and drill holes in the psu case to fit the jacks. However, I was eventually able to get everything installed and working properly.
+### Tuesday
 
-Next, I moved on to the controller frontplate. I removed all of the old buttons and mounted the new ones in their place. I then soldered individual wires to the buttons and LEDs, which will make them easier to connect to the rest of the circuit. This was a bit time-consuming, but I'm happy with how it turned out.
+{{< lead >}}F**k you and I'll see you tomorrow! {{< /lead>}}
 
-Wednesday:
+Tuesday was both a funny and frustrating day. In the first part of the day I worked on soldering some DC jacks to that gutted out psu so that I can properly wire things up to it instead of taking the "trust me, I'm an engineer" approach.
 
-Today, I spent most of the day working on the controller circuit. I started by soldering components to a protoboard in an attempt to make a custom PCB. This was a bit frustrating, as I was having some difficulty getting everything to work correctly. I had to troubleshoot and make a few changes to the circuit, but eventually I was able to get everything working properly.
+Later in the day, the order for the missing components came in and you'll never guess what happened. All 16 of the 12V arcade buttons I ordered ended up having 5V LEDs instead 🙃. That means that the 12V PSU, the transistors and most of the other things that were part of that order are now useless for this project... GREAT!
 
-However, I was not happy with the way the circuit was laid out on the protoboard, so I decided to switch to a custom PCB instead. I spent some time designing the PCB in KiCAD, and I'm much happier with the layout and organization of the components on the PCB. I'm looking forward to getting the PCB fabricated and assembled so that I can continue testing and debugging the controller.
+I had already spent the time earlier today to undo all of the cabling for the previous buttons and remove them from the frontplate, so now I decided to make the thing more modular. Instead of mounting the buttons and then wiring the button matrix directly on them, I decided to solder individual wires for each button and LED and then design some circuit board that will implement the actual matrix itself. The buttons and LEDs will probably connect via screw terminals to the board so that they can be easily swapped if needed.
 
-Thursday:
+### Wednesday
 
-Today, I spent most of the day working on the custom PCB for the controller. I continued working on the design in KiCAD, and I made a lot of progress. I added the remaining components to the PCB and routed the connections between them. I also added some labels and other details to the PCB to make it easier to understand and use.
+Wednesday was a bit busy and I did not have a lot of time to work on Devember. I did, however, decide to do the little I can. As such, I ended up soldering the screw terminals on a protoboard and brainstorming some ideas as to how I should run the cabling later on.
 
-However, I ran into some difficulty when trying to get the LCD display to work properly. I spent a lot of time troubleshooting and trying to figure out why it wasn't working, but I was ultimately unable to get it working. I'm a bit frustrated with the progress I'm making on the PCB, but I'm determined to figure it out and continue working on it.
+### Thursday
 
-Friday:
+Today, I spent a good chunk of the day working on the protoboard circuit for the controller. I ended up getting frustrated because APPARENTLY, enthusiasm is not enough and you also need some skill or whatever 😒. I quickly realised that soldering anything remotely complex is quite a bit above my skill level and got very frustrated relatively quickly.
 
-Unfortunately, I didn't get a chance to work on Devember today. I had to spend the day studying for the CKAD exam I have on Monday, as I was a bit behind. I spent the day reviewing the material and practicing with sample questions, and I'm feeling pretty confident about the exam. I'm looking forward to getting back to work on my Devember project tomorrow and continuing my progress.
+In a futile attempt to maintain what was left of my sanity, I decided to just open up good ole' KiCad and create a custom PCB that the Pi Zero will just slot into and get that printed eventually. I managed to get an initial design done, but I decided to wait a bit before printing it in case I come up with any more adjustments or other boards to print.
 
-Saturday:
+### Friday
 
-Today, I made some good progress on the controller. I started by setting up the circuit on a breadboard with the gutted out psu and a pi 4 for development. This will allow me to test and debug the controller as I continue to work on it. I was able to get everything set up and working properly, and I'm happy with the progress I made.
+Unfortunately, friday was another day in which I didn't get a chance to work on Devember. I was quite busy and in the last part of the day I decided to spend some time studying for the CKAD exam I have on Monday, as I was a bit behind.
 
-Ending:
+### Saturday
 
-That's it for this week's devlog. I'm happy with the progress I made on my Devember project, despite having to take a day off to study for an exam. I'm looking forward to continuing my work on the project next week and hopefully making even more progress. Thank you for reading, and I'll be back with another update next week.
+On saturday I set up the circuit for the controller component on a breadboard. I used the gutted out PSU to power everything. Next, I wired up the LCD display and wrote a bit of code to validate it is working. Finally, I connected the wires for a few of the buttons and LEDs to have a platform that I can write code for and test on.
+
+### Sunday
+
+Today was a productive day in terms of coding for the controller project. I started off slowly by creating some of the "supporting infrastructure" for the code. I firstly set up a Singleton class for the Configuration object and decided on a structure for the `config.yaml` file.
+
+Next, I refactored all the code related to the LCD display in another Singleton class. I intend to implement only 2 public methods for this class. One of the functions should put the display in an "idle" state, which will just show maybe the "PiPDU" text alongside the overall power consumption for all of the sockets as well as todays' date. The second one should put the display in an "info" state to show information specific to a particular socket after a button was pressed.
+
+Finally, I implemented some trivial scraping of the Prometheus metrics endpoint exposed by the Server component. I threw that in a `while True:` loop with a customizable delay, since I intend to implement the button press functionality via interrupts, and called it a day.
+
+## Ending
+
+That's about it for this week! While I did not get around to work every single day, as life managed to get in the way, I did make steady progress and I think that that's what counts!
