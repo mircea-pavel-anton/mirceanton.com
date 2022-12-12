@@ -40,7 +40,11 @@ Wednesday was a bit busy and I did not have a lot of time to work on Devember. I
 
 ### Thursday
 
+{{< figure src="img/pcb_diagram.webp" caption="The PCB design I ended up creating in KiCAD" >}}
+
 Today, I spent a good chunk of the day working on the protoboard circuit for the controller. I ended up getting frustrated because APPARENTLY, enthusiasm is not enough and you also need some skill or whatever 😒. I quickly realised that soldering anything remotely complex is quite a bit above my skill level and got very frustrated relatively quickly.
+
+{{< figure src="img/pcb_model.webp" caption="A 3D render of the PCB design" >}}
 
 In a futile attempt to maintain what was left of my sanity, I decided to just open up good ole' KiCad and create a custom PCB that the Pi Zero will just slot into and get that printed eventually. I managed to get an initial design done, but I decided to wait a bit before printing it in case I come up with any more adjustments or other boards to print.
 
@@ -49,6 +53,8 @@ In a futile attempt to maintain what was left of my sanity, I decided to just op
 Unfortunately, friday was another day in which I didn't get a chance to work on Devember. I was quite busy and in the last part of the day I decided to spend some time studying for the CKAD exam I have on Monday, as I was a bit behind.
 
 ### Saturday
+
+{{< figure src="img/circuit_schematic.webp" caption="Circuit Diagram for the PiPDU Controller" >}}
 
 On saturday I set up the circuit for the controller component on a breadboard. I used the gutted out PSU to power everything. Next, I wired up the LCD display and wrote a bit of code to validate it is working. Finally, I connected the wires for a few of the buttons and LEDs to have a platform that I can write code for and test on.
 
