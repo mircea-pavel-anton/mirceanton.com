@@ -1,6 +1,6 @@
 ---
 title: My (terrible) CKAD Experience
-description: PSI Exams? More like PSA
+description: "PSA on PSI: A Terrible Experience"
 
 series: [ "Getting Certified: My Journey Through IT Certifications" ]
 series_order: 2
