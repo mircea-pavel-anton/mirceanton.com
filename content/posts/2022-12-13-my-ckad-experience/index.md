@@ -10,7 +10,7 @@ tags:
   - DevOps
 
 author: "Mircea-Pavel Anton"
-date: "2022-12-12"
+date: "2022-12-13"
 ---
 
 Today, I took the CKAD (Certified Kubernetes Application Developer) exam and I wanted to share my experience. Unfortunately, it was not what I had expected and I ended up having a pretty terrible time. Let's talk about it.
