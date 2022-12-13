@@ -46,3 +46,9 @@ Overall, while I would not recommend taking an exam with PSI due to the issues I
 Ultimately, I am glad I got the exam over with, and I think I did decently enough to pass (I will update this post tomorrow). However, I am very disappointed with the PSI exam process and it was, in my opinion, unacceptable that this happened. I will do my best to avoid taking an exam with PSI again in the future.
 
 I hope this provided some insight to anyone interested in taking the CKAD exam!
+
+---
+
+> Update: I managed to pass the exam, but I still don't think that changes anything! What happened is still unacceptable.
+
+---
