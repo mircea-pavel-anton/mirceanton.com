@@ -31,9 +31,9 @@ These tasks usually just require one or two basic commands which can be easily f
 
 **Easy**:
 
-These are not particularly difficult, but they do require some knowledge and understanding of how Kubernetes works. I think that, especially if you took the CKA and/or CKAD prior to the CKS, these should be second natura at this point:
+These are not particularly difficult, but they do require some knowledge and understanding of how Kubernetes works. I think that, especially if you took the CKA and/or CKAD before the CKS, these should be second nature at this point:
 
-- setting up `apparmor` profiles
+- setting up `AppArmor` profiles
 - configuring `seccomp`
 - creating `network policies`
 - managing `service accounts` with the appropriate `roles` and `rolebindings`
@@ -45,20 +45,20 @@ These tasks are not necessarily difficult, but they can be time-consuming and re
 - setting up `admission controllers`
 - editing the static pod definition files to secure the cluster
 
-I placed these tasks in this category since validating your work can be quite time consuming since you are editing the static pod manifests on the master node and it can take a bit for the pods to be recreated.
+I placed these tasks in this category since validating your work can be quite time-consuming since you are editing the static pod manifests on the master node and it can take a bit for the pods to be recreated.
 
 **Difficult**:
 
-In my opinion, this was the most difficult and time-consuming part of the exam. I had not used Falco before and I felt that the amount of practice I was able to get prior to the exam was insufficient to properly "master" it.
+In my opinion, this was the most difficult and time-consuming part of the exam. I had not used Falco before and I felt that the amount of practice I was able to get before the exam was insufficient to properly "master" it.
 
-- managing `falco` configuration
-- configuring `falco` rules
+- managing `Falco` configuration
+- configuring `Falco` rules
 
 ## 📚 Useful Resources
 
-To prepare for the CKS exam, I used the course offered by KodeKloud, as well as their CKS challenges. While I found these resources to be helpful in preparing for the actual exam, I did not feel as ready and confident as I did for the CKA and CKAD. In my opinion, the course quality was not up to par compared to the other two mentioned.
+To prepare for the CKS exam, I used the course offered by KodeKloud, as well as their CKS challenges. While I found these resources to help prepare for the actual exam, I did not feel as ready and confident as I did for the CKA and CKAD. In my opinion, the course quality was not up to par compared to the other two mentioned.
 
-That being said, I would still recommend these resources to others preparing for the CKS exam as they do in fact cover the entire curriculum, just not as well and thorough as I came to expect from them.
+That being said, I would still recommend these resources to others preparing for the CKS exam as they do in fact cover the entire curriculum, just not as well and thoroughly as I came to expect from them.
 
 ## 💻 Technical Aspects
 
