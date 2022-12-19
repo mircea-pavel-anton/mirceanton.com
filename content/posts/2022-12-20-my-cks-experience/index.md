@@ -11,7 +11,7 @@ tags:
   - Security
 
 author: "Mircea-Pavel Anton"
-date: "2022-12-20"
+date: "2022-12-19"
 ---
 
 Hello everyone! In this blog post, I wanted to share my experience taking the Certified Kubernetes Security Specialist (CKS) exam.
