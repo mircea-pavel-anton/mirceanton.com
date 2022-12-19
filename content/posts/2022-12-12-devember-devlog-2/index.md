@@ -1,6 +1,6 @@
 ---
-title: "Devember 2022: One step forward, two steps... to the left"
-description: "Week 2 of Devember: custom PCBs and Controller prototype"
+title: Week 2 | One step forward, two steps... to the left
+description: In this blog post, I go over the ups and downs of my second week of Devember.
 
 series: [ Devember 2022 ]
 series_order: 2

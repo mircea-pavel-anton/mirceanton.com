@@ -1,5 +1,5 @@
 ---
-title: "Devember 2022: So it begins..."
+title: Week 0 | So it begins...
 description: In this blog post, I am making my pledge to follow the Devember coding challenge and going over the project I have planned out.
 
 series: [ Devember 2022 ]

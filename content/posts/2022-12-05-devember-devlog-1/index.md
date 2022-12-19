@@ -1,7 +1,6 @@
 ---
-title: "Devember 2022: Planning is Essential, but Plans are Useless"
-description: >
-  "When life gives you lemons, don't make lemonade! Make life take the lemons back... What am I supposed to do with these? I demand to see life's manager..." - J. K. Simmons.
+title: Week 1 | Planning is Essential, but Plans are Useless
+description: In this blog post, I go over the progress I made on my Devember project during the first week of development.
 
 series: [ Devember 2022 ]
 series_order: 1
