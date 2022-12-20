@@ -41,6 +41,12 @@ What started with "*computers are interesting*", ended up with building custom s
 ## Certifications
 
 <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around; align-items: left; margin: 0; padding: 0;">
+<a href="https://www.credly.com/badges/73b08bea-4705-41b8-bd59-50ec34c1340c/public_url">
+  <center>
+    {{< figure src="badges/CKS.webp" caption="Dec 2022" class="w-24 p-0 mt-3 mb-0" default="true" >}}
+  </center>
+</a>
+
 <a href="https://www.credly.com/badges/8f5e2b1a-f47c-4139-85c5-b8bbe323bd9d/public_url">
   <center>
     {{< figure src="badges/CKAD.webp" caption="Dec 2022" class="w-24 p-0 mt-3 mb-0" default="true" >}}
