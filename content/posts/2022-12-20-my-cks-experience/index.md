@@ -60,7 +60,7 @@ To prepare for the CKS exam, I used the course offered by KodeKloud, as well as 
 
 That being said, I would still recommend these resources to others preparing for the CKS exam as they do in fact cover the entire curriculum, just not as well and thoroughly as I came to expect from them.
 
-Another thing worth mentioning is that I challenged myself to get all 3 Kubernetes certifications within 3 weeks, which left me with only 1 week to study and prepare for each exam. This was not a problem for the CKA and CKAD as the curriculum had a lot of overlap between them and they are also closely related to what I do at work. For the CKS, on the other hand, I do believe that a longer preparation phase would have been extremely beneficial, as I really did not feel that confident going in. While I did manage to pass, my score was considerably lower than my CKA and CKAD, which again suggests that I really should have taken more than 1 week to prepare.
+Another thing worth mentioning is that I challenged myself to get all 3 Kubernetes certifications within 3 weeks. This means that I was left with 1 week only to study and prepare for each exam. For the CKA and CKAD, this was not a problem, as the curriculum had a lot of overlap and they are also closely related to what I do at work. For the CKS, on the other hand, I do believe that a longer preparation phase would have been extremely beneficial, as I really did not feel that confident going in. While I did manage to pass, my score was considerably lower than my CKA and CKAD, which again suggests that I really should have taken more than 1 week to prepare.
 
 ## 💻 Technical Aspects
 
