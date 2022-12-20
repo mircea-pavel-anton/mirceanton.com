@@ -16,11 +16,11 @@ date: "2022-12-20"
 
 Hello everyone! In this blog post, I wanted to share my experience taking the Certified Kubernetes Security Specialist (CKS) exam.
 
-I have previously taken the Certified Kubernetes Administrator (CKA) and the Certified Kubernetes Application Developer (CKAD) exams, and I personally found the CKS exam to be more difficult than both of those. However, I believe this was mostly due to my lack of exposure to the topics covered on the CKS exam in my career thus far, as a Junior DevOps engineer.
-
 ## 📝 The Exam Difficulty
 
-As I mentioned previously, I would rate the CKS exam as more difficult than the CKA and CKAD. In terms of ranking, I would place the various topics on a tier list as follows:
+I have previously taken the CKA and CKAD exams, and I personally found the CKS to be more difficult than either of those. Granted, this was most likely due to my lack of exposure to the topics covered on the CKS exam in my career thus far, as a Junior DevOps engineer, but still.
+
+In terms of a difficulty ranking, I would place the various topics on a tier list as follows:
 
 **Very easy**:
 
@@ -59,6 +59,8 @@ In my opinion, this was the most difficult and time-consuming part of the exam. 
 To prepare for the CKS exam, I used the course offered by KodeKloud, as well as their CKS challenges. While I found these resources to help prepare for the actual exam, I did not feel as ready and confident as I did for the CKA and CKAD. In my opinion, the course quality was not up to par compared to the other two mentioned.
 
 That being said, I would still recommend these resources to others preparing for the CKS exam as they do in fact cover the entire curriculum, just not as well and thoroughly as I came to expect from them.
+
+Another thing worth mentioning is that I challenged myself to get all 3 Kubernetes certifications within 3 weeks, which left me with only 1 week to study and prepare for each exam. This was not a problem for the CKA and CKAD as the curriculum had a lot of overlap between them and they are also closely related to what I do at work. For the CKS, on the other hand, I do believe that a longer preparation phase would have been extremely beneficial, as I really did not feel that confident going in. While I did manage to pass, my score was considerably lower than my CKA and CKAD, which again suggests that I really should have taken more than 1 week to prepare.
 
 ## 💻 Technical Aspects
 
