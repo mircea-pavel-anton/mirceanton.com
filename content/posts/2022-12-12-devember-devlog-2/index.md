@@ -1,5 +1,5 @@
 ---
-title: Week 2 | One step forward, two steps... to the left
+title: Week 2 - One step forward, two steps... to the left
 description: In this blog post, I go over the ups and downs of my second week of Devember.
 
 series: [ Devember 2022 ]
