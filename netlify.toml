@@ -16,7 +16,7 @@ command = "hugo --gc --minify"
 HUGO_VERSION = "0.104.1"
 
 [context.branch-deploy]
-command = "hugo --gc --minify"
+command = "hugo --gc --minify --buildDrafts --buildFuture"
 
 [context.branch-deploy.environment]
 HUGO_VERSION = "0.104.1"
