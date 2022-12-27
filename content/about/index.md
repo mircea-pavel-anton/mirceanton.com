@@ -43,25 +43,25 @@ What started with "*computers are interesting*", ended up with building custom s
 <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around; align-items: left; margin: 0; padding: 0;">
 <a href="https://www.credly.com/badges/73b08bea-4705-41b8-bd59-50ec34c1340c/public_url">
   <center>
-    {{< figure src="badges/CKS.webp" caption="Dec 2022" class="w-24 p-0 mt-3 mb-0" default="true" >}}
+    {{< figure src="badges/CKS.png" caption="Dec 2022" class="w-24 p-0 mt-3 mb-0" default="true" >}}
   </center>
 </a>
 
 <a href="https://www.credly.com/badges/8f5e2b1a-f47c-4139-85c5-b8bbe323bd9d/public_url">
   <center>
-    {{< figure src="badges/CKAD.webp" caption="Dec 2022" class="w-24 p-0 mt-3 mb-0" default="true" >}}
+    {{< figure src="badges/CKAD.png" caption="Dec 2022" class="w-24 p-0 mt-3 mb-0" default="true" >}}
   </center>
 </a>
 
 <a href="https://www.credly.com/badges/7019331e-ca92-4b13-9605-2946e71ff1ca/public_url">
   <center>
-    {{< figure src="badges/CKA.webp" caption="Dec 2022" class="w-24 p-0 mt-3 mb-0" default="true" >}}
+    {{< figure src="badges/CKA.png" caption="Dec 2022" class="w-24 p-0 mt-3 mb-0" default="true" >}}
   </center>
 </a>
 
 <a href="https://www.credly.com/badges/b055e3d7-73db-4661-a613-abd843afa155/public_url">
   <center>
-    {{< figure src="badges/LFCS.webp" caption="Oct 2022" class="w-24 p-0 mt-3 mb-0" default="true" >}}
+    {{< figure src="badges/LFCS.png" caption="Oct 2022" class="w-24 p-0 mt-3 mb-0" default="true" >}}
   </center>
 </a>
 </div>

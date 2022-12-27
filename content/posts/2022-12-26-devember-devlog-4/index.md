@@ -27,11 +27,11 @@ No work has been done on the devember project today, sadly, but I am still count
 
 ### Tuesday
 
-{{< figure src="img/pcb_schema_v1.1.webp" caption="PCB v1.1 diagram" >}}
+{{< figure src="img/pcb_schema_v1.1.png" caption="PCB v1.1 diagram" >}}
 
 On Tuesday, I decided to take some time and fix all the errors reported by KiCAD on my PCB design and finish it up so that I can send it to JLC PCB or some other PCB printing service to get it, hopefully, in January.
 
-{{< figure src="img/pcb_v1.1.webp" caption="3D Model of the PCB v1.1" >}}
+{{< figure src="img/pcb_v1.1.png" caption="3D Model of the PCB v1.1" >}}
 
 I made sure to add some mounting holes so I can bolt the PCB onto the case and then I moved some of the traces around.
 
