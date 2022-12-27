@@ -4,6 +4,8 @@ theme: blowfish
 baseURL: https://mirceanton.netlify.app/
 defaultContentLanguage: en
 
+timeout: 120s
+
 enableRobotsTXT: true
 paginate: 20
 summaryLength: 30
