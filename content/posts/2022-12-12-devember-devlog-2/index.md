@@ -24,7 +24,7 @@ On Monday I actually had my CKA certification exam around noon and then I decide
 
 ### Tuesday
 
-{{< figure src="img/this_is_fun.webp" caption="Me, December 2022, colorized" >}}
+{{< figure src="img/this_is_fun.png" caption="Me, December 2022, colorized" >}}
 
 Tuesday was both a funny and frustrating day. In the first part of the day I worked on soldering some DC jacks to that gutted-out PSU so that I can properly wire things up to it instead of taking the "trust me, I'm an engineer" approach.
 
@@ -38,11 +38,11 @@ Wednesday was a bit busy and I did not have a lot of time to work on Devember. I
 
 ### Thursday
 
-{{< figure src="img/pcb_diagram.webp" caption="The PCB design I ended up creating in KiCAD" >}}
+{{< figure src="img/pcb_diagram.png" caption="The PCB design I ended up creating in KiCAD" >}}
 
 Today, I spent a good chunk of the day working on the protoboard circuit for the controller. I ended up getting frustrated because APPARENTLY, enthusiasm is not enough and you also need some skill or whatever 😒. I quickly realized that soldering anything remotely complex is quite a bit above my skill level and got very frustrated relatively quickly.
 
-{{< figure src="img/pcb_model.webp" caption="A 3D render of the PCB design" >}}
+{{< figure src="img/pcb_model.png" caption="A 3D render of the PCB design" >}}
 
 In a futile attempt to maintain what was left of my sanity, I decided to just open up good ole' KiCad and create a custom PCB that the Pi Zero will just slot into and get that printed eventually. I managed to get an initial design done, but I decided to wait a bit before printing it in case I come up with any more adjustments or other boards to print.
 
@@ -52,13 +52,13 @@ Unfortunately, Friday was another day in which I didn't get a chance to work on 
 
 ### Saturday
 
-{{< figure src="img/circuit_schematic.webp" caption="Circuit Diagram for the PiPDU Controller" >}}
+{{< figure src="img/circuit_schematic.png" caption="Circuit Diagram for the PiPDU Controller" >}}
 
 On Saturday I set up the circuit for the controller component on a breadboard. I used the gutted-out PSU to power everything. Next, I wired up the LCD display and wrote a bit of code to validate it is working. Finally, I connected the wires for a few of the buttons and LEDs to have a platform that I can write code for and test on.
 
 ### Sunday
 
-{{< figure src="img/fe_vs_be.webp" caption="" >}}
+{{< figure src="img/fe_vs_be.png" caption="" >}}
 
 While I do not have much to show visually for today, it was still a productive day at least in terms of coding. I started off slowly by creating some of the "supporting infrastructure" for the code. I first set up a Singleton class for the Configuration object and decided on a structure for the `config.yaml` file.
 
