@@ -18,8 +18,6 @@ For me, this past year was the year when I upgraded my main server from an 8-cor
 
 With this upgrade, I now grew my Homelab to a whooping 4 server:
 
-1. Main Server
-
 ```yaml
 servers:
   main-server:
