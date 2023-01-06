@@ -18,8 +18,6 @@ autoSwitchAppearance: false
 enableSearch: true
 enableCodeCopy: true
 
-showComments: true
-
 # =================================================================================================
 # Header and Footer Configuration
 # =================================================================================================
@@ -56,6 +54,7 @@ article:
   showDateUpdated: true
   showAuthor: true
   showHero: true
+  showComments: true
   heroStyle: big # basic | big | background
   showBreadcrumbs: true
   showDraftLabel: true
