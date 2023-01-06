@@ -40,7 +40,7 @@ homepage:
 article:
   showDate: true
   showViews: true
-  showLikes: true
+  showLikes: false
   showDateUpdated: true
   showAuthor: true
   showHero: true
