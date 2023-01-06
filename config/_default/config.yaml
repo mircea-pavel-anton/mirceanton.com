@@ -1,31 +1,44 @@
----
 # -- Site Configuration --
+# Refer to the theme docs for more details about each of these parameters.
+# https://nunocoracao.github.io/blowfish/docs/configuration/#site-configuration
+---
 theme: blowfish
-baseURL: https://mirceanton.netlify.app/
+baseURL: https://mirceanton.com
 defaultContentLanguage: en
 
+# Timeout for the hugo build command
 timeout: 120s
 
+# When enabled, a robots.txt file will be created in the site root that allows search engines to crawl the entire site
 enableRobotsTXT: true
+
+# The number of articles listed on each page of the article listing
 paginate: 20
+
+# The number of words that are used to generate the article summary
 summaryLength: 30
 
+# Whether or not to build drafts and future posts
 buildDrafts: false
 buildFuture: false
 
+# Google Analytics ID
 googleAnalytics: G-RE0K14YZ9P
-
-taxonomies:
-  tag: tags
-  category: categories
-  author: authors
-  series: series
 
 sitemap:
   changefreq: daily
   filename: sitemap.xml
   priority: 0.5
 
+# Content organization
+taxonomies:
+  tag: tags
+  category: categories
+  author: authors
+  series: series
+
+# The output formats that are generated for the site.
+# Blowfish requires HTML, RSS and JSON for all theme components to work correctly.
 outputs:
   home: 
     - HTML

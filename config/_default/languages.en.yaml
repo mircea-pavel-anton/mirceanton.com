@@ -1,3 +1,6 @@
+# -- Language Configuration --
+# Refer to the theme docs for more details about each of these parameters.
+# https://nunocoracao.github.io/blowfish/docs/configuration/#language-and-i18n
 ---
 languageCode: en
 languageName: English
@@ -6,13 +9,22 @@ isoCode: en
 weight: 1
 rtl: false
 
+# The title of the website. This will be displayed in the site header and footer
 title: Mircea Anton
-logo: images/logo-icon.avif # Icon in navbar
-description: My awesome website
-copyright: Copyright © Anton Mircea-Pavel, 2022
 
+# The website description. This will be used in the site metadata.
+description: My awesome website
+
+logo: images/logo-icon.avif # Icon in navbar
+
+# A Markdown string containing the copyright message to be displayed in the site footer
+copyright: Copyright © Anton Mircea-Pavel, 2023
+
+# How dates are formatted in this language. Refer to the Hugo docs for acceptable formats.
+# https://gohugo.io/functions/format/#gos-layout-string
 dateFormat: 2 January 2006
 
+# This will be displayed in article footers, and on the homepage when the profile layout is used.
 author:
   name: Mircea-Pavel Anton
   image: images/logo.avif
