@@ -101,7 +101,7 @@ giscus:
   enabled: true
   repo: mirceanton/mirceanton.com
   repoID: R_kgDOIcQzGQ
-  category: Blog Comments
+  category: Announcements
   categoryID: DIC_kwDOIcQzGc4CTb3S
   mapping: title
   reactionsEnabled: 1
