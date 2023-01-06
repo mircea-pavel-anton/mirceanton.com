@@ -1,6 +1,6 @@
 ---
 title: My Homelab Plans for 2023
-description: Secure your cluster and your career with the CKS exam
+description: In this blog post I go over the upgrades and changes I have planned for my homelab in the coming year.
 
 tags:
   - Homelab
