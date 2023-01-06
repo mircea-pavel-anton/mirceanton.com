@@ -18,6 +18,8 @@ autoSwitchAppearance: false
 enableSearch: true
 enableCodeCopy: true
 
+showComments: true
+
 # =================================================================================================
 # Header and Footer Configuration
 # =================================================================================================
