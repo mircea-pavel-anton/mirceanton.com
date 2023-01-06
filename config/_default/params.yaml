@@ -36,7 +36,7 @@ footer:
 # =================================================================================================
 homepage:
   layout: hero # page | profile | hero | card | background | custom
-  homepageImage: images/cover.avif # used in: hero, card
+  homepageImage: images/cover.png # used in: hero, card
   showRecent: true
   showRecentItems: 3
   showMoreLink: true
