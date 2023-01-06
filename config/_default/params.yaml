@@ -94,6 +94,23 @@ list:
   cardViewScreenWidth: false
 
 # =================================================================================================
+# Giscus Comments Config
+# =================================================================================================
+giscus:
+  enabled: true
+  repo: mirceanton/mirceanton.com
+  repoID: R_kgDOIcQzGQ
+  category: Blog Comments
+  categoryID: DIC_kwDOIcQzGc4CTb3S
+  mapping: url
+  reactionsEnabled: 1
+  emitMetadata: 0
+  inputPosition: bottom
+  theme: dark_protanopia
+  lang: en
+  loading: lazy
+
+# =================================================================================================
 # Firebase integration for view count and likes
 # =================================================================================================
 firebase:
