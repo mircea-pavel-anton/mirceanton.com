@@ -103,7 +103,7 @@ giscus:
   repoID: R_kgDOIcQzGQ
   category: Blog Comments
   categoryID: DIC_kwDOIcQzGc4CTb3S
-  mapping: url
+  mapping: title
   reactionsEnabled: 1
   emitMetadata: 0
   inputPosition: bottom
