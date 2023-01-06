@@ -1,21 +1,26 @@
----
 # -- Theme Options --
 # These options control how the theme functions and allow you to
 # customise the display of your website.
 #
 # Refer to the theme docs for more details about each of these parameters.
 # https://nunocoracao.github.io/blowfish/docs/configuration/#theme-parameters
+---
+# =================================================================================================
+# Generic Theme settings
+# =================================================================================================
+# Options: blowfish | avocado | fire | forest | princess | neon | bloody | terminal | marvel | noir | autumn | congo | slate
+colorScheme: dark
 
-colorScheme: dark # blowfish | avocado | fire | forest | princess | neon | bloody | terminal | marvel | noir | autumn | congo | slate
-defaultAppearance: dark # light | dark
+# Light/Dark Color Scheme
+defaultAppearance: dark
 autoSwitchAppearance: false
 
 enableSearch: true
 enableCodeCopy: true
 
-# mainSections: ["section1", "section2"]
-# robots: ""
-
+# =================================================================================================
+# Header and Footer Configuration
+# =================================================================================================
 header:
   layout: fixed # basic | fixed
 
@@ -26,6 +31,9 @@ footer:
   showAppearanceSwitcher: false
   showScrollToTop: true
 
+# =================================================================================================
+# Home Page configuration
+# =================================================================================================
 homepage:
   layout: hero # page | profile | hero | card | background | custom
   homepageImage: images/cover.avif # used in: hero, card
@@ -35,8 +43,10 @@ homepage:
   showMoreLinkDest: /posts
   cardView: false
   cardViewScreenWidth: false
-  layoutBackgroundBlur: true # used in: background
 
+# =================================================================================================
+# Article Page Configuration (this affects blog posts)
+# =================================================================================================
 article:
   showDate: true
   showViews: true
@@ -45,7 +55,6 @@ article:
   showAuthor: true
   showHero: true
   heroStyle: big # basic | big | background
-  layoutBackgroundBlur: true # only used when heroStyle equals background
   showBreadcrumbs: true
   showDraftLabel: true
   showEdit: true
@@ -68,9 +77,12 @@ article:
     - facebook
     - email
 
+# =================================================================================================
+# List Pages Configuration (affects individual pages)
+# =================================================================================================
 list:
   showHero: true
-  heroStyle: background # valid options: basic, big, background
+  heroStyle: background # basic | big | background
   showBreadcrumbs: false
   showSummary: false
   showViews: false
@@ -81,12 +93,9 @@ list:
   cardView: false
   cardViewScreenWidth: false
 
-sitemap:
-  excludedKinds: []
-
-taxonomy:
-  showTermCount: true
-
+# =================================================================================================
+# Firebase integration for view count and likes
+# =================================================================================================
 firebase:
   apiKey: "AIzaSyDC0Mh5yjpXxcFRDAFMYtNO9XRRBBp3ZyI"
   authDomain: "personal-blog-e6c22.firebaseapp.com"
@@ -95,20 +104,3 @@ firebase:
   messagingSenderId: "900801120243"
   appId: "1:900801120243:web:8027966796046137887486"
   measurementId: "G-XY66Z7PPV4"
-
-# fathomAnalytics:
-#   site: "ABC12345"
-#   domain: "llama.yoursite.com"
-
-# buymeacoffee:
-#   identifier: ""
-#   globalWidget: true
-#   globalWidgetMessage: "Hello"
-#   globalWidgetColor: "#FFDD00"
-#   globalWidgetPosition: "Right"
-
-# verification:
-#   google: ""
-#   bing: ""
-#   pinterest: ""
-#   yandex: ""
