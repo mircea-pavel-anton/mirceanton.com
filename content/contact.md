@@ -12,6 +12,7 @@ showTableOfContents : false
 showTaxonomies : false 
 showWordCount : false
 showSummary : false
+showComments: false
 sharingLinks : false
 showEdit: false
 showViews: false
