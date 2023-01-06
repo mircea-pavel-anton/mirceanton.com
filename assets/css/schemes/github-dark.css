@@ -1,0 +1,40 @@
+/* Blowfish scheme */
+:root {
+  --color-neutral: 255, 255, 255;
+
+  /* Gray */
+  --color-neutral-50:  107,120,139;
+  --color-neutral-100: 80,96,120;
+  --color-neutral-200: 40,57,85;
+  --color-neutral-300: 16,30,53;
+  --color-neutral-400: 5,13,27;
+  --color-neutral-500: 1,4,9;
+  --color-neutral-600: 0,0,0;
+  --color-neutral-700: 0,0,0;
+  --color-neutral-800: 1,2,4;
+  --color-neutral-900: 5,8,12;
+
+  /* Blue */
+  --color-primary-50:  223,189,198;
+  --color-primary-100: 204,152,171;
+  --color-primary-200: 168,93,134;
+  --color-primary-300: 134,50,110;
+  --color-primary-400: 103,24,93;
+  --color-primary-500: 77,10,77;
+  --color-primary-600: 51,4,57;
+  --color-primary-700: 34,2,41;
+  --color-primary-800: 22,2,29;
+  --color-primary-900: 14,2,19;
+
+  /* Cyan */
+  --color-secondary-50:  236,209,247;
+  --color-secondary-100: 222,187,251;
+  --color-secondary-200: 167,141,255;
+  --color-secondary-300: 97,102,255;
+  --color-secondary-400: 59,106,252;
+  --color-secondary-500: 31,111,235;
+  --color-secondary-600: 16,106,206;
+  --color-secondary-700: 10,88,166;
+  --color-secondary-800: 9,60,118;
+  --color-secondary-900: 7,30,66;
+}

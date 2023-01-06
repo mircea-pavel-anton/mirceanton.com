@@ -9,7 +9,7 @@
 # Generic Theme settings
 # =================================================================================================
 # Options: blowfish | avocado | fire | forest | princess | neon | bloody | terminal | marvel | noir | autumn | congo | slate
-colorScheme: dark
+colorScheme: github-dark
 
 # Light/Dark Color Scheme
 defaultAppearance: dark
