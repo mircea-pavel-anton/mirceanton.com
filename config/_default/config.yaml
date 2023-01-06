@@ -33,7 +33,7 @@ sitemap:
 # Content organization
 taxonomies:
   tag: tags
-  category: categories
+# category: categories
   author: authors
   series: series
 
