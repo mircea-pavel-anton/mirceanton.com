@@ -20,6 +20,12 @@
   min-width: 100ch;
 }
 
+/* Fix social icons on home page */
+.relative.block.icon {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+
 .prose :where(h2):where([class="relative group"]) {
   margin-top: 0.8em;
   margin-bottom: 0.25em;
