@@ -14,3 +14,8 @@
   padding-top: 8px;
   padding-bottom: 8px;
 }
+
+/* Expand contact form to full width */
+.min-w-0.min-h-0.max-w-prose div {
+  min-width: 100ch;
+}
