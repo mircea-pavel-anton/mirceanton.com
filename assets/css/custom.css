@@ -19,3 +19,15 @@
 .min-w-0.min-h-0.max-w-prose div {
   min-width: 100ch;
 }
+
+.prose :where(h2):not(:where([class~="not-prose"] *)) {
+  margin-top: 0.8em;
+  margin-bottom: 0.25em;
+  font-size: 1.7em;
+}
+
+.prose :where(h3):not(:where([class~="not-prose"] *)) {
+  margin-top: 0.6em;
+  margin-bottom: 0.15em;
+  font-size: 1.5em;
+}
