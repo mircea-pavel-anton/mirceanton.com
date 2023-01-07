@@ -55,7 +55,8 @@ article:
   showAuthor: true
   showHero: true
   showComments: true
-  heroStyle: big # basic | big | background
+  heroStyle: background # basic | big | background
+  layoutBackgroundBlur: true
   showBreadcrumbs: true
   showDraftLabel: true
   showEdit: true
