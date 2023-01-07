@@ -1,11 +1,11 @@
-<div style="display: flex; flex-direction: row; justify-content: left; align-items: center">
+<div style="display: flex; flex-direction: row; justify-content: left; align-items: center;" class="mt-4">
   <span class="flex">
     <span
-      class="rounded-md border border-primary-400 px-2 py-1 text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+      class="rounded-md border border-primary-400 px-2 py-1 mb-2 text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
       {{ .Get "period" }}
     </span>
   </span>
-  <span style="margin-left: 16px;" class="dark:text-neutral-400">{{ .Get "subtitle" }}</span>
+  <span class="dark:text-neutral-400 ml-3 mb-2">{{ .Get "subtitle" }}</span>
 </div>
 <b>{{ .Get "title" }}</b>
 {{ .Inner | markdownify }}
