@@ -41,7 +41,7 @@ homepage:
   showRecentItems: 3
   showMoreLink: true
   showMoreLinkDest: /posts
-  cardView: false
+  cardView: true
   cardViewScreenWidth: false
 
 # =================================================================================================
