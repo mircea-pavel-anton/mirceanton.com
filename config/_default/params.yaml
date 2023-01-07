@@ -82,7 +82,7 @@ article:
 # List Pages Configuration (affects individual pages)
 # =================================================================================================
 list:
-  showHero: true
+  showHero: false
   heroStyle: background # basic | big | background
   showBreadcrumbs: false
   showSummary: false
@@ -92,7 +92,7 @@ list:
   showCards: true
   groupByYear: true
   cardView: false
-  cardViewScreenWidth: false
+  cardViewScreenWidth: true
 
 # =================================================================================================
 # Giscus Comments Config
