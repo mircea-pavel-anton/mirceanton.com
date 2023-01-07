@@ -20,13 +20,13 @@
   min-width: 100ch;
 }
 
-.prose :where(h2):not(:where([class~="not-prose"] *)) {
+.prose :where(h2):where([class="relative group"]) {
   margin-top: 0.8em;
   margin-bottom: 0.25em;
   font-size: 1.7em;
 }
 
-.prose :where(h3):not(:where([class~="not-prose"] *)) {
+.prose :where(h3):where([class="relative group"]) {
   margin-top: 0.6em;
   margin-bottom: 0.15em;
   font-size: 1.5em;
