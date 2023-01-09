@@ -15,7 +15,7 @@ title: Mircea Anton
 # The website description. This will be used in the site metadata.
 description: My awesome website
 
-logo: images/logo-icon.avif # Icon in navbar
+logo: images/logo-icon.png # Icon in navbar
 
 # A Markdown string containing the copyright message to be displayed in the site footer
 copyright: Copyright © Anton Mircea-Pavel, 2023
@@ -27,7 +27,7 @@ dateFormat: 2 January 2006
 # This will be displayed in article footers, and on the homepage when the profile layout is used.
 author:
   name: Mircea-Pavel Anton
-  image: images/logo.avif
+  image: images/logo.png
   headline: DevOps engineer by day, drummer & gym rat by night
   bio: I meme, therefore I am.
   links:
