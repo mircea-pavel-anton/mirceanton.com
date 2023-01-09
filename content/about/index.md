@@ -80,9 +80,7 @@ What started with "*computers are interesting*", ended up with building custom s
 
 <div style="width: 66%">
 
-| Language | Fluency |
-| :------: | :-----: |
-| Romanian | Native  |
-| English  | Fluent  |
+- :romania: Romanian
+- :gb: English
 
 </div>
