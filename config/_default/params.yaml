@@ -6,24 +6,28 @@
 # https://nunocoracao.github.io/blowfish/docs/configuration/#theme-parameters
 ---
 # =================================================================================================
-# Generic Theme settings
+# Color Scheme Settings
 # =================================================================================================
 # Options: blowfish | avocado | fire | forest | princess | neon | bloody | terminal | marvel | noir | autumn | congo | slate
 colorScheme: dark
-
-# Light/Dark Color Scheme
-defaultAppearance: dark
+defaultAppearance: dark # dark | light
 autoSwitchAppearance: false
 
+# =================================================================================================
+# Enabled featured
+# =================================================================================================
 enableSearch: true
 enableCodeCopy: true
 
 # =================================================================================================
-# Header and Footer Configuration
+# Header Configuration
 # =================================================================================================
 header:
   layout: fixed # basic | fixed
 
+# =================================================================================================
+# Footer Configuration
+# =================================================================================================
 footer:
   showMenu: false
   showCopyright: true
@@ -35,37 +39,24 @@ footer:
 # Home Page configuration
 # =================================================================================================
 homepage:
-  layout: hero # page | profile | hero | card | background | custom
-  homepageImage: images/cover.png # used in: hero, card
-  showRecent: true
-  showRecentItems: 3
-  showMoreLink: true
-  showMoreLinkDest: /posts
-  cardView: false
-  cardViewScreenWidth: false
+  layout: hero                   # page | profile | hero | card | background | custom
+  homepageImage: images/cover.png # used in: hero, card, background
+
+  # Recent blog post
+  showRecent: true            # Enable disable
+  showRecentItems: 3          # How many to show
+  showMoreLink: true          # Show "Show more" button
+  showMoreLinkDest: /posts    # Where the button redirects to
+  cardView: true              # Show posts as cards or list
+  cardViewScreenWidth: false  # Make cards section 5 posts wide
 
 # =================================================================================================
 # Article Page Configuration (this affects blog posts)
 # =================================================================================================
 article:
-  showDate: true
+  # Generic show/hide fields
   showViews: true
-  showLikes: false
-  showDateUpdated: true
-  showAuthor: true
-  showHero: true
   showComments: true
-  heroStyle: big # basic | big | background
-  showBreadcrumbs: true
-  showDraftLabel: true
-  showEdit: true
-  editURL: https://github.com/mirceanton/mirceanton.com/tree/main/content
-  editAppendPath: true
-  seriesOpened: false
-  showHeadingAnchors: true
-  showPagination: true
-  invertPagination: false
-  showReadingTime: true
   showTableOfContents: true
   showTaxonomies: true
   showAuthorsBadges: true
@@ -78,21 +69,27 @@ article:
     - facebook
     - email
 
+  # Hero configuration
+  showHero: true
+  heroStyle: background # basic | big | background
+  layoutBackgroundBlur: true
+
+  # Edit configuration
+  showEdit: true
+  editURL: https://github.com/mirceanton/mirceanton.com/tree/main/content
+  editAppendPath: true
+
 # =================================================================================================
 # List Pages Configuration (affects individual pages)
 # =================================================================================================
 list:
-  showHero: true
-  heroStyle: background # basic | big | background
-  showBreadcrumbs: false
-  showSummary: false
-  showViews: false
-  showLikes: false
-  showTableOfContents: false
-  showCards: true
-  groupByYear: true
-  cardView: false
-  cardViewScreenWidth: false
+  showCards: true   # Draw a border around the blog post list item
+
+# =================================================================================================
+# Taxonomy Page Configuration (`/tags`, `/series`, `/collections`)
+# =================================================================================================
+taxonomy:
+  cardView: true
 
 # =================================================================================================
 # Giscus Comments Config

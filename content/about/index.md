@@ -1,21 +1,6 @@
 ---
 title: About Me
-
-showDate: false
-showDateUpdated: false
-showHeadingAnchors: false
-showPagination: false
-showReadingTime: false
-showComments: false
-showTableOfContents: false
-showTaxonomies: false 
-showWordCount: false
-showSummary: false
-sharingLinks: false
-showEdit: false
-showViews: false
-showLikes: false
-showAuthor: false
+layout: simple
 ---
 
 What started with "*computers are interesting*", ended up with building custom servers for my Home Lab, tinkering with Raspberry Pi clusters, automating deployments, and being the sysadmin of my personal "datacenter".
