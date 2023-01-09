@@ -8,6 +8,7 @@ showDateUpdated : false
 showHeadingAnchors : false
 showPagination : false
 showReadingTime : false
+showComments: false
 showTableOfContents : false
 showTaxonomies : false 
 showWordCount : false
