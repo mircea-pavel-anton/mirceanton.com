@@ -30,13 +30,6 @@ sitemap:
   filename: sitemap.xml
   priority: 0.5
 
-# Content organization
-taxonomies:
-  tag: tags
-  category: categories
-  author: authors
-  series: series
-
 # The output formats that are generated for the site.
 # Blowfish requires HTML, RSS and JSON for all theme components to work correctly.
 outputs:
