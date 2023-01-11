@@ -6,7 +6,7 @@
 
 /* 75% makes the content from blog posts and "about me" page as wide as it can be while keeping the comment section as narrow as it can be*/
 .max-w-prose {
-  max-width: 80%;
+  max-width: 100%;
 }
 
 /* Add padding to the header */
