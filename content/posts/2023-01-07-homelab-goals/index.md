@@ -6,7 +6,7 @@ tags:
   - Homelab
 
 author: "Mircea-Pavel Anton"
-date: "2023-01-03"
+date: "2023-01-11"
 ---
 
 Hello and Happy New Year! I hope everyone had a great holiday season and that we're starting strong for 2023. As we kick off the new year, I wanted to share my plans and goals for evolving my homelab in the following 12 months. I will go over some of the planned upgrades, technologies I want to study, and setups I want to explore. Without further ado, let's dive right in!
