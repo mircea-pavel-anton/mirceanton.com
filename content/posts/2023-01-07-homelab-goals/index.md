@@ -27,7 +27,7 @@ To solve that this year, I decided to promote my OPNsense and TrueNAS from VM to
 
 ### Kubernetes all the way
 
-{{< figure src = "img/kubernetes-certifications.png" >}}
+{{< figure src = "img/kubernetes_certifications.png" >}}
 
 Now let's get to the interesting part! Since I got my certified nerd diplomas for Kubernetes ([CKA](http://mirceanton.com/posts/2022-12-06-my-cka-experience/), [CKAD](http://mirceanton.com/posts/2022-12-13-my-ckad-experience/), and [CKS](http://mirceanton.com/posts/2022-12-20-my-cks-experience/)) late last year, I decided it was time to start my tryhard Kubernetes arc this year 🤓.
 
