@@ -1,5 +1,5 @@
 ---
-title: Week 1 - Planning is Essential, but Plans are Useless
+title: Planning is Essential, but Plans are Useless
 description: In this blog post, I go over the progress I made on my Devember project during the first week of development.
 
 series: [ Devember 2022 ]
