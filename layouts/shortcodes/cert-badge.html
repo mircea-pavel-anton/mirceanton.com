@@ -1,10 +1,11 @@
-<a {{ with .Get "href" }}href="{{ . }}"{{ end }} class="px-4 py-0">
+<a {{ with .Get "href" }}href="{{ . }}"{{ end }}
+   class="px-4 py-2">
   <center>
-    {{< figure 
-              {{ with .Get "src" }}src="{{ . }}"{{ end }}
-              {{ with .Get "caption" }}caption="{{ . }}"{{ end }}
-              class="w-24 p-0 mt-3 mb-0"
-              default="true"
-    >}}
+    <img
+      {{ with .Get "src" }}src="{{ . }}"{{ end }}
+      {{ with .Get "caption" }}caption="{{ . }}"{{ end }}
+      class="w-24 p-0 mt-0 mb-0"
+      default="true"
+    />
   </center>
 </a>
