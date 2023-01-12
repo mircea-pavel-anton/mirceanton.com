@@ -59,9 +59,5 @@ What started with "*computers are interesting*", ended up with building custom s
 
 ## Languages
 
-<div style="width: 66%">
-
 - :romania: Romanian
 - :gb: English
-
-</div>
