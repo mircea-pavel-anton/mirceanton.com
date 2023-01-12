@@ -1,6 +1,7 @@
 ---
 title: About Me
 layout: simple
+sharingLinks: false
 ---
 
 What started with "*computers are interesting*", ended up with building custom servers for my Home Lab, tinkering with Raspberry Pi clusters, automating deployments, and being the sysadmin of my personal "datacenter".
