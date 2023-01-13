@@ -24,15 +24,26 @@ One of the biggest challenges I faced this week was staying on schedule ☹️. 
 
 ### Monday
 
+{{< 
+  figure src = "img/controller_pcb_v1_front.png"
+         caption = "v1.0 of the controller PCB, backside"
+>}}
+
 On Monday, I attempted to print version 1 of the PCB for the controller with my dad. I say "attempted" because the result wasn't really all that great. We tried using the "Iron on Glossy paper method", but we used regular paper 😆.
 
-<!-- Add picture of pcb print v1 -->
+{{< 
+  figure src = "img/controller_pcb_v1_back.png"
+         caption = "v1.0 of the controller PCB, backside"
+>}}
 
 We printed the PCB from KiCAD on a sheet of paper, setting the scale to `1:1`. We then took the printed paper, cut it to size to fit on the PCB, and went to town ironing it. After about 5 minutes of ironing, we put it in water so the paper would dissolve and tear apart, leaving only the toner on the PCB. That worked decently well, but some tracks were not continuous after corroding it with Ferric chloride. Overall, it was not as good of a result as I had hoped.
 
 ### Tuesday
 
-<!-- Add picture of circuit schematic -->
+{{< 
+  figure src = "img/server_schematic.png"
+         caption = "The circuit diagram for the server"
+>}}
 
 On Tuesday, I created a circuit schematic for the server circuit to get an idea of the components I need and the required connections.
 
@@ -40,7 +51,7 @@ I considered getting a few I2C ADCs (Analog-to-Digital Converters) for the Raspb
 
 ### Wednesday
 
-<!-- Add picture of server pcb drawn -->
+> I forgot to take a picture of the circuit drawing on the PCB... 😅
 
 On Wednesday, I teamed up with my dad again, and we worked on creating a small PCB for the server circuit I had designed the day before. We decided to try a different method for this one, namely drawing the circuit on a piece of copper-clad laminate by hand, using a paint marker. We chose this approach for 3 reasons:
 
@@ -54,13 +65,26 @@ We also debated simplifying the controller PCB layout, given the sub-par results
 
 ### Thursday
 
-<!-- Add picture of server pcb,etched -->
+{{< 
+  figure src = "img/server_pcb.png"
+         caption = "v1.0 of the server PCB"
+>}}
 
 On Thursday, we etched the server PCB, which we had drawn the day before, and drilled some of the holes. The results for this one were much, much better. We used a thick (thicc) marker to draw the traces, so we had high hopes from the start. The only downside is that, since the marker was so thick, we ended up with a bunch of shorts, especially for the pins of the current sensors, since they are so close to one another. We fixed those by scratching off the copper with a flat-head screwdriver.
 
-<!-- Add image of the back of the case here -->
+{{< 
+  figure src = "img/controller_case_power_hole.png"
+         caption = "The hole cut into the back panel of the controller case, for the power socket"
+>}}
 
-We also cut the hole for the power socket in the controller case. 
+We also cut the hole for the power socket in the controller case.
+
+{{< 
+  figure src = "img/controller_case_power_mounted.png"
+         caption = "The power socket, mounted to the back of the controller case"
+>}}
+
+And then mounted it.
 
 ### We don't talk about Friday
 
@@ -70,7 +94,10 @@ In this context, time off meant working on my master's thesis. Apparently, they 
 
 ### Saturday
 
-<!-- Add image of controller pcb printed -->
+{{< 
+  figure src = "img/controller_pcb_v2.png"
+         caption = "The PCB for the controller, version 2.0"
+>}}
 
 We gave it another go on Saturday and printed the controller PCB v2. Thankfully, the results this time were a heck of a lot better! We used the same process, with some minor tweaks, given what we learned:
 
@@ -84,9 +111,26 @@ We gave it another go on Saturday and printed the controller PCB v2. Thankfully,
 
 Let me know in the comments if you want me to do a write-up on how we printed the PCBs and go into more detail about the process.
 
-<!-- Add picture of ethernet module mounted -->
+{{< 
+  figure src = "img/ethernet_jack.png"
+         caption = "The panel-mount RJ45 socket"
+>}}
 
-Finally, the panel-mount ethernet sockets came in today. We drilled a hole for it in the back panel of the controller case.
+Finally, the panel-mount ethernet sockets came in today.
+
+{{< 
+  figure src = "img/controller_case_ethernet_hole.png"
+         caption = "The hole for the panel-mount RJ45 socket"
+>}}
+
+We drilled a hole for it in the back panel of the controller case.
+
+{{< 
+  figure src = "img/controller_case_ethernet_mounted.png"
+         caption = "The panel-mount RJ45 socket, mounted to the case"
+>}}
+
+And finally mounted it as well.
 
 ### Sunday
 
