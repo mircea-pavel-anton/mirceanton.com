@@ -1,6 +1,6 @@
 ---
 title: New Year, Same Devember
-description: TODO
+description: In this blog post, I give you some updates on the progress I made in the fifth week of my Devember 2022 Project.
 
 series: [ Devember 2022 ]
 series_order: 5
