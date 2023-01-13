@@ -136,13 +136,19 @@ And finally mounted it as well.
 
 Sunday was a team effort with my dad again. We worked on the Pi PDU server case this time. There were quite a few mods required to make it work, so we got down to business.
 
-<!-- Add picture of the panel with the holes drilled -->
-
 First things first, we were worried that the front panel for the 5U case I got would be too thin and would not support the forces when I pushed and pulled on the sockets to plug things in over time. As such, we cut the new front panel from a 3mm sheet of metal.
 
-<!-- Add picture of the panel with the sockets mounted -->
+{{< 
+  figure src = "img/power_sockets_holes.png"
+         caption = "The new front-panel for the server, with the holes for the power sockets drilled"
+>}}
 
 Next, we decided on a layout for the power sockets, marked them down, and started drilling. Let me tell you... It may not sound like a lot, but 3mm of metal is much stronger than you think. Just give it a go and try to drill 45mm holes in that... As if that wasn't enough, we had to drill 4 mounting holes for each socket, a total of 64 more holes 😓. It took us almost the whole day, but we got it done 🎖️.
+
+{{< 
+  figure src = "img/power_sockets_mounted.png"
+         caption = "The new front-panel for the server, with the power sockets mounted"
+>}}
 
 Finally, we decided we couldn't leave the front panel to be the detachable side of the case, since that will hold all of the higher voltage wires. Hence, we had to cut the case at basically every edge so we could redesign the way it closes. We still need to finish that, but hopefully, we'll get it done next week!
 
