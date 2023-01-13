@@ -68,6 +68,8 @@ On Saturday, we gave it another go and printed the controller PCB v2. Thankfully
 - give it a nice ferric clorhide bath (for ~30 minutes, so that all the copper came off)
 - wash the board and clean it with some paint thinner to get the toner off
 
+Let me know in the comments if you want me to do a write-up on how we printed the PCBs and go into more details about the process.
+
 Finally, the panel-mount ethernet sockets came in today so we also drilled the hole for the ethernet module in the back panel of the controller case as well as the holes for the pins in the  server PCB.
 
 ### Sunday
