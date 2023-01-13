@@ -1,5 +1,5 @@
 ---
-title: Week 3 - 58% of the time, it works every time
+title: 58% of the time, it works every time
 description: In this blog post, I talk about the challenges I faced during the 3rd week of Devember
 
 series: [ Devember 2022 ]

@@ -1,5 +1,5 @@
 ---
-title: Week 4 - Ho-Ho-Holidays are here
+title: Ho-Ho-Holidays are here
 description: In this blog post, I go over the progress I made for my Devember project, the PiPDU, during the fourth week of development as well as announcing my week of for the holidays.
 
 series: [ Devember 2022 ]
