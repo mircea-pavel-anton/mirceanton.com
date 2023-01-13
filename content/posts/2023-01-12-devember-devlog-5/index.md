@@ -26,15 +26,21 @@ One of the biggest challenges I faced this week was staying on schedule ☹️. 
 
 On Monday, I attempted to print version 1 of the PCB for the controller with my dad. I say "attempted" because the result wasn't really all that great. We tried using the "Iron on Glossy paper method", but we used regular paper 😆.
 
+<!-- Add picture of pcb print v1 -->
+
 We printed the PCB from KiCAD on a sheet of paper, setting the scale to `1:1`. We then took the printed paper, cut it to size to fit on the PCB, and went to town ironing it. After about 5 minutes of ironing, we put it in water so the paper would dissolve and tear apart, leaving only the toner on the PCB. That worked decently well, but some tracks were not continuous after corroding it with Ferric chloride. Overall, it was not as good of a result as I had hoped.
 
 ### Tuesday
+
+<!-- Add picture of circuit schematic -->
 
 On Tuesday, I created a circuit schematic for the server circuit to get an idea of the components I need and the required connections.
 
 I considered getting a few I2C ADCs (Analog-to-Digital Converters) for the Raspberry Pi. I soon dropped the idea, mainly due to cost considerations. For some context, I am currently using an Arduino Mega to act as a glorified I2C device, providing the Pi with 16 analog inputs as well as 16 digital outputs. I quickly realized that getting the same amount of analog channels via ADC boards would be more expensive than getting an Arduino Mega. Furthermore, I already had the Arduino, so it felt like a waste of money to buy more components I didn't need.
 
 ### Wednesday
+
+<!-- Add picture of server pcb drawn -->
 
 On Wednesday, I teamed up with my dad again, and we worked on creating a small PCB for the server circuit I had designed the day before. We decided to try a different method for this one, namely drawing the circuit on a piece of copper-clad laminate by hand, using a paint marker. We chose this approach for 3 reasons:
 
@@ -48,7 +54,11 @@ We also debated simplifying the controller PCB layout, given the sub-par results
 
 ### Thursday
 
+<!-- Add picture of server pcb,etched -->
+
 On Thursday, we etched the server PCB, which we had drawn the day before, and drilled some of the holes. The results for this one were much, much better. We used a thick (thicc) marker to draw the traces, so we had high hopes from the start. The only downside is that, since the marker was so thick, we ended up with a bunch of shorts, especially for the pins of the current sensors, since they are so close to one another. We fixed those by scratching off the copper with a flat-head screwdriver.
+
+<!-- Add image of the back of the case here -->
 
 We also cut the hole for the power socket in the controller case. 
 
@@ -60,6 +70,8 @@ In this context, time off meant working on my master's thesis. Apparently, they 
 
 ### Saturday
 
+<!-- Add image of controller pcb printed -->
+
 We gave it another go on Saturday and printed the controller PCB v2. Thankfully, the results this time were a heck of a lot better! We used the same process, with some minor tweaks, given what we learned:
 
 - print the circuit on a piece of paper, glossy this time
@@ -70,9 +82,9 @@ We gave it another go on Saturday and printed the controller PCB v2. Thankfully,
 - give it a nice ferric chloride bath (for ~30 minutes, so that all the copper came off)
 - wash the board and clean it with some paint thinner to get the toner off
 
-Next, we got to work drilling holes for the pins in the PCB so that we could solder THT components to it.
-
 Let me know in the comments if you want me to do a write-up on how we printed the PCBs and go into more detail about the process.
+
+<!-- Add picture of ethernet module mounted -->
 
 Finally, the panel-mount ethernet sockets came in today. We drilled a hole for it in the back panel of the controller case.
 
@@ -80,7 +92,11 @@ Finally, the panel-mount ethernet sockets came in today. We drilled a hole for i
 
 Sunday was a team effort with my dad again. We worked on the Pi PDU server case this time. There were quite a few mods required to make it work, so we got down to business.
 
+<!-- Add picture of the panel with the holes drilled -->
+
 First things first, we were worried that the front panel for the 5U case I got would be too thin and would not support the forces when I pushed and pulled on the sockets to plug things in over time. As such, we cut the new front panel from a 3mm sheet of metal.
+
+<!-- Add picture of the panel with the sockets mounted -->
 
 Next, we decided on a layout for the power sockets, marked them down, and started drilling. Let me tell you... It may not sound like a lot, but 3mm of metal is much stronger than you think. Just give it a go and try to drill 45mm holes in that... As if that wasn't enough, we had to drill 4 mounting holes for each socket, a total of 64 more holes 😓. It took us almost the whole day, but we got it done 🎖️.
 
