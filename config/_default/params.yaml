@@ -16,6 +16,8 @@ autoSwitchAppearance: false
 # =================================================================================================
 # Enabled featured
 # =================================================================================================
+highlightCurrentMenuArea: true
+smartTOC: true
 enableSearch: true
 enableCodeCopy: true
 
