@@ -1,0 +1,104 @@
+<div class="contact-section">
+  <div class="card flex-1 dark:bg-primary-800 p-5 rounded-lg">
+    <center>
+      <p class="dark:text-neutral-100 text-2xl font-bold">
+        Find me on...
+      </p>
+    </center>
+  
+    {{ range $links := .Site.Author.links }}
+    {{ range $name, $url := $links }}
+    <div class="rounded-md bg-primary-100 dark:bg-primary-900">
+      <a class="min-w-full hover:text-primary-700 dark:hover:text-primary-400 flex items-center mb-3 px-4 py-3"
+         href="{{ $url }}"
+         target="_blank">
+        <span class="text-primary-400 ltr:pr-3 rtl:pl-3">
+          {{ partial "icon.html" $name }}
+        </span>
+        <span class="dark:text-neutral-300">
+          {{ $name }}
+        </span>
+      </a>
+    </div>
+    {{ end }}
+    {{ end }}
+  </div>
+  
+  <div class="card flex-2 bg-neutral-100 p-5 rounded-lg">
+    <center>
+      <p class="text-neutral-900 text-2xl font-bold">
+        Get in Touch
+      </p>
+    </center>
+
+    <form name="contact" action="/thank-you/" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact" />
+    
+      <div id="Name" class="ltr:pr-3">
+        <label class="min-w-full" for="Name"></label>
+        <div>
+          <input id="contact-form-name" name="Name" type="text" placeholder="Name"
+            class="min-w-full m-2 dark:text-neutral-700 rounded" required="true" autocomplete="off">
+        </div>
+      </div>
+    
+      <div id="Email" class="ltr:pr-3">
+        <label for="Email"></label>
+    
+        <div>
+          <input id="contact-form-email" name="Email" type="email" placeholder="Email Address"
+            class="min-w-full m-2 dark:text-neutral-700 rounded" required="true" autocomplete="off">
+        </div>
+      </div>
+    
+      <div id="Subject" class="ltr:pr-3">
+        <label for="Subject"></label>
+    
+        <div>
+          <input id="contact-form-subject" name="Subject" type="text" placeholder="Subject"
+            class="min-w-full m-2 dark:text-neutral-700 rounded" required="" autocomplete="off">
+        </div>
+      </div>
+    
+      <div id="Message" class="ltr:pr-3">
+        <label for=""></label>
+    
+        <textarea class="min-w-full m-2 dark:text-neutral-700 rounded" id="contact-form-message" name="Message"
+          placeholder="What's up?" rows="8"></textarea>
+      </div>
+    
+      <!-- Button -->
+      <div id="Button" class="ltr:pr-3">
+        <button type="submit" value="Submit" id="Form-submit" class="min-w-full m-2 py-2 dark:text-neutral font-bold dark:bg-primary-800 rounded-xl text-xl">Submit</button>
+      </div>
+    </form>
+  </div>
+  
+  <style>
+    .form-card {
+      float: left;
+      width: 65%;
+      height: 100%;
+    }
+    
+    @media screen and (max-width: 1000px) {
+      .form_card {
+        width: 100%;
+        margin-bottom: 1em;
+      }
+    }
+  </style>
+</div>
+
+<style>
+  .contact-section { display: flex; }
+  .flex-1 { flex: 1; }
+  .flex-2 { flex: 2; }
+  @media screen and (max-width: 1000px) {
+    .card {
+      width: 100%;
+      margin-bottom: 1em;
+    }
+    .contact-section { display: block; }
+  }
+</style>
