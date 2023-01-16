@@ -35,59 +35,58 @@
       <input type="hidden" name="form-name" value="contact" />
     
       <div id="Name" class="ltr:pr-3">
-        <label class="min-w-full" for="Name"></label>
-        <div>
-          <input id="contact-form-name" name="Name" type="text" placeholder="Name"
-            class="min-w-full m-2 dark:text-neutral-700 rounded" required="true" autocomplete="off">
-        </div>
+        <label for="Name"/>
+          <input name="Name"
+                 type="text"
+                 placeholder="Name"
+                 id="contact-form-name"
+                 required="true"
+                 autocomplete="off"
+                 class="min-w-full m-2 dark:text-neutral-700 rounded">
       </div>
     
       <div id="Email" class="ltr:pr-3">
-        <label for="Email"></label>
-    
-        <div>
-          <input id="contact-form-email" name="Email" type="email" placeholder="Email Address"
-            class="min-w-full m-2 dark:text-neutral-700 rounded" required="true" autocomplete="off">
-        </div>
+        <label for="Email"/>
+          <input name="Email"
+                 type="email"
+                 placeholder="Email Address"
+                 id="contact-form-email" 
+                 required="true"
+                 autocomplete="off"
+                 class="min-w-full m-2 dark:text-neutral-700 rounded">
       </div>
     
       <div id="Subject" class="ltr:pr-3">
-        <label for="Subject"></label>
-    
-        <div>
-          <input id="contact-form-subject" name="Subject" type="text" placeholder="Subject"
-            class="min-w-full m-2 dark:text-neutral-700 rounded" required="" autocomplete="off">
-        </div>
+        <label for="Subject"/>
+          <input name="Subject"
+                 id="contact-form-subject"
+                 type="text"
+                 placeholder="Subject"
+                 class="min-w-full m-2 dark:text-neutral-700 rounded"
+                 required=""
+                 autocomplete="off">
       </div>
     
       <div id="Message" class="ltr:pr-3">
         <label for=""></label>
     
-        <textarea class="min-w-full m-2 dark:text-neutral-700 rounded" id="contact-form-message" name="Message"
-          placeholder="What's up?" rows="8"></textarea>
+        <textarea id="contact-form-message" 
+                  name="Message"
+                  placeholder="What's up?"
+                  rows="8"
+                  class="min-w-full m-2 dark:text-neutral-700 rounded"></textarea>
       </div>
     
-      <!-- Button -->
       <div id="Button" class="ltr:pr-3">
-        <button type="submit" value="Submit" id="Form-submit" class="min-w-full m-2 py-2 dark:text-neutral font-bold dark:bg-primary-800 rounded-xl text-xl">Submit</button>
+        <button type="submit"
+                value="Submit"
+                id="Form-submit"
+                class="min-w-full m-2 py-2 dark:text-neutral font-bold dark:bg-primary-800 rounded-xl text-xl">
+          Submit
+        </button>
       </div>
     </form>
   </div>
-  
-  <style>
-    .form-card {
-      float: left;
-      width: 65%;
-      height: 100%;
-    }
-    
-    @media screen and (max-width: 1000px) {
-      .form_card {
-        width: 100%;
-        margin-bottom: 1em;
-      }
-    }
-  </style>
 </div>
 
 <style>
