@@ -4,4 +4,4 @@ layout: simple
 sharingLinks: false
 ---
 
-{{< contact_form >}}
+{{< contact-form >}}
