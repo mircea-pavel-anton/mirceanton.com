@@ -31,3 +31,13 @@
   margin-bottom: 0.15em;
   font-size: 1.5em;
 }
+
+
+.rounded-left-lg {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+.rounded-right-lg {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
