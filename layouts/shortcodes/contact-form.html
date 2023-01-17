@@ -1,5 +1,5 @@
-<div class="contact-section">
-  <div class="card flex-1 dark:bg-primary-800 p-5 rounded-left-lg shadow-2xl">
+<div class="contact-section flex">
+  <div class="contact-card flex-1 dark:bg-primary-800 p-5 rounded-left-lg shadow-2xl">
     <center>
       <p class="dark:text-neutral-100 text-2xl font-bold">
         Find me on...
@@ -24,7 +24,7 @@
     {{ end }}
   </div>
   
-  <div class="card flex-2 bg-neutral-100 p-5 rounded-right-lg shadow-2xl">
+  <div class="contact-card flex-2 bg-neutral-100 p-5 rounded-right-lg shadow-2xl">
     <center>
       <p class="text-neutral-900 text-2xl font-bold">
         Get in Touch
@@ -88,16 +88,3 @@
     </form>
   </div>
 </div>
-
-<style>
-  .contact-section { display: flex; }
-  .flex-1 { flex: 1; }
-  .flex-2 { flex: 2; }
-  @media screen and (max-width: 1000px) {
-    .card {
-      width: 100%;
-      margin-bottom: 1em;
-    }
-    .contact-section { display: block; }
-  }
-</style>
