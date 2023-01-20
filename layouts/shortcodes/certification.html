@@ -1,0 +1,7 @@
+{{ $name := .Get "name"   }}
+{{ $id := .Get "credly"   }}
+{{ $class := .Get "class" }}
+
+<a href="https://www.credly.com/badges/{{ $id }}/public_url" class="{{ $class }}" target="_blank">
+  <img src="badges/{{ $name }}.png" alt="{{ $name }} badge">
+</a>
