@@ -21,7 +21,7 @@ For 2023, I plan to solve some of the current limitations and annoyances, implem
 
 Let's start off with the problems I have encountered with my setup in the past year and what I will be attempting to solve this year.
 
-With my current setup, I started noticing some limitations and some annoyances. For example, having my router and storage server virtualized inside Proxmox means that whenever I tinker and *inevitably* break something, my internet and Storage also go down. This is particularly annoying since it prevents me from doing other things, such as gaming with my friends. 
+With my current setup, I started noticing some limitations and some annoyances. For example, having my router and storage server virtualized inside Proxmox means that whenever I tinker and *inevitably* break something, my internet and Storage also go down. This is particularly annoying since it prevents me from doing other things, such as gaming with my friends.
 
 To solve that this year, I decided to promote my OPNsense and TrueNAS from VM to bare-metal systems. Additionally, I would like it if the services I host were not impacted by my mindless tinkering either. This year I am scaling back out, separating my core infrastructure from my testing/labbing setup.
 
@@ -55,7 +55,7 @@ Ok, so we went over the goals. Great! Now... how do I plan to achieve them, and 
 
 ### Firewall Appliance
 
-{{< 
+{{<
   figure src = "img/netserv.png"
          caption = "My OPNsense Box"
 >}}
@@ -64,7 +64,7 @@ First things first, my firewall will be migrated from running inside a VM on my 
 
 To accomplish that, I will repurpose one of the lower-powered servers I have running in my rack. Previously, it has been dedicated to running some of my CI and scripts to automate and provision infrastructure in my lab. For this year, though, I will install my firewall of choice, OPNsense, on it and use it as a dedicated firewall appliance.
 
-{{< 
+{{<
   figure src = "img/netserv_internals.png"
          caption = "Internals of the OPNsense server"
 >}}
@@ -75,7 +75,7 @@ Try to ignore the PSU mounting contraption. I forgot to check the supported dime
 
 ### Storage Appliance
 
-{{< 
+{{<
   figure src = "img/storage_server.png"
          caption = "My TrueNAS Appliance and its emotional support foam roller"
 >}}
@@ -86,8 +86,7 @@ For the OS, I chose to go with TrueNAS Scale. In the past few years, I have been
 
 One of the main advantages of Scale vs. Core is that it has support for Docker and thus allows me to easily run and deploy many more applications. This server, however, won't be doing any of that. It will handle Storage and, maybe, a GitLab server, but more on this later.
 
-
-{{< 
+{{<
   figure src = "img/storage_server_internals.png"
          caption = "TrueNAS server internals"
 >}}
@@ -102,15 +101,14 @@ On the networking side, my backbone is currently only gigabit. In the near futur
 
 ### Backup Server
 
-{{< 
+{{<
   figure src = "img/backup_server.png"
          caption = "My 2U backup server"
 >}}
 
 Up next, my backup server will remain as it was for the past year. It came in handy more times than I'd like to admit, and I see no reason to change it, at least for the foreseeable future. The CPU is too underpowered to do anything meaningful with it, so if it ain't broken, don't fix it!
 
-
-{{< 
+{{<
   figure src = "img/backup_server_internals.png"
          caption = "Backup server internals"
 >}}
@@ -121,27 +119,25 @@ The case itself is yet another InterTech 2U case, the 2U 20255 this time. The fa
 
 ### Kubernetes Cluster
 
-
-{{< 
+{{<
   figure src = "img/k8s_all.png"
          caption = "A bunch of SBCs dedicated to running K8S"
 >}}
 
-For hosting my services, I am already in the midst of a project to build a 2U rackmount PSU that provides a bunch of 5V and 12V outputs to power my Raspberry PIs and Odrdoid boards. I will create a Kubernetes cluster with these nodes. 
+For hosting my services, I am already in the midst of a project to build a 2U rackmount PSU that provides a bunch of 5V and 12V outputs to power my Raspberry PIs and Odrdoid boards. I will create a Kubernetes cluster with these nodes.
 
 #### Control plane
 
-{{< 
+{{<
   figure src = "img/k8s_controlplane.png"
          caption = "3x Pi4 2Gb dedicated to k8s controlplane"
 >}}
-
 
 I have 3x Pi4s with 2Gb of RAM, which I will use as the control-plane nodes. I made this decision since they are the only ones I have 3 of the same, and I want to implement HA into my cluster. I don't know if the 2Gb of RAM will be enough to handle the workload, but I'll cross that bridge when I get to it.
 
 #### Worker
 
-{{< 
+{{<
   figure src = "img/k8s_workers.png"
          caption = "A couple Odroid boards and a Pi4 4Gb dedicated to running workloads"
 >}}
@@ -150,7 +146,7 @@ Next, all my 4Gb RAM boards will be worker nodes. This means that I will have 3 
 
 #### Storage
 
-{{< 
+{{<
   figure src = "img/k8s_storage.png"
          caption = "A couple of Odroid HC1 boards for Longhorn"
 >}}
@@ -159,7 +155,7 @@ The next issue to tackle is Storage. I want my cluster and workloads to be indep
 
 ### Virtualization Server
 
-{{< 
+{{<
   figure src = "img/virt_server.png"
          caption = "My Virtualization Server"
 >}}
@@ -170,7 +166,7 @@ I decided to install a plain-old Ubuntu Server and configure it as a node in the
 
 I like this idea of having my VMs inside the cluster because I can integrate them much more easily into a GitOps workflow. Furthermore, I can implement more complex setups by making use of Kubernetes native concepts, such as network policies, namespaces, etc. In order to automate the initial configuration of the VMs, I want to explore the option of using init or sidecar containers to run my ansible playbooks.
 
-{{< 
+{{<
   figure src = "img/virt_server_internals.png"
          caption = "The insides of my virtualization server"
 >}}
@@ -181,13 +177,12 @@ The case for this server is, yet again, an InterTech one, the 4U 4098S. In all h
 
 ### The Forgotten Child
 
-{{< 
+{{<
   figure src = "img/9700k.png"
          caption = "The forgotten child"
 >}}
 
 Finally, we have my 9700K & RTX 2070S system. I don't have a plan for this one. For now, I put it in the piece-of-junk case I got as a bundle with my 6850K purchase. I think I will just install windows on it and use it as a game-streaming server until I get my Kubernetes setup up and running and then sell it. Really not sure what to do here. Let me know in the comments if you have any suggestions for what I could do with it!
-
 
 ### Configuration as Code
 

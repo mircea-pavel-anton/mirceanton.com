@@ -27,11 +27,11 @@ What started with "*computers are interesting*", ended up with building custom s
 
 ## Certifications
 
-{{< gallery >}}
-  {{< cert-badge src="badges/CKS.png" caption="Dec 2022" href="https://www.credly.com/badges/73b08bea-4705-41b8-bd59-50ec34c1340c/public_url" >}}
-  {{< cert-badge src="badges/CKAD.png" caption="Dec 2022" href="https://www.credly.com/badges/8f5e2b1a-f47c-4139-85c5-b8bbe323bd9d/public_url" >}}
-  {{< cert-badge src="badges/CKA.png" caption="Dec 2022" href="https://www.credly.com/badges/7019331e-ca92-4b13-9605-2946e71ff1ca/public_url" >}}
-  {{< cert-badge src="badges/LFCS.png" caption="Dec 2022" href="https://www.credly.com/badges/b055e3d7-73db-4661-a613-abd843afa155/public_url" >}}
+{{< gallery spacing="15" >}}
+  {{< certification name="CKS" credly="73b08bea-4705-41b8-bd59-50ec34c1340c" class="grid-w20 px-4" >}}
+  {{< certification name="CKAD" credly="8f5e2b1a-f47c-4139-85c5-b8bbe323bd9d" class="grid-w20 px-4" >}}
+  {{< certification name="CKA" credly="7019331e-ca92-4b13-9605-2946e71ff1ca" class="grid-w20 px-4" >}}
+  {{< certification name="LFCS" credly="b055e3d7-73db-4661-a613-abd843afa155" class="grid-w20 px-4" >}}
 {{< /gallery >}}
 
 ## Education
