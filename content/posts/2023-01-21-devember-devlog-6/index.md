@@ -34,7 +34,7 @@ So what actually did we (dad) get done this week? Well, we decided on a design f
 
 Next, we (dad) did quite a bit of the wiring for the power sockets, as we had already decided where the relay board would be located inside the case.
 
-> TODO: add an image of the wiring here
+{{< carousel images="img/sockets_wired*.png" aspectRatio="21-9" >}}
 
 And that's really about it. We also soldered up the connections on both the controller and server PCBs. Still, I forgot to take pictures of those, and there wasn't much to showcase anyway.
 
