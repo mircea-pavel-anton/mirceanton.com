@@ -14,9 +14,9 @@ author: "Mircea-Pavel Anton"
 date: "2023-01-21"
 ---
 
-Hello, there! Normally, I'd be writing this devlog to provide updates on the progress I made in the previous week on this Devember project. This time, however, I found myself scartching my head as to why I am writing this when I didn't really have the time to really work on anything...
+Hey there! So, I know it's been a hot minute since I last shared an update on my Devember project with you all. Honestly, I've been struggling to find the time to really dive into it... with the new year in, I started work again (I was on holiday for the entirety of December) and I have to take care of some uni assignments and all that, so there is a lot less time per day/week to work on this. However, I'm not gonna let that hold me back.
 
-That being said, for this week I will drop the daily log and just go over the things that got done this week, as we'll get it done much quicker that way.
+This week, I thought I'd mix things up a bit and instead of giving you a daily log of what I've been working on, I'm just gonna give you the highlights. I know it might not be as detailed, but to be fully honest, there aren't that many details to go into for this week anyway... I believe it'll be a lot quicker for me to write and for you to read this way. So, let's get into it!
 
 ## Sixth Week Review
 
