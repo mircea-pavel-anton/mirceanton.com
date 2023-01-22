@@ -30,7 +30,7 @@ While he did that, I worked on passing this uni semester as it is coming to a cl
 
 So what actually did we (dad) get done this week? Well, we decided on a design for the case and how to put it back together. Then, we (dad) cut all the aluminum angle brackets and drilled all the holes to assemble the case.
 
-> TODO: Add an image/carousel of the case here
+{{< carousel images="img/server_case*.png" aspectRatio="21-9" >}}
 
 Next, we (dad) did quite a bit of the wiring for the power sockets, as we had already decided where the relay board would be located inside the case.
 
