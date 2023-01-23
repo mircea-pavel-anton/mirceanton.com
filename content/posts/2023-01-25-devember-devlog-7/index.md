@@ -14,46 +14,42 @@ author: "Mircea-Pavel Anton"
 date: "2023-01-25"
 ---
 
-TODO: Add some introduction here
+It's been a busy week, and I'm finally starting to make some real progress on the project again. Hopefully, it's not too late and I get to finish everything in time, as I only really have 2 weeks left 😟. University is still kicking my ass as it is finals season, but I am determined to make it work!
+
+Here's a quick overview of what I've been working on for the past 7 days:
 
 ## Seventh Week Review
 
 ### Monday
 
-- soldered the components onto the controller PCB
-
-### Tuesday
-
-N/A
+I started off the week strong by soldering all of the components to the controller PCB. If you recall from the previous weeks, I did a DIY at home PCB printing thing with my dad and it turned out better than I initially expected. We drilled all the holes and now I finally completed this section of the project by soldering all the screw terminals and wires to the board to connect everything together. This was a nice and chill monday night project as I put some YouTube in the background and took my time with it.
 
 ### Wednesday
 
-- mounted the components inside the controller case for a quick and dirty testing setup
-
-### Thursday
-
-N/A
+Next, on Wednesday I did a test fit for the components inside the controller case. With the buttons mounted, I connected the wires to the screw terminals and laid out the PCB and the other components inside a case to decide on a proper layout. While this doesn't sound like much, and I certainly did not expect it to take too long, keep in mind there are 16 buttons with 4 wires per button as well as other components as well, so that's like, over 70 connections. 💀
 
 ### Friday
 
-- drilled all of the holes in the pipdu controller case so that I can mount the components securely
-- mounted the components inside the case
-- dirtiest wiring job of my life lol
+On Friday I marked the mounting spots for the components onto the case and went to town drilling the holes. You can really tell dad wasn't there to help for this one as they just **BARELY** line up 😅. Nonetheless, I got it done eventually. Next, I screwed down the components with M3 screws and butchered the top of my desk as the countersunk screws did not really countersink all the way...
 
 ### Saturday
 
-- went to a local hardware store to get some more components
-- wrote the devlog for the previous week as I was WAY behind 😅
-- did the cable management for the components inside the case and wired everything up properly, cleaned everything up nicely. looks kinda pro now, ngl
+The weekend was off to an amazing start when we realized we were missing some components. We needed some terminations for the 220V wire, to secure it to the main socket. After a quick trip to the local hardware store, we were good to go!
+
+Since dad was busy today and I wanted his help continuing the progress on the server case, I decided to get some other things done. First things first, I made sure to do the write-up for the [previous week](../2023-01-21-devember-devlog-6/) as it as LONG overdue... With that done, I did a bit of cable management inside the controller case, making sure all the wires are now the appropriate length. To be honest, I think it looks almost pro right now. I kinda dig it!
 
 ### Sunday
 
-- redesigned the internal layout of the components inside the server case
-- cut holes into the pipdu server PCB to mount it to the case
-- cut a plastic board to fit between the server pcb and the relay board in order to stagger the screws pattern and drilled the required holes
-- cut a few pieces of plastic to make a mount for the arduino on top of the relay board
+Finally, on Sunday dad came back to the rescue. We went back to his garage and had to redesign the internal layout for the components inside the server case as it got more crowded than we expected initially. We ended up deciding to mount the PCB and relay board to the back panel instead of the floor of the case.
+
+We drilled all the mounting holes into the PCB so we can secure it to the back panel. Next, we needed to find a way to mount the relay board to the PCB, but the screws were not lining up, so we had to cut a middle layer of acrylic. The plan is to use some longer screws when mounting the PCB to the case and also secure this plastic sheet to them as well. Then, we can make use of it to mount the relay board to it. We ended up doing a very similar thing in order to mount the Arduino on top of the relay board as well.
+
+We ended up with a funky looking sandwich, but hey... if it works it works I guess. We still need to solder on all the wires to make the connections and wire up the sockets to the relay, but that's a task for future me!
 
 ## Conclusion
 
-- finally starting to get back on track, sadly it is kinda late and I am afraid i will not finish on time
-- excited as things are in the last stretch and are getting put together
+Overall, I'm finally starting to get back on track, but I fear it's a bit late and I'm afraid I won't finish on time. It does stress me out a bit, as I worked quite a lot and poured a lot of effort into this project, but I will do my best to finish on time! Sleep is for the weak, anyway 🥲
+
+Anyway, I'm excited as things are in the last stretch and are finally getting put together. It's nice to see something much much closer to a finished product and it is motivating.
+
+I'll catch you in the next one! 👋
