@@ -22,13 +22,19 @@ Here's a quick overview of what I've been working on for the past 7 days:
 
 ### Monday
 
+> TODO: Components mounted to the PCB
+
 I started the week strong by soldering the components to the controller PCB. If you recall, I did a DIY at-home PCB print a couple of weeks ago with my dad, which turned out better than I initially expected. We drilled all the holes, and I finally completed this section of the project by soldering all the screw terminals and wires to the board to connect everything together. This was a nice and chill Monday night project as I put some YouTube in the background and took my time with it.
 
 ### Wednesday
 
+> TODO: first picture of the thing put together
+
 Next, I did a test fit for the components inside the controller case on Wednesday. With the buttons mounted, I connected the wires to the screw terminals. I laid out the PCB and the other components inside a case to decide on a proper layout. While this doesn't sound like much, and I certainly did not expect it to take too long, there are 16 buttons with 4 wires per button and other components, so that's over 70 connections. 💀
 
 ### Friday
+
+> TODO: before and after drilling + the components mounted
 
 On Friday, I marked the mounting spots for the components onto the case and went to town drilling the holes. You can tell dad wasn't there to help with this one as they just **BARELY** line up 😅. Nonetheless, I got it done eventually. Next, I screwed down the components with M3 screws and butchered the top of my desk as the countersunk screws did not really countersink all the way...
 
@@ -36,13 +42,19 @@ On Friday, I marked the mounting spots for the components onto the case and went
 
 The weekend was off to an amazing start when we realized we were missing some components. We needed some terminations for the 220V wire to secure it to the main socket. After a quick trip to the local hardware store, we were good to go!
 
-Since dad was busy today and I wanted his help continuing the progress on the server case, I decided to get some other things done. First, I did the write-up for the [previous week](../2023-01-21-devember-devlog-6/) as it was LONG overdue... With that done, I did a bit of cable management inside the controller case, ensuring all the wires were now the appropriate length. To be honest, it looks almost pro right now. I kinda dig it!
+> TODO: Controller case, cable managed
+
+Since dad was busy today and I wanted his help continuing the progress on the server case, I decided to get some other things done. I did a bit of cable management inside the controller case, ensuring all the wires were now the appropriate length. To be honest, it looks almost pro right now. I kinda dig it!
 
 ### Sunday
 
 Finally, on Sunday, dad came back to the rescue. We went back to his garage and had to redesign the internal layout for the components inside the server case as it got more crowded than we initially expected. We decided to mount the PCB and relay board to the back panel instead of the floor of the case.
 
+> TODO: PCB with holes drilled, plastic piece, relay board and plastic piece no. 2
+
 We drilled all the mounting holes into the PCB to secure it to the back panel. Next, we needed to find a way to mount the relay board to the PCB, but the screws were not lining up, so we had to cut a middle layer of acrylic. The plan is to use longer screws when mounting the PCB to the case and secure this plastic sheet to them. Then, we can use it to mount the relay board to it. We did a similar thing to mount the Arduino on top of the relay board as well.
+
+> TODO: The funky looking sandwich, assembled
 
 We ended up with a funky-looking sandwich, but hey... if it works, it works, I guess. We still need to solder on all the wires to make the connections and wire up the sockets to the relay, but that's a task for future me!
 
