@@ -22,15 +22,21 @@ Here's a quick overview of what I've been working on for the past 7 days:
 
 ### Monday
 
+> TODO: Picture of the PCB from prev post
+
+If you recall, I did a DIY at-home PCB print a couple of weeks ago with my dad, which turned out better than I initially expected. We drilled all the mounting holes and the holes for the components 2 weeks ago and last week we soldered up the connections.
+
 > TODO: Components mounted to the PCB
 
-I started the week strong by soldering the components to the controller PCB. If you recall, I did a DIY at-home PCB print a couple of weeks ago with my dad, which turned out better than I initially expected. We drilled all the holes, and I finally completed this section of the project by soldering all the screw terminals and wires to the board to connect everything together. This was a nice and chill Monday night project as I put some YouTube in the background and took my time with it.
+I finally completed this section of the project by soldering all the screw terminals and wires to the board to connect everything together. This was a nice and chill Monday night project as I put some YouTube in the background and took my time with it.
 
 ### Wednesday
 
 > TODO: first picture of the thing put together
 
-Next, I did a test fit for the components inside the controller case on Wednesday. With the buttons mounted, I connected the wires to the screw terminals. I laid out the PCB and the other components inside a case to decide on a proper layout. While this doesn't sound like much, and I certainly did not expect it to take too long, there are 16 buttons with 4 wires per button and other components, so that's over 70 connections. 💀
+Next, I did a test fit for the components inside the controller case on Wednesday. With the buttons mounted, I connected the wires to the screw terminals. I laid out the PCB and the other components inside a case to decide on a proper layout.
+
+While this doesn't sound like much, and I certainly did not expect it to take too long, there are 16 buttons with 4 wires per button and other components, so that's over 70 connections. 💀
 
 ### Friday
 
