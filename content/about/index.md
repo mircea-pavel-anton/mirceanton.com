@@ -6,25 +6,6 @@ sharingLinks: false
 
 What started with "*computers are interesting*", ended up with building custom servers for my Home Lab, tinkering with Raspberry Pi clusters, automating deployments, and being the sysadmin of my personal "datacenter".
 
-## Experience
-
-{{< timeline title="Junior DevOps Engineer" subtitle="Thales" period="Jun 2021 - Present" >}}
-
-- Worked on a Kubernetes based CI/CD platform containing services such as GitLab, Jenkins, SonarQube, Dependency-Track, DefectDojo
-- Managed AWS infrastructure
-- Contributed to open-source projects
-- Performed code reviews
-
-{{< /timeline >}}
-
-{{< timeline title="Undergraduate Teaching Assistant" subtitle="University of Automatic Control and Computer Science" period="Oct 2020 - Jun 2021" >}}
-
-- Developed software in Python to automatically grade student assignments, considerably speeding up the homework verification process
-- Set up CI/CD pipelines via GitLab Runners to ensure the quality of the developed software
-- Taught the introductory labs teaching student the basics of MatLab
-
-{{< /timeline >}}
-
 ## Certifications
 
 {{< gallery spacing="15" >}}
@@ -34,31 +15,68 @@ What started with "*computers are interesting*", ended up with building custom s
   {{< certification name="LFCS" credly="b055e3d7-73db-4661-a613-abd843afa155" class="grid-w20 px-4" >}}
 {{< /gallery >}}
 
-## Education
+## Experience
 
-{{< timeline title="MSc in Digital Management" subtitle="University of Entrepreneurship, Business Engineering and Management" period="Sep 2022 - Current" >}}
+{{< timeline >}}
+  {{< timelineItem icon="devops" header="Junior DevOps Engineer" subheader="Thales Romania" badge="June 2021 - Present" >}}
+    <ul>
+      <li>Worked on a Kubernetes based CI/CD platform containing services such as GitLab, Jenkins, SonarQube, Dependency-Track, DefectDojo</li>
+      <li>Managed AWS infrastructure</li>
+      <li>Contributed to open-source projects</li>
+      <li>Performed code reviews</li>
+    </ul>
+  {{< /timelineItem >}}
 
-- Studying the techniques of managing human and physical assets
-- Learning how to manage teams and projects
-- Studying the management of supply chains, logistics and warehousing
-
+  {{< timelineItem icon="workcase" header="Undergraduate Teaching Assistant" subheader="University of Automatic Control and Computer Science" badge="Oct 2020 - Jun 2021" >}}
+    <ul>
+      <li>Developed software in Python to automatically grade student assignments, considerably speeding up the homework verification process</li>
+      <li>Set up CI/CD pipelines via GitLab Runners to ensure the quality of the developed software</li>
+      <li>Taught the introductory labs teaching student the basics of MatLab</li>
+    </ul>
+  {{< /timelineItem >}}
 {{< /timeline >}}
 
-{{< timeline title="BSc in Systems Engineering" subtitle="University of Automatic Control and Computer Science" period="Sep 2018 - Jun 2022" >}}
+## Education
 
-- Developed software in Python to automatically grade student assignments, considerably speeding up the homework verification process
-- Set up CI/CD pipelines via GitLab Runners to ensure the quality of the developed software
-- Taught the introductory labs teaching student the basics of MatLab
+{{< timeline >}}
+  {{< timelineItem icon="student" header="MSc in Digital Management" subheader="University of Entrepreneurship, Business Engineering and Management" badge="Sep 2022 - Present" >}}
+    <ul>
+      <li>Studying the techniques of managing human and physical assets</li>
+      <li>Learning how to manage teams and projects</li>
+      <li>Studying the management of supply chains, logistics and warehousing</li>
+    </ul>
+  {{< /timelineItem >}}
 
+  {{< timelineItem icon="student" header="BSc in Systems Engineering" subheader="University of Automatic Control and Computer Science" badge="Sep 2018 - Jun 2022" >}}
+    <ul>
+      <li>Developed software in Python to automatically grade student assignments, considerably speeding up the homework verification process</li>
+      <li>Set up CI/CD pipelines via GitLab Runners to ensure the quality of the developed software</li>
+      <li>Taught the introductory labs teaching student the basics of MatLab</li>
+    </ul>
+  {{< /timelineItem >}}
 {{< /timeline >}}
 
 ## Hobbies
 
-- Playing the Drums
-- Lifting Weights
-- Reading
+{{< gallery >}}
+  <div class="grid-w20">
+    {{< alert "drums" >}}Playing the Drums{{< /alert >}}
+  </div>
+  <div class="grid-w20">
+    {{< alert "gym" >}}Lifting Weights{{< /alert >}}
+  </div>
+  <div class="grid-w20">
+    {{< alert "book" >}}Reading{{< /alert >}}
+  </div>
+{{< /gallery >}}
 
 ## Languages
 
-- :romania: Romanian
-- :gb: English
+{{< gallery >}}
+  <div class="grid-w20">
+    {{< alert "flag-ro" >}}Romanian{{< /alert >}}
+  </div>
+  <div class="grid-w20">
+    {{< alert "flag-uk" >}}English{{< /alert >}}
+  </div>
+{{< /gallery >}}
