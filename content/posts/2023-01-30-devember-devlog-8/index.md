@@ -23,7 +23,13 @@ date: "2023-01-30"
 
 ### Tuesday
 
+- finished fixing all of the imperfect connections
+- replaced one of the buttons that was broken, apparently
+- fixed the code to handle the buttons and LEDs via the I2C expanders
+
 ### Wednesday
+
+- soldered the components to the server PCB
 
 ### Thursday
 
