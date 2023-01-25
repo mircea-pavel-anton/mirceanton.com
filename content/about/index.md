@@ -9,10 +9,10 @@ What started with "*computers are interesting*", ended up with building custom s
 ## Certifications
 
 {{< gallery spacing="15" >}}
-  {{< certification name="CKS" credly="73b08bea-4705-41b8-bd59-50ec34c1340c" class="grid-w20 px-4" >}}
-  {{< certification name="CKAD" credly="8f5e2b1a-f47c-4139-85c5-b8bbe323bd9d" class="grid-w20 px-4" >}}
-  {{< certification name="CKA" credly="7019331e-ca92-4b13-9605-2946e71ff1ca" class="grid-w20 px-4" >}}
-  {{< certification name="LFCS" credly="b055e3d7-73db-4661-a613-abd843afa155" class="grid-w20 px-4" >}}
+  {{< certification name="CKS" credly="73b08bea-4705-41b8-bd59-50ec34c1340c" class="grid-w20 md-grid-w45 px-4" >}}
+  {{< certification name="CKAD" credly="8f5e2b1a-f47c-4139-85c5-b8bbe323bd9d" class="grid-w20 md-grid-w45 px-4" >}}
+  {{< certification name="CKA" credly="7019331e-ca92-4b13-9605-2946e71ff1ca" class="grid-w20 md-grid-w45 px-4" >}}
+  {{< certification name="LFCS" credly="b055e3d7-73db-4661-a613-abd843afa155" class="grid-w20 md-grid-w45 px-4" >}}
 {{< /gallery >}}
 
 ## Experience
@@ -59,13 +59,13 @@ What started with "*computers are interesting*", ended up with building custom s
 ## Hobbies
 
 {{< gallery >}}
-  <div class="grid-w20">
+  <div class="grid-w20 md-grid-w45">
     {{< alert "drums" >}}Playing the Drums{{< /alert >}}
   </div>
-  <div class="grid-w20">
+  <div class="grid-w20 md-grid-w45">
     {{< alert "gym" >}}Lifting Weights{{< /alert >}}
   </div>
-  <div class="grid-w20">
+  <div class="grid-w20 md-grid-w45">
     {{< alert "book" >}}Reading{{< /alert >}}
   </div>
 {{< /gallery >}}
@@ -73,10 +73,10 @@ What started with "*computers are interesting*", ended up with building custom s
 ## Languages
 
 {{< gallery >}}
-  <div class="grid-w20">
+  <div class="grid-w20 md-grid-w45">
     {{< alert "flag-ro" >}}Romanian{{< /alert >}}
   </div>
-  <div class="grid-w20">
+  <div class="grid-w20 md-grid-w45">
     {{< alert "flag-uk" >}}English{{< /alert >}}
   </div>
 {{< /gallery >}}

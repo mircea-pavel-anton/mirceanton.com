@@ -53,4 +53,8 @@
     border-radius: 0.5em; /* round all borders when cards are stacked*/
   }
   .contact-section { display: block; }
+
+  .md-grid-w45 {
+    width: 45%;
+  }
 }
