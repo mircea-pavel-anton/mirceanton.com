@@ -24,7 +24,9 @@ In this blog post, I'll give you some updates on the progress I've made in the f
 
 ### Monday
 
-Monday was a bit of a rough start. If you recall from the previous weeks, the Controller itself is more or less done, and it was just time to put it all together. Upon assembly, I found out that there were some imperfect connections on the PCB. I didn't let that get me down, though. I spent the day troubleshooting and was able to identify and fix the issues. By the end of the day, I had closed up the controller case and started testing and adjusting the code. It wasn't the most exciting day, but alas, it was a necessary step.
+Monday was a bit of a rough start. If you recall from the previous weeks, the Controller itself is more or less done, and it was just time to put it all together. Upon assembly, I found out that there were some imperfect connections on the PCB. I didn't let that get me down, though.
+
+I spent the day troubleshooting and was able to identify and fix the issues. By the end of the day, I had closed up the controller case and started testing and adjusting the code. It wasn't the most exciting day, but alas, it was a necessary step.
 
 ### Tuesday
 
@@ -34,15 +36,23 @@ In the "original" design, the buttons were connected as a matrix to the Pi direc
 
 ### Wednesday
 
+> TODO: Server pcb with components soldered
+
 Wednesday was all about soldering. I spent the entire evening/night with dad, soldering the components to the server PCB. It was a tedious task, but I made sure to double-check all of the connections and test everything before moving on to the next step, given my Monday and Tuesday experience.
+
+> TODO: Arduino with paperclip
 
 We realised we had a bit of an issue in the component choice. The cables on this PCB are connecting directly to the Arduino, but both the cables and the Arduino board have female dupont connectors, so there is no easy way to connect them. I did not manage to find the appropriate dupont pins since they had to be long on either side, so we had to improvise. This is a very "do as I say not as I do" moment. I took a paper clip, straightened it and started cutting pieces of it to shove them into the connectors to get them together... 😅
 
 ### Friday
 
+> TODO: The THING, assembled and wired up
+
 Friday was the big day. We spent the entire evening assembling the server circuitry and doing the low-voltage wiring. It looks jank af and I am unsure if I would actually trust it if somebody else showed it to me, but hey... ugly as it may be, it **should** get the job done!
 
 ### Sunday
+
+TODO
 
 ## Conclusion
 
