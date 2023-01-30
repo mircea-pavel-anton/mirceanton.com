@@ -1,22 +1,53 @@
+# =================================================================================================
+# BUILD SETTINGS
+# =================================================================================================
 [build]
   command = "hugo --gc --minify"
+  base = "website/"
   publish = "public"
 
 [build.environment]
-TZ = "Europe/Bucharest"
+  TZ = "Europe/Bucharest"
+  HUGO_VERSION = "0.107.0"
+  
+[build.processing]
+  skip_processing = false
 
-[context.production.environment]
-HUGO_VERSION = "0.107.0"
-HUGO_ENV = "production"
+[build.processing.css]
+  bundle = true
+  minify = true
 
+[build.processing.js]
+  bundle = true
+  minify = true
+[build.processing.html]
+  pretty_urls = true
+
+[build.processing.images]
+  compress = true
+
+# =================================================================================================
+# DEPLOY PREVIEWS
+# =================================================================================================
 [context.deploy-preview]
-command = "hugo --gc"
+  command = "hugo --gc --buildDrafts --buildFuture"
+  base = "website/"
+  publish = "public"
 
 [context.deploy-preview.environment]
-HUGO_VERSION = "0.107.0"
+  HUGO_VERSION = "0.107.0"
 
-[context.branch-deploy]
-command = "hugo --gc --buildDrafts --buildFuture"
+# =================================================================================================
+# FUNCTIONS
+# =================================================================================================
+[functions]
+  directory = "functions/"
 
-[context.branch-deploy.environment]
-HUGO_VERSION = "0.107.0"
+# =================================================================================================
+# BUILD PLUGINS
+# =================================================================================================
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
+
+[[plugins]]
+  package = "netlify-plugin-hugo-cache-resources"
