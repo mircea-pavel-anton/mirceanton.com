@@ -1,8 +1,0 @@
-// Workspace settings
-{
-  "files.exclude": {
-      "resources": true,
-      ".git*": true,
-      ".vscode": true
-  }
-}
