@@ -36,17 +36,19 @@ In the "original" design, the buttons were connected as a matrix to the Pi direc
 
 ### Wednesday
 
-> TODO: Server PCB with components soldered
-
 Wednesday was all about soldering. I spent the entire evening/night with dad, soldering the components to the server PCB. It was a tedious task, but I made sure to double-check all the connections and test everything before moving on to the next step, given my Monday and Tuesday experience.
+
+{{< figure src="img/server_pcb_components_soldered.png" caption="The server PCB with the components soldered on." >}}
+
+We had an issue with the component choice. The cables on this PCB connect directly to the Arduino. Still, both the cables and the Arduino board have female Dupont connectors, so there is no easy way to connect them. I did not manage to find the appropriate DuPont pins since they had to be long on either side, so we had to improvise.
 
 > TODO: Arduino with the paperclip
 
-We had an issue with the component choice. The cables on this PCB connect directly to the Arduino. Still, both the cables and the Arduino board have female Dupont connectors, so there is no easy way to connect them. I did not manage to find the appropriate DuPont pins since they had to be long on either side, so we had to improvise. This is a very "do as I say, not as I do" moment. I took a paper clip, straightened it, and started cutting pieces of it to shove them into the connectors to get them together... 😅
+This is a very "do as I say, not as I do" moment. I took a paper clip, straightened it, and started cutting pieces of it to shove them into the connectors to get them together... 😅
 
 ### Friday
 
-> TODO: The THING, assembled and wired up
+{{< carousel images="img/server_contraption_assembled*.png" aspectRatio="16-9" >}}
 
 Friday was the big day. We spent the entire evening assembling the server circuitry and doing the low-voltage wiring. It looks jank af, and I am unsure if I would actually trust it if somebody else showed it to me, but hey... ugly as it may be, it **should** get the job done!
 
