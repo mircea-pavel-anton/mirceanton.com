@@ -52,7 +52,14 @@ Friday was the big day. We spent the entire evening assembling the server circui
 
 ### Sunday
 
-TODO
+- added a power switch to the server case
+- added the 5V PSU and wired mains power to it
+- mounted the contraption to the server case
+- mounted a bunch of terminal strips and wired them to the relays NC and the sensors (power -> sensor -> relay -> socket)
+- designed a mounting system for the pi as well, on top of the arduino
+- added a terminal block to split up the 5V and GND from the PSU to power multiple components
+- ran the 5V power to the server PCB, relay board, arduino and Pi
+- wired the I2C from the pi to the arduino
 
 ## Conclusion
 
