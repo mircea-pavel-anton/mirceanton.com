@@ -42,7 +42,7 @@ footer:
 # =================================================================================================
 homepage:
   layout: hero                   # page | profile | hero | card | background | custom
-  homepageImage: images/cover.png # used in: hero, card, background
+  homepageImage: images/cover.webp # used in: hero, card, background
 
   # Recent blog post
   showRecent: true            # Enable disable
