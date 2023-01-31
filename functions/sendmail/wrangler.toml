@@ -1,0 +1,12 @@
+name = "sendmail"
+main = "src/index.ts"
+compatibility_date = "2023-01-31"
+usage_model = "bundled"
+env = { }
+
+[route]
+pattern = "mirceanton.com/sendMail"
+zone_name = ""
+
+[triggers]
+crons = [ ]
