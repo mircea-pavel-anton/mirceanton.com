@@ -2,7 +2,8 @@
 {
   "files.exclude": {
       "resources": true,
-      ".git*": true,
-      ".vscode": true
+      "public": true,
+      "package-lock.json": true,
+      "node_modules": true
   }
 }
