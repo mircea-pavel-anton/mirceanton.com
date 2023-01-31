@@ -17,7 +17,7 @@ For 2023, I plan to solve some of the current limitations and annoyances, implem
 
 ### Solving current problems
 
-{{< figure src = "img/drake_meme.png" >}}
+{{< figure src = "img/drake_meme.webp" >}}
 
 Let's start off with the problems I have encountered with my setup in the past year and what I will be attempting to solve this year.
 
@@ -27,7 +27,7 @@ To solve that this year, I decided to promote my OPNsense and TrueNAS from VM to
 
 ### Kubernetes all the way
 
-{{< figure src = "img/kubernetes_certifications.png" >}}
+{{< figure src = "img/kubernetes_certifications.webp" >}}
 
 Now let's get to the interesting part! Since I got my certified nerd diplomas for Kubernetes ([CKA](http://mirceanton.com/posts/2022-12-06-my-cka-experience/), [CKAD](http://mirceanton.com/posts/2022-12-13-my-ckad-experience/), and [CKS](http://mirceanton.com/posts/2022-12-20-my-cks-experience/)) late last year, I decided it was time to start my tryhard Kubernetes arc this year 🤓.
 
@@ -35,7 +35,7 @@ As such, I want to implement Kubernetes as the core component of my infrastructu
 
 ### Infrastructure as Code
 
-{{< figure src = "img/iac.png" >}}
+{{< figure src = "img/iac.webp" >}}
 
 For starters, in 2023, I want to double down on the Infrastructure-as-Code topic and learn something like Flux or ArgoCD to automate my service deployments. Next, to automate the physical hosts themselves, I want to get more familiar with either Jenkins or GitLab-CI and use it to trigger the Ansible playbooks or whatever scripts I write.
 
@@ -43,7 +43,7 @@ For configuration management, I will stick to Ansible, as I am enjoying it, and 
 
 ### Logging, Monitoring, and Alerting
 
-{{< figure src = "img/grafana.png" >}}
+{{< figure src = "img/grafana.webp" >}}
 
 2023 will also be the year I implement proper logging, monitoring, and alerting in my Homelab. I plan to learn more about Prometheus, Grafana, and maybe Loki, ELK, or something similar. Let me know if you have any suggestions!
 
@@ -56,7 +56,7 @@ Ok, so we went over the goals. Great! Now... how do I plan to achieve them, and 
 ### Firewall Appliance
 
 {{<
-  figure src = "img/netserv.png"
+  figure src = "img/netserv.webp"
          caption = "My OPNsense Box"
 >}}
 
@@ -65,7 +65,7 @@ First things first, my firewall will be migrated from running inside a VM on my 
 To accomplish that, I will repurpose one of the lower-powered servers I have running in my rack. Previously, it has been dedicated to running some of my CI and scripts to automate and provision infrastructure in my lab. For this year, though, I will install my firewall of choice, OPNsense, on it and use it as a dedicated firewall appliance.
 
 {{<
-  figure src = "img/netserv_internals.png"
+  figure src = "img/netserv_internals.webp"
          caption = "Internals of the OPNsense server"
 >}}
 
@@ -76,7 +76,7 @@ Try to ignore the PSU mounting contraption. I forgot to check the supported dime
 ### Storage Appliance
 
 {{<
-  figure src = "img/storage_server.png"
+  figure src = "img/storage_server.webp"
          caption = "My TrueNAS Appliance and its emotional support foam roller"
 >}}
 
@@ -87,7 +87,7 @@ For the OS, I chose to go with TrueNAS Scale. In the past few years, I have been
 One of the main advantages of Scale vs. Core is that it has support for Docker and thus allows me to easily run and deploy many more applications. This server, however, won't be doing any of that. It will handle Storage and, maybe, a GitLab server, but more on this later.
 
 {{<
-  figure src = "img/storage_server_internals.png"
+  figure src = "img/storage_server_internals.webp"
          caption = "TrueNAS server internals"
 >}}
 
@@ -102,14 +102,14 @@ On the networking side, my backbone is currently only gigabit. In the near futur
 ### Backup Server
 
 {{<
-  figure src = "img/backup_server.png"
+  figure src = "img/backup_server.webp"
          caption = "My 2U backup server"
 >}}
 
 Up next, my backup server will remain as it was for the past year. It came in handy more times than I'd like to admit, and I see no reason to change it, at least for the foreseeable future. The CPU is too underpowered to do anything meaningful with it, so if it ain't broken, don't fix it!
 
 {{<
-  figure src = "img/backup_server_internals.png"
+  figure src = "img/backup_server_internals.webp"
          caption = "Backup server internals"
 >}}
 
@@ -120,7 +120,7 @@ The case itself is yet another InterTech 2U case, the 2U 20255 this time. The fa
 ### Kubernetes Cluster
 
 {{<
-  figure src = "img/k8s_all.png"
+  figure src = "img/k8s_all.webp"
          caption = "A bunch of SBCs dedicated to running K8S"
 >}}
 
@@ -129,7 +129,7 @@ For hosting my services, I am already in the midst of a project to build a 2U ra
 #### Control plane
 
 {{<
-  figure src = "img/k8s_controlplane.png"
+  figure src = "img/k8s_controlplane.webp"
          caption = "3x Pi4 2Gb dedicated to k8s controlplane"
 >}}
 
@@ -138,7 +138,7 @@ I have 3x Pi4s with 2Gb of RAM, which I will use as the control-plane nodes. I m
 #### Worker
 
 {{<
-  figure src = "img/k8s_workers.png"
+  figure src = "img/k8s_workers.webp"
          caption = "A couple Odroid boards and a Pi4 4Gb dedicated to running workloads"
 >}}
 
@@ -147,7 +147,7 @@ Next, all my 4Gb RAM boards will be worker nodes. This means that I will have 3 
 #### Storage
 
 {{<
-  figure src = "img/k8s_storage.png"
+  figure src = "img/k8s_storage.webp"
          caption = "A couple of Odroid HC1 boards for Longhorn"
 >}}
 
@@ -156,7 +156,7 @@ The next issue to tackle is Storage. I want my cluster and workloads to be indep
 ### Virtualization Server
 
 {{<
-  figure src = "img/virt_server.png"
+  figure src = "img/virt_server.webp"
          caption = "My Virtualization Server"
 >}}
 
@@ -167,7 +167,7 @@ I decided to install a plain-old Ubuntu Server and configure it as a node in the
 I like this idea of having my VMs inside the cluster because I can integrate them much more easily into a GitOps workflow. Furthermore, I can implement more complex setups by making use of Kubernetes native concepts, such as network policies, namespaces, etc. In order to automate the initial configuration of the VMs, I want to explore the option of using init or sidecar containers to run my ansible playbooks.
 
 {{<
-  figure src = "img/virt_server_internals.png"
+  figure src = "img/virt_server_internals.webp"
          caption = "The insides of my virtualization server"
 >}}
 
@@ -178,7 +178,7 @@ The case for this server is, yet again, an InterTech one, the 4U 4098S. In all h
 ### The Forgotten Child
 
 {{<
-  figure src = "img/9700k.png"
+  figure src = "img/9700k.webp"
          caption = "The forgotten child"
 >}}
 

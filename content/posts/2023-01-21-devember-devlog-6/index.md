@@ -30,11 +30,11 @@ While he did that, I worked on passing this uni semester as it is coming to a cl
 
 So what actually did we (dad) get done this week? Well, we decided on a design for the case and how to put it back together. Then, we (dad) cut all the aluminum angle brackets and drilled all the holes to assemble the case.
 
-{{< carousel images="img/server_case*.png" aspectRatio="21-9" >}}
+{{< carousel images="img/server_case*.webp" aspectRatio="21-9" >}}
 
 Next, we (dad) did quite a bit of the wiring for the power sockets, as we had already decided where the relay board would be located inside the case.
 
-{{< carousel images="img/sockets_wired*.png" aspectRatio="21-9" >}}
+{{< carousel images="img/sockets_wired*.webp" aspectRatio="21-9" >}}
 
 And that's really about it. We also soldered up the connections on both the controller and server PCBs. Still, I forgot to take pictures of those, and there wasn't much to showcase anyway.
 

@@ -37,7 +37,7 @@ The reason I am building them as 2 separate components is for mounting flexibili
 
 ### The PDU
 
-![PDU Design](img/pdu.png)
+![PDU Design](img/pdu.webp)
 
 The PDU is a 5U box with 16 Schuko plugs on it. Inside, there will be a Raspberry Pi Zero which will host a small webpage and an API server, and an Arduino to interface with the sensors.
 
@@ -55,7 +55,7 @@ In the other direction, the Raspberry will send the Arduino commands received vi
 
 ### The Controller
 
-![Controller Design](img/controller.png)
+![Controller Design](img/controller.webp)
 
 The controller is a 2U box with 16 buttons, 16 LEDs, and an LCD display on the front plate. The buttons will toggle the outlets on and off, the LEDs will show the status, and the LCD will display stats.
 

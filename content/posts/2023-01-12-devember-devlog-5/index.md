@@ -26,14 +26,14 @@ One of the biggest challenges I faced this week was staying on schedule ☹️. 
 ### Monday
 
 {{<
-  figure src = "img/controller_pcb_v1_front.png"
+  figure src = "img/controller_pcb_v1_front.webp"
          caption = "v1.0 of the controller PCB, backside"
 >}}
 
 On Monday, I attempted to print version 1 of the PCB for the controller with my dad. I say "attempted" because the result wasn't really all that great. We tried using the "Iron on Glossy paper method", but we used regular paper 😆.
 
 {{<
-  figure src = "img/controller_pcb_v1_back.png"
+  figure src = "img/controller_pcb_v1_back.webp"
          caption = "v1.0 of the controller PCB, backside"
 >}}
 
@@ -42,7 +42,7 @@ We printed the PCB from KiCAD on a sheet of paper, setting the scale to `1:1`. W
 ### Tuesday
 
 {{<
-  figure src = "img/server_schematic.png"
+  figure src = "img/server_schematic.webp"
          caption = "The circuit diagram for the server"
 >}}
 
@@ -67,21 +67,21 @@ We also debated simplifying the controller PCB layout, given the sub-par results
 ### Thursday
 
 {{<
-  figure src = "img/server_pcb.png"
+  figure src = "img/server_pcb.webp"
          caption = "v1.0 of the server PCB"
 >}}
 
 On Thursday, we etched the server PCB, which we had drawn the day before, and drilled some of the holes. The results for this one were much, much better. We used a thick (thicc) marker to draw the traces, so we had high hopes from the start. The only downside is that, since the marker was so thick, we ended up with a bunch of shorts, especially for the pins of the current sensors, since they are so close to one another. We fixed those by scratching off the copper with a flat-head screwdriver.
 
 {{<
-  figure src = "img/controller_case_power_hole.png"
+  figure src = "img/controller_case_power_hole.webp"
          caption = "The hole cut into the back panel of the controller case, for the power socket"
 >}}
 
 We also cut the hole for the power socket in the controller case.
 
 {{<
-  figure src = "img/controller_case_power_mounted.png"
+  figure src = "img/controller_case_power_mounted.webp"
          caption = "The power socket, mounted to the back of the controller case"
 >}}
 
@@ -96,7 +96,7 @@ In this context, time off meant working on my master's thesis. Apparently, they 
 ### Saturday
 
 {{<
-  figure src = "img/controller_pcb_v2.png"
+  figure src = "img/controller_pcb_v2.webp"
          caption = "The PCB for the controller, version 2.0"
 >}}
 
@@ -113,21 +113,21 @@ We gave it another go on Saturday and printed the controller PCB v2. Thankfully,
 Let me know in the comments if you want me to do a write-up on how we printed the PCBs and go into more detail about the process.
 
 {{<
-  figure src = "img/ethernet_jack.png"
+  figure src = "img/ethernet_jack.webp"
          caption = "The panel-mount RJ45 socket"
 >}}
 
 Finally, the panel-mount ethernet sockets came in today.
 
 {{<
-  figure src = "img/controller_case_ethernet_hole.png"
+  figure src = "img/controller_case_ethernet_hole.webp"
          caption = "The hole for the panel-mount RJ45 socket"
 >}}
 
 We drilled a hole for it in the back panel of the controller case.
 
 {{<
-  figure src = "img/controller_case_ethernet_mounted.png"
+  figure src = "img/controller_case_ethernet_mounted.webp"
          caption = "The panel-mount RJ45 socket, mounted to the case"
 >}}
 
@@ -140,14 +140,14 @@ Sunday was a team effort with my dad again. We worked on the Pi PDU server case 
 First things first, we were worried that the front panel for the 5U case I got would be too thin and would not support the forces when I pushed and pulled on the sockets to plug things in over time. As such, we cut the new front panel from a 3mm sheet of metal.
 
 {{<
-  figure src = "img/power_sockets_holes.png"
+  figure src = "img/power_sockets_holes.webp"
          caption = "The new front-panel for the server, with the holes for the power sockets drilled"
 >}}
 
 Next, we decided on a layout for the power sockets, marked them down, and started drilling. Let me tell you... It may not sound like a lot, but 3mm of metal is much stronger than you think. Just give it a go and try to drill 45mm holes in that... As if that wasn't enough, we had to drill 4 mounting holes for each socket, a total of 64 more holes 😓. It took us almost the whole day, but we got it done 🎖️.
 
 {{<
-  figure src = "img/power_sockets_mounted.png"
+  figure src = "img/power_sockets_mounted.webp"
          caption = "The new front-panel for the server, with the power sockets mounted"
 >}}
 
