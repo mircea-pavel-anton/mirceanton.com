@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "convert": "bash scripts/image_convert.sh"
+    "convert": "bash scripts/image_convert.sh",
+    "build": "hugo --gc --minify --source website/ --destination ../public/"
   },
   "devDependencies": {
     "webp-batch-convert": "^1.0.1"
