@@ -1,0 +1,16 @@
+name: Blog Post Ideea
+description: An ideea for a new blog post.
+
+title: ":bulb: "
+
+labels: ["💡Ideea ", "📜 Blog Post" ]
+assignees:
+  - mirceanton 
+
+body:
+  - type: textarea
+    id: ideea-describe
+    attributes:
+      label: Describe the ideea
+    validations:
+      required: true
