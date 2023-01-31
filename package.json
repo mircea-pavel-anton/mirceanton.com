@@ -1,6 +1,10 @@
 {
+  "scripts": {
+    "convert": "bash scripts/image_convert.sh"
+  },
   "devDependencies": {
     "@netlify/plugin-lighthouse": "^4.0.7",
-    "netlify-plugin-hugo-cache-resources": "^0.2.1"
+    "netlify-plugin-hugo-cache-resources": "^0.2.1",
+    "webp-batch-convert": "^1.0.1"
   }
 }
