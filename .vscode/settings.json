@@ -4,6 +4,7 @@
       "resources": true,
       "public": true,
       "package-lock.json": true,
+      ".hugo_build.lock": true,
       "node_modules": true
   }
 }
