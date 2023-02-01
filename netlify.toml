@@ -3,43 +3,37 @@
 # =================================================================================================
 [build]
   publish = "public"
-  command = "hugo --gc --minify -s website/ -d ../public/"
+  command = "npm run build"
 
-# =================================================================================================
-# CONTEXT SETTINGS
-# =================================================================================================
-[context.production.environment]
-  HUGO_VERSION = "0.110.0"
-  HUGO_ENV = "production"
-  HUGO_ENABLEGITINFO = "true"
-
-[context.split1]
-  command = "hugo --gc --minify -s website/ -d ../public/ --enableGitInfo"
-
-[context.split1.environment]
-  HUGO_VERSION = "0.110.0"
-  HUGO_ENV = "production"
-
-[context.deploy-preview]
-  command = "hugo --gc --minify -s website/ -d ../public/ --buildFuture -b $DEPLOY_PRIME_URL"
-
-[context.deploy-preview.environment]
+[build.environment]
   HUGO_VERSION = "0.110.0"
 
-[context.branch-deploy]
-  command = "hugo --gc --minify -s website/ -d ../public/ -b $DEPLOY_PRIME_URL"
+[build.processing]
+  skip_processing = true
 
-[context.branch-deploy.environment]
-  HUGO_VERSION = "0.110.0"
+[build.processing.css]
+  bundle = true
+  minify = true
 
-[context.next.environment]
-  HUGO_ENABLEGITINFO = "true"
+[build.processing.js]
+  bundle = true
+  minify = true
+
+[build.processing.html]
+  pretty_urls = true
+
+[build.processing.images]
+  compress = true
 
 # =================================================================================================
 # BUILD PLUGINS
 # =================================================================================================
 [[plugins]]
   package = "netlify-plugin-hugo-cache-resources"
+
+  [plugins.inputs]
+  debug = true
+  srcdir = "./website"
 
 [[plugins]]
   package = "@netlify/plugin-lighthouse"
