@@ -1,7 +1,7 @@
 name: Blog Post Ideea
 description: An ideea for a new blog post.
 
-title: ":bulb: "
+title: "💡 "
 
 labels: ["💡Ideea ", "📜 Blog Post" ]
 assignees:
