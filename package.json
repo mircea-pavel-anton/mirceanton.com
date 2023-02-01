@@ -1,6 +1,9 @@
 {
   "scripts": {
-    "convert": "bash scripts/image_convert.sh"
+    "img:convert": "bash scripts/image_convert.sh",
+    "build": "bash scripts/build.sh",
+    "dev": "bash scripts/dev.sh",
+    "clean": "bash scripts/clean.sh"
   },
   "devDependencies": {
     "@netlify/plugin-lighthouse": "^4.0.7",
