@@ -4,6 +4,7 @@
 [build]
   publish = "public"
   command = "npm run build"
+  edge_functions = "edge-functions/"
 
 [build.environment]
   HUGO_VERSION = "0.110.0"
@@ -43,3 +44,7 @@
 # =================================================================================================
 [functions]
   directory = "functions/"
+
+[[edge_functions]]
+function = "send-contact-email"
+path = "/contact/submit"
