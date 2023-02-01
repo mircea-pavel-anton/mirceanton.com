@@ -6,6 +6,11 @@
     "clean": "bash scripts/clean.sh"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230115.0",
+    "typescript": "^4.9.5",
     "webp-batch-convert": "^1.0.1"
+  },
+  "dependencies": {
+    "@cloudflare/pages-plugin-mailchannels": "^0.1.1"
   }
 }
