@@ -98,7 +98,7 @@ async function sendMail({dest, from, subject, message}: MailParams) {
       subject: subject,
       content: [
         {
-          type: 'text/plain',
+          type: 'text/html',
           value: message,
         },
       ],
