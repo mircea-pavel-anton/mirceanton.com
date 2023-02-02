@@ -38,21 +38,21 @@ export async function onRequestPost({ request, env }) {
     message: ${message},
   `)
 
-  // // Send notification mail to user
-  // var response = await sendMail({
-  //   dest: person,
-  //   subject: "Thank you for contacting me!",
-  //   message: `
-  //     Hello, ${person.name},
+  // Send notification mail to user
+  var response = await sendMail({
+    dest: person,
+    subject: "Thank you for contacting me!",
+    message: `
+      Hello, ${person.name},
 
-  //     Thank you for taking the time to get in touch. This is an automated email sent to notify you that I have received your email.
-  //     I will read it and reply as soon as I possibly can!
+      Thank you for taking the time to get in touch. This is an automated email sent to notify you that I have received your email.
+      I will read it and reply as soon as I possibly can!
 
-  //     Thank you,
-  //     Mircea ANTON
-  //   `,
-  // })
-  // console.log(await response.text)
+      Thank you,
+      Mircea ANTON
+    `,
+  })
+  console.log(await response.text)
 
   // // Send mail to me
   // response = await sendMail({
