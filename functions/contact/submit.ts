@@ -44,17 +44,19 @@ export async function onRequestPost({ request, env }) {
         <p>
         Thank you for taking the time to reach out.
         </p>
-        
+
         <p>
         This is an automated message to notify you that I have received your email. I will read it and reply to you as soon as I possibly can!
         </p>
-        
+
         <p>
         Please note that this email is sent from a no-reply address. I will not receive any replies to this email. If you have any additional questions or concerns, please reach out via the contact form or any of the other links in the <a href="https://mirceanton.com/contact">contact page</a>.
         </p>
-        
-        beep-boop,<br>
-        I am a bot
+
+        <i>
+        <p>beep-boop,</p>
+        <b>I am a bot</b>
+        </i>
       </body>
     </html>
     `
@@ -76,6 +78,11 @@ export async function onRequestPost({ request, env }) {
         <hr>
         ${message}
         <hr>
+
+        <i>
+        <p>beep-boop,</p>
+        <b>I am a bot</b>
+        </i>
       </body>
     </html>
     `,
