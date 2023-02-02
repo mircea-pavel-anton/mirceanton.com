@@ -1,0 +1,24 @@
+{{- partial "partials/functions/warnings.html" .Site -}}
+<!DOCTYPE html>
+<html lang="{{ with .Site.Params.isoCode | default (.Site.LanguageCode | default " en") }} {{- . -}} {{ end }}" dir="{{ if .Site.Params.rtl | default false -}}
+    rtl
+  {{- else -}}
+    ltr
+  {{- end }}" class="scroll-smooth" data-default-appearance="{{ .Site.Params.defaultAppearance | default " light" }}"
+  data-auto-appearance="{{ .Site.Params.autoSwitchAppearance | default " true" }}">
+{{- partial "head.html" . -}}
+
+  <body
+    class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32">
+    <div class="flex justify-center">
+      <div class="block p-6 rounded-lg shadow-lg bg-white max-w-sm">
+        <h5 class="text-gray-900 text-xl leading-tight font-medium mb-2">Card title</h5>
+        <p class="text-gray-700 text-base mb-4">
+          Some quick example text to build on the card title and make up the bulk of the card's
+          content.
+        </p>
+        <button type="button" class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Button</button>
+      </div>
+    </div>
+  </body>
+</html>
