@@ -21,7 +21,6 @@ const CONTACT_EMAIL = {
 }
 
 export async function onRequestPost({ request, env }) {
-  // Extract formData from the request and parse out the form fields
   const formData = await request.formData();
   const person = {
     name: formData.get("Name"),
@@ -29,9 +28,18 @@ export async function onRequestPost({ request, env }) {
   }
   const subject = formData.get("Subject")
   const message = formData.get("Message")
+  console.log(`
+    Extracted form data:
+    person: {
+      name: ${person.name},
+      email: ${person.email},
+    },
+    subject: ${subject},
+    message: ${message},
+  `)
 
   // Send notification mail to user
-  await sendMail({
+  var response = await sendMail({
     dest: person,
     subject: "Thank you for contacting me!",
     message: `
@@ -44,13 +52,15 @@ export async function onRequestPost({ request, env }) {
       Mircea ANTON
     `,
   })
+  console.log(await response.text)
 
   // Send mail to me
-  await sendMail({
+  response = await sendMail({
     dest: CONTACT_EMAIL,
     subject: "Form Submission: " + subject,
     message: message,
   })
+  console.log(await response.text)
 
   return Response.redirect('https://mirceanton.com/')
 }
