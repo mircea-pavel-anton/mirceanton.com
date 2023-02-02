@@ -56,7 +56,13 @@ export async function onRequestPost({ request, env }) {
   response = await sendMail({
     dest: CONTACT_EMAIL,
     subject: "Form Submission: " + subject,
-    message: message,
+    message: `<h2>You have a new contact form submission!</h2>
+
+    From: ${person.name} ( ${person.email} )
+    On: ${(new Date()).toUTCString()}
+    Message:
+    ${message}
+    `,
   })
 
   return Response.redirect('https://mirceanton.com/')
