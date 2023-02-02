@@ -54,19 +54,19 @@ export async function onRequestPost({ request, env }) {
   })
   console.log(await response.text)
 
-  // // Send mail to me
-  // response = await sendMail({
-  //   dest: CONTACT_EMAIL,
-  //   subject: "Form Submission: " + subject,
-  //   message: message,
-  // })
-  // console.log(await response.text)
+  // Send mail to me
+  response = await sendMail({
+    dest: CONTACT_EMAIL,
+    subject: "Form Submission: " + subject,
+    message: message,
+  })
+  console.log(await response.text)
 
   return Response.redirect('https://mirceanton.com/')
 }
 
 async function sendMail({dest, from, subject, message}: MailParams) {
-  return await new Request('https://api.mailchannels.net/tx/v1/send', {
+  return await fetch(new Request('https://api.mailchannels.net/tx/v1/send', {
     method: 'POST',
     headers: {
       'content-type': 'application/json',
@@ -86,5 +86,5 @@ async function sendMail({dest, from, subject, message}: MailParams) {
         },
       ],
     }),
-  });
+  }));
 }
