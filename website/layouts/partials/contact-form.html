@@ -1,0 +1,53 @@
+<form name="contact" action="/contact/submit" method="POST">
+  <div id="Name" class="ltr:pr-3">
+    <label for="Name"/>
+    <input name="Name"
+            type="text"
+            placeholder="Name"
+            id="contact-form-name"
+            required="true"
+            autocomplete="off"
+            class="min-w-full m-2 text-neutral-200 rounded bg-neutral-600">
+  </div>
+
+  <div id="Email" class="ltr:pr-3">
+    <label for="Email"/>
+    <input name="Email"
+            type="email"
+            placeholder="Email Address"
+            id="contact-form-email" 
+            required="true"
+            autocomplete="off"
+            class="min-w-full m-2 text-neutral-200 rounded bg-neutral-600">
+  </div>
+
+  <div id="Subject" class="ltr:pr-3">
+    <label for="Subject"/>
+    <input name="Subject"
+            id="contact-form-subject"
+            type="text"
+            placeholder="Subject"
+            class="min-w-full m-2 text-neutral-200 rounded bg-neutral-600"
+            required=""
+            autocomplete="off">
+  </div>
+
+  <div id="Message" class="ltr:pr-3">
+    <label for=""></label>
+
+    <textarea id="contact-form-message" 
+              name="Message"
+              placeholder="What's up?"
+              rows="8"
+              class="min-w-full m-2 text-neutral-200 rounded bg-neutral-600"></textarea>
+  </div>
+
+  <div id="Button" class="ltr:pr-3">
+    <button type="submit"
+            value="Submit"
+            id="Form-submit"
+            class="min-w-full m-2 py-2 text-neutral-200 font-bold text-xl rounded-lg hover:!bg-primary-500 dark:bg-primary-800 dark:hover:!bg-primary-700">
+      Submit
+    </button>
+  </div>
+</form>
