@@ -53,7 +53,7 @@ export async function onRequestPost({ request, env }) {
         Please note that this email is sent from a no-reply address. I will not receive any replies to this email. If you have any additional questions or concerns, please reach out via the contact form or any of the other links in the <a href="https://mirceanton.com/contact">contact page</a>.
         </p>
         
-        beep-boop,
+        beep-boop,<br>
         I am a bot
       </body>
     </html>
@@ -70,10 +70,12 @@ export async function onRequestPost({ request, env }) {
         <title>You have a new contact form submission!</title>
       </head>
       <body>
-        From: ${person.name} ( ${person.email} )
-        On: ${(new Date()).toUTCString()}
-        Message:
+        <p>From: ${person.name} ( ${person.email} )</p>
+        <p>On: ${(new Date()).toUTCString()}</p>
+        Message:<br>
+        <hr>
         ${message}
+        <hr>
       </body>
     </html>
     `,
