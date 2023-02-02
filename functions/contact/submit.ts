@@ -28,15 +28,6 @@ export async function onRequestPost({ request, env }) {
   }
   const subject = formData.get("Subject")
   const message = formData.get("Message")
-  console.log(`
-    Extracted form data:
-    person: {
-      name: ${person.name},
-      email: ${person.email},
-    },
-    subject: ${subject},
-    message: ${message},
-  `)
 
   // Send notification mail to user
   var response = await sendMail({
@@ -52,7 +43,6 @@ export async function onRequestPost({ request, env }) {
       Mircea ANTON
     `,
   })
-  console.log(await response.text)
 
   // Send mail to me
   response = await sendMail({
@@ -60,7 +50,6 @@ export async function onRequestPost({ request, env }) {
     subject: "Form Submission: " + subject,
     message: message,
   })
-  console.log(await response.text)
 
   return Response.redirect('https://mirceanton.com/')
 }
