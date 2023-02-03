@@ -12,7 +12,7 @@ interface MailParams {
 }
 
 const NOREPLY_FROM = {
-  name: 'Mircea Anton - mailbot',
+  name: 'Mircea Anton: mailbot',
   email: 'noreply@mirceanton.com',
 }
 const CONTACT_EMAIL = {
@@ -54,8 +54,8 @@ export async function onRequestPost({ request, env }) {
         </p>
 
         <i>
-        <p>beep-boop,</p>
-        <b>I am a bot</b>
+        beep-boop,<br>
+        <b>Mr. Robot</b>
         </i>
       </body>
     </html>
@@ -80,8 +80,8 @@ export async function onRequestPost({ request, env }) {
         <hr>
 
         <i>
-        <p>beep-boop,</p>
-        <b>I am a bot</b>
+        beep-boop,<br>
+        <b>Mr. Robot</b>
         </i>
       </body>
     </html>
