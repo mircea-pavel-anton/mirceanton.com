@@ -12,7 +12,7 @@ interface MailParams {
 }
 
 const NOREPLY_FROM = {
-  name: 'Mircea Anton: mailbot',
+  name: 'Mircea Anton mailbot',
   email: 'noreply@mirceanton.com',
 }
 const CONTACT_EMAIL = {
