@@ -1,0 +1,18 @@
+{{- $socialColors := .Site.Data.socialColors -}}
+{{ range $links := .Site.Author.links }}
+{{ range $name, $url := $links }}
+<div class="rounded-md"
+     style="background-color: {{ index $socialColors $name }}">
+  <a class="min-w-full flex items-center mb-3 px-4 py-3"
+     href="{{ $url }}"
+     target="_blank">
+    <span class="ltr:pr-3 rtl:pl-3">
+      {{ partial "icon.html" $name }}
+    </span>
+    <span>
+      {{ $name }}
+    </span>
+  </a>
+</div>
+{{ end }}
+{{ end }}

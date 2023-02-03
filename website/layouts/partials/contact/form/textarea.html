@@ -1,0 +1,9 @@
+<div id="{{ .id | title }}" class="ltr:pr-3">
+  <label for=""></label>
+
+  <textarea id="contact-form-{{ .id }}" 
+            name="{{ .id | title }}"
+            placeholder="{{ .placeholder | title }}"
+            rows="8"
+            class="min-w-full m-2 text-neutral-200 rounded bg-neutral-600"></textarea>
+</div>
