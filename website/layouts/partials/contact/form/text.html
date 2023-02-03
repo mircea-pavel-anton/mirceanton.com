@@ -1,7 +1,7 @@
 <div id="{{ .id | title }}" class="ltr:pr-3">
   <label for="{{ .id | title }}"/>
   <input name="{{ .id | title }}"
-          type="text"
+          type="{{ .type }}"
           placeholder="{{ .id | title }}"
           id="contact-form-{{ .id }}"
           required="true"
