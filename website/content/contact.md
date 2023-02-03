@@ -1,7 +1,4 @@
 ---
 title: Contact
-layout: simple
-sharingLinks: false
+layout: contact
 ---
-
-{{< contact-form >}}
