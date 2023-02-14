@@ -72,7 +72,7 @@ Mains power comes in one of the strips and is then daisy chained to the other. I
 
 With some of the high-voltage wiring out of the way, we decided to mount the 5V power supply, again making use of the perforated holes on the back panel. We wired it to the same 220V going into the terminal strips by tapping into one of the bridged connections. Then, we added another terminal strip just underneath the PSU to get "more" `5V,` and `GND` outputs from it. Being a small capacity PSU (5V3A), it only had one `5V` out and one `GND`. Since we have 4 components that require `5V` in, that was not enough, so that's how we solved that.
 
-{{< figure src="img/final_assembly.webp" caption="" >}}
+{{< figure src="img/final_assembly.webp" caption="The final assembly of the server." >}}
 
 With the PSU mounted and wired, we continued to design a mounting system for the Pi to sit on top of the Arduino. We cut yet another plastic piece to screw into the one on which the Arduino is mounted and then proceeded to connect all the components to the `5V` rail. The 4 parts that need a `5V` input are:
 
