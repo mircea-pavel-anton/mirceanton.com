@@ -22,7 +22,7 @@ Here's a quick overview of what I've been working on for the past 7 days:
 
 ### Monday
 
-{{< figure src="img/controller_pcb_old.webp" >}}
+{{< figure src="img/controller_pcb_old.webp" caption="The controller PCB I printed with my dad 2 weeks ago." >}}
 
 If you recall, I did a DIY at-home PCB print a couple of weeks ago with my dad, which turned out better than I initially expected. We drilled all the mounting holes and the holes for the components 2 weeks ago and last week we soldered up the connections.
 
@@ -32,7 +32,7 @@ I finally completed this section of the project by soldering all the screw termi
 
 ### Wednesday
 
-{{< figure src="img/components_mounted_ugly.webp" >}}
+{{< figure src="img/components_mounted_ugly.webp" caption="The components, thrown together inside the case." >}}
 
 Next, I did a test fit for the components inside the controller case on Wednesday. With the buttons mounted, I connected the wires to the screw terminals. I laid out the PCB and the other components inside a case to decide on a proper layout.
 
@@ -48,7 +48,7 @@ On Friday, I marked the mounting spots for the components onto the case and went
 
 The weekend was off to an amazing start when we realized we were missing some components. We needed some terminations for the 220V wire to secure it to the main socket. After a quick trip to the local hardware store, we were good to go!
 
-{{< figure src="img/components_mounted_pretty.webp" >}}
+{{< figure src="img/components_mounted_pretty.webp" caption="The components, mounted \"neatly\"" >}}
 
 Since dad was busy today and I wanted his help continuing the progress on the server case, I decided to get some other things done. I did a bit of cable management inside the controller case, ensuring all the wires were now the appropriate length. To be honest, it looks almost pro right now. I kinda dig it!
 

@@ -17,7 +17,7 @@ For 2023, I plan to solve some of the current limitations and annoyances, implem
 
 ### Solving current problems
 
-{{< figure src = "img/drake_meme.webp" >}}
+{{< figure src="img/drake_meme.webp" caption="Virtualizing VS. Running on bare metal" >}}
 
 Let's start off with the problems I have encountered with my setup in the past year and what I will be attempting to solve this year.
 
@@ -27,7 +27,7 @@ To solve that this year, I decided to promote my OPNsense and TrueNAS from VM to
 
 ### Kubernetes all the way
 
-{{< figure src = "img/kubernetes_certifications.webp" >}}
+{{< figure src="img/kubernetes_certifications.webp" caption="Kubernetes Certified Nerd" >}}
 
 Now let's get to the interesting part! Since I got my certified nerd diplomas for Kubernetes ([CKA](http://mirceanton.com/posts/2022-12-06-my-cka-experience/), [CKAD](http://mirceanton.com/posts/2022-12-13-my-ckad-experience/), and [CKS](http://mirceanton.com/posts/2022-12-20-my-cks-experience/)) late last year, I decided it was time to start my tryhard Kubernetes arc this year 🤓.
 
@@ -35,7 +35,7 @@ As such, I want to implement Kubernetes as the core component of my infrastructu
 
 ### Infrastructure as Code
 
-{{< figure src = "img/iac.webp" >}}
+{{< figure src="img/iac.webp" caption="Infrastructure as Code tools" >}}
 
 For starters, in 2023, I want to double down on the Infrastructure-as-Code topic and learn something like Flux or ArgoCD to automate my service deployments. Next, to automate the physical hosts themselves, I want to get more familiar with either Jenkins or GitLab-CI and use it to trigger the Ansible playbooks or whatever scripts I write.
 
@@ -43,7 +43,7 @@ For configuration management, I will stick to Ansible, as I am enjoying it, and 
 
 ### Logging, Monitoring, and Alerting
 
-{{< figure src = "img/grafana.webp" >}}
+{{< figure src="img/grafana.webp" caption="Grafana Inc." >}}
 
 2023 will also be the year I implement proper logging, monitoring, and alerting in my Homelab. I plan to learn more about Prometheus, Grafana, and maybe Loki, ELK, or something similar. Let me know if you have any suggestions!
 
