@@ -59,13 +59,13 @@ What started with "*computers are interesting*", ended up with building custom s
 ## Hobbies
 
 {{< gallery >}}
-  <div class="grid-w20 md-grid-w45">
+  <div class="grid-w50 sm:grid-w50 md:grid-w50 lg:grid-w40 xl:grid-w30 2xl:grid-w30">
     {{< alert "drums" >}}Playing the Drums{{< /alert >}}
   </div>
-  <div class="grid-w20 md-grid-w45">
+  <div class="grid-w50 sm:grid-w50 md:grid-w50 lg:grid-w40 xl:grid-w30 2xl:grid-w30">
     {{< alert "gym" >}}Lifting Weights{{< /alert >}}
   </div>
-  <div class="grid-w20 md-grid-w45">
+  <div class="grid-w50 sm:grid-w50 md:grid-w50 lg:grid-w40 xl:grid-w30 2xl:grid-w30">
     {{< alert "book" >}}Reading{{< /alert >}}
   </div>
 {{< /gallery >}}
@@ -73,10 +73,10 @@ What started with "*computers are interesting*", ended up with building custom s
 ## Languages
 
 {{< gallery >}}
-  <div class="grid-w20 md-grid-w45">
+  <div class="grid-w50 sm:grid-w50 md:grid-w50 lg:grid-w40 xl:grid-w30 2xl:grid-w30">
     {{< alert "flag-ro" >}}Romanian{{< /alert >}}
   </div>
-  <div class="grid-w20 md-grid-w45">
+  <div class="grid-w50 sm:grid-w50 md:grid-w50 lg:grid-w40 xl:grid-w30 2xl:grid-w30">
     {{< alert "flag-uk" >}}English{{< /alert >}}
   </div>
 {{< /gallery >}}
