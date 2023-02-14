@@ -78,7 +78,7 @@ article:
 
   # Edit configuration
   showEdit: true
-  editURL: https://github.com/mirceanton/mirceanton.com/tree/main/content
+  editURL: https://github.com/mirceanton/mirceanton.com/tree/main/website/content
   editAppendPath: true
 
 # =================================================================================================
@@ -109,15 +109,3 @@ giscus:
   theme: dark_protanopia
   lang: en
   loading: lazy
-
-# =================================================================================================
-# Firebase integration for view count and likes
-# =================================================================================================
-firebase:
-  apiKey: "AIzaSyDC0Mh5yjpXxcFRDAFMYtNO9XRRBBp3ZyI"
-  authDomain: "personal-blog-e6c22.firebaseapp.com"
-  projectId: "personal-blog-e6c22"
-  storageBucket: "personal-blog-e6c22.appspot.com"
-  messagingSenderId: "900801120243"
-  appId: "1:900801120243:web:8027966796046137887486"
-  measurementId: "G-XY66Z7PPV4"

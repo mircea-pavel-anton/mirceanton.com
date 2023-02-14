@@ -44,7 +44,7 @@ This is a very "do as I say, not as I do" moment. I took a paper clip, straighte
 
 ### Friday
 
-{{< carousel images="img/server_contraption_assembled*.webp" aspectRatio="16-9" >}}
+{{< carousel images="img/server_contraption_assembled*.webp" aspectRatio="16-9" interval=3000 >}}
 
 Friday was a pretty exciting day. We spent the entire evening assembling the server circuitry outside of the case and doing some of the low-voltage wirings. It looks jank af, and I am unsure if I would actually trust it if somebody else showed it to me, but hey... ugly as it may be, it **should** get the job done!
 
@@ -52,11 +52,11 @@ Friday was a pretty exciting day. We spent the entire evening assembling the ser
 
 Sunday was a big and eventful day as we worked on many things.
 
-{{< carousel images="img/power_switch*.webp" aspectRatio="21-9" >}}
+{{< carousel images="img/power_switch*.webp" aspectRatio="21-9" interval=2500 >}}
 
 Firstly, we added an on/off switch to the case to cut off the mains' power to the entire thing... y'know... just in case 😃. We wired it up to the already mounted socket to the case and moved on with the other, more important tasks.
 
-{{< carousel images="img/sensor_to_relay*.webp" aspectRatio="16-9" >}}
+{{< carousel images="img/sensor_to_relay*.webp" aspectRatio="16-9" interval=2200 >}}
 
 Next, we cut and bent some thicker wire to make the connection from the current sensors to the relays. For the wiring to be manageable, we decided to go from the mains in -> sensor IN, sensor OUT -> relay NC, and relay COM -> power socket.
 
@@ -64,7 +64,7 @@ Next, we cut and bent some thicker wire to make the connection from the current 
 
 Now that the wiring that could be done before mounting the components inside the case was done, it was time to... well... mount the components inside the case, duh! We secured them with screws to the back of the case, making use of the already-existing perforated pattern. Next, we mounted some terminal strips to the left and right of the components to facilitate the wiring.
 
-{{< carousel images="img/terminal_strips_wired*.webp" aspectRatio="16-9" >}}
+{{< carousel images="img/terminal_strips_wired*.webp" aspectRatio="16-9" interval=2740 >}}
 
 Mains power comes in one of the strips and is then daisy chained to the other. In order to run the mains' power along the terminal strip, we bridged all the connections on one side. Finally, on the other side, we ran the cables to the sensors. Now, we have a connection coming in from the mains power into the sensor and then into the relays for each of the 16 sensors and relays.
 
@@ -72,7 +72,7 @@ Mains power comes in one of the strips and is then daisy chained to the other. I
 
 With some of the high-voltage wiring out of the way, we decided to mount the 5V power supply, again making use of the perforated holes on the back panel. We wired it to the same 220V going into the terminal strips by tapping into one of the bridged connections. Then, we added another terminal strip just underneath the PSU to get "more" `5V,` and `GND` outputs from it. Being a small capacity PSU (5V3A), it only had one `5V` out and one `GND`. Since we have 4 components that require `5V` in, that was not enough, so that's how we solved that.
 
-{{< figure src="img/final_assembly.webp" caption="" >}}
+{{< figure src="img/final_assembly.webp" caption="The final assembly of the server." >}}
 
 With the PSU mounted and wired, we continued to design a mounting system for the Pi to sit on top of the Arduino. We cut yet another plastic piece to screw into the one on which the Arduino is mounted and then proceeded to connect all the components to the `5V` rail. The 4 parts that need a `5V` input are:
 
