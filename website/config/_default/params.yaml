@@ -78,7 +78,7 @@ article:
 
   # Edit configuration
   showEdit: true
-  editURL: https://github.com/mirceanton/mirceanton.com/tree/main/content
+  editURL: https://github.com/mirceanton/mirceanton.com/tree/main/website/content
   editAppendPath: true
 
 # =================================================================================================
