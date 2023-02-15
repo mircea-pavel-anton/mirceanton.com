@@ -7,7 +7,7 @@ main:
     pageRef: about
     weight: 10
   - name: Resume
-    url: https://mirceanton.netlify.app/docs/Resume.pdf
+    url: https://mirceanton.com/docs/Resume.pdf
     weight: 20
   - name: Blog
     pageRef: posts
