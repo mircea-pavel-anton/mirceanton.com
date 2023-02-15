@@ -57,7 +57,6 @@ homepage:
 # =================================================================================================
 article:
   # Generic show/hide fields
-  showViews: true
   showComments: true
   showTableOfContents: true
   showTaxonomies: true
