@@ -1,4 +1,18 @@
 {
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "node_modules": true,
+    "public": true,
+    "package-lock.json": true,
+    "**/*/.hugo_build.lock": true,
+    "website/resources": true,
+    "website/public": true
+  },
   "deno.enable": true,
   "deno.enablePaths": [
     "edge-functions"
