@@ -72,7 +72,7 @@ article:
 
   # Hero configuration
   showHero: true
-  heroStyle: background # basic | big | background
+  heroStyle: big # basic | big | background
   layoutBackgroundBlur: true
 
   # Edit configuration
