@@ -1,0 +1,29 @@
+---
+.terraform-base:
+  image:
+    name: hashicorp/terraform:light
+    entrypoint: [""]
+
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
+  variables:
+    TF_DIR: scripts/cloudflare_pages
+    TF_VAR_cloudflare_api_token: $CLOUDFLARE_API_TOKEN
+    TF_VAR_cloudflare_account_id: $CLOUDFLARE_ACCOUNT_ID
+    CI_TERRAFORM_STATE_NAME: terraform_state
+    TF_HTTP_ADDRESS: $CI_API_V4_URL/projects/$CI_PROJECT_ID/terraform/state/$CI_TERRAFORM_STATE_NAME
+    TF_HTTP_UPDATE_METHOD: POST
+    TF_HTTP_LOCK_ADDRESS: $CI_API_V4_URL/projects/$CI_PROJECT_ID/terraform/state/$CI_TERRAFORM_STATE_NAME/lock
+    TF_HTTP_LOCK_METHOD: POST
+    TF_HTTP_UNLOCK_ADDRESS: $CI_API_V4_URL/projects/$CI_PROJECT_ID/terraform/state/$CI_TERRAFORM_STATE_NAME/lock
+    TF_HTTP_UNLOCK_METHOD: DELETE
+    TF_HTTP_USERNAME: mirceanton
+    TF_HTTP_PASSWORD: $GITLAB_PERSONAL_ACCESS_TOKEN
+    TF_HTTP_RETRY_WAIT_MIN: 5
+    TF_HTTP_RETRY_WAIT_MAX: 30
+
+  before_script:
+    - terraform --version
+    - cd ${TF_DIR}
+    - terraform init -reconfigure
