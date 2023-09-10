@@ -12,6 +12,8 @@ runs:
   steps:
     - name: Inject Terraform Cloud Credentials
       shell: bash
+      env:
+        TF_TOKEN: ${{ secrets.TF_TOKEN }}
       run: |
         mkdir -p ~/.terraform.d
         touch ~/.terraform.d/credentials.tfrc.json
@@ -19,7 +21,7 @@ runs:
         {
           "credentials": {
             "app.terraform.io": {
-              "token": "${{ secrets.TF_TOKEN }}"
+              "token": "$TF_TOKEN"
             }
           }
         }
