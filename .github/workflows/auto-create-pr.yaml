@@ -10,23 +10,25 @@ jobs:
   create_pr_repo_sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Generate PR name based on branch name
-        id: generate
+      - name: Automatically Generate The PR Name
+        id: generate_name
         run: |
-          branch_name="${{ github.ref_name }}"
-          IFS='/' read -ra elements <<< "$branch_name"
-          formatted_branch="(${elements[0]}): ${elements[1]^}"
-          echo $formatted_branch >> $GITHUB_OUTPUT
+          chmod +x .github/scripts/generate_pr_name.sh
+          output=$(.github/scripts/generate_pr_name.sh)
+          echo "::set-output name=pr_name::$output"
+        env:
+          GITHUB_REF_NAME: ${{ github.ref_name }}
 
-      - name: Show generated branch name
-        run: echo "${{ steps.generate.outputs.* }}"
+      - name: Show The Generated Name
+        run: |
+          echo "PR Name: ${{ steps.generate_name.outputs.pr_name }}"
 
       - name: Create pull request
         id: open-pr
         uses: repo-sync/pull-request@v2
         with:
           destination_branch: "main"
-          pr_title: ${{ steps.generate.outputs }}
+          pr_title: ${{ steps.generate_name.outputs.pr_name }}
           pr_template: ".github/PULL_REQUEST_TEMPLATE.md"
           pr_reviewer: "mirceanton"
           pr_draft: true
