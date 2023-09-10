@@ -1,5 +1,12 @@
 terraform {
-  backend "http" {}
+  cloud {
+    organization = "mirceanton"
+
+    workspaces {
+      name = "mirceanton"
+    }
+  }
+
   required_providers {
     cloudflare = {
       source  = "cloudflare/cloudflare"
