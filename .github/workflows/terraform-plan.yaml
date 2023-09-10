@@ -27,19 +27,6 @@ jobs:
           PR_NUMBER=$(echo $GITHUB_REF | awk 'BEGIN { FS = "/" } ; { print $3 }')
           echo "PR_NUMBER=$PR_NUMBER" >> $GITHUB_OUTPUT
 
-      - name: Configure Terraform Cloud Backend
-        shell: bash
-        run: |
-          cat > ~/.terraform.d/credentials.tfrc.json << EOF
-          {
-            "credentials": {
-              "app.terraform.io": {
-                "token": "${{ secrets.TF_TOKEN }}"
-              }
-            }
-          }
-          EOF
-
       - name: Terraform Plan
         uses: ./.github/templates/terraform/plan
         with:

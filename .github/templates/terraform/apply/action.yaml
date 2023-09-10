@@ -26,10 +26,9 @@ runs:
         terraform_wrapper: false
 
     - name: Terraform Init
-      id: init
-      working-directory: ${{ inputs.terraform_directory }}
-      shell: bash
-      run: terraform init
+      uses: ./.github/templates/terraform/init
+      with:
+        terraform_directory: "infrastructure/cloudflare"
 
     - name: Download Plan
       id: download-plan
