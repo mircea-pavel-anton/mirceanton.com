@@ -18,6 +18,7 @@ resource "cloudflare_pages_project" "pages_project" {
       deployments_enabled           = true
       production_deployment_enabled = true
       preview_deployment_setting    = "custom"
+      preview_branch_includes       = ["post/*"]
       preview_branch_excludes       = ["main"]
     }
   }
