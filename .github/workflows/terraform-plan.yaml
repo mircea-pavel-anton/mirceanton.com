@@ -7,7 +7,10 @@ on:
 
 env:
   TERRAFORM_VERSION: 1.5.7
+  TERRAFORM_DIRECTORY: infrastructure
   TF_IN_AUTOMATION: true
+  TF_VAR_CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+  TF_VAR_CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
 
 jobs:
   terraform_plan:
@@ -30,7 +33,7 @@ jobs:
       - name: Terraform Plan
         uses: ./.github/templates/terraform/plan
         with:
-          terraform_directory: "infrastructure"
+          terraform_directory: ${{ env.TERRAFORM_DIRECTORY }}
           terraform_version: ${{ env.TERRAFORM_VERSION }}
           terraform_token: ${{ secrets.TF_TOKEN }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
