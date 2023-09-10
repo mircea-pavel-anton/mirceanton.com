@@ -38,6 +38,7 @@ jobs:
               }
             }
           }
+          EOF
 
       - name: Terraform Plan
         uses: ./.github/templates/terraform/plan

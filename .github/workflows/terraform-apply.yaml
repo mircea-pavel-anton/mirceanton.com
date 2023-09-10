@@ -30,6 +30,11 @@ jobs:
       - name: Configure Terraform Cloud Backend
         shell: bash
         run: |
+          cat > backend.tf << EOF
+
+      - name: Configure Terraform Cloud Backend
+        shell: bash
+        run: |
           cat > ~/.terraform.d/credentials.tfrc.json << EOF
           {
             "credentials": {
@@ -38,6 +43,7 @@ jobs:
               }
             }
           }
+          EOF
 
       - name: Terraform Apply
         uses: ./.github/templates/terraform/apply
