@@ -27,7 +27,7 @@ jobs:
           echo "PR_NUMBER=$PR_NUMBER" >> $GITHUB_OUTPUT
 
       - name: Terraform Plan
-        uses: ./.github/templates/tf-plan-template.yaml
+        uses: .github/templates/terraform/plan
         with:
           terraform_directory: "infrastructure/cloudflare"
           terraform_version: ${{ env.TERRAFORM_VERSION }}
