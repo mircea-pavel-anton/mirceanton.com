@@ -6,6 +6,9 @@ inputs:
   terraform_directory:
     description: Directory that holds Terraform code
     required: true
+  terraform_token:
+    description: Terraform token for auth to TF Cloud
+    required: true
 
 runs:
   using: composite
@@ -13,7 +16,7 @@ runs:
     - name: Inject Terraform Cloud Credentials
       shell: bash
       env:
-        TF_TOKEN: ${{ secrets.TF_TOKEN }}
+        TF_TOKEN: ${{ inputs.terraform_token }}
       run: |
         mkdir -p ~/.terraform.d
         touch ~/.terraform.d/credentials.tfrc.json

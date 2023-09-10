@@ -32,5 +32,6 @@ jobs:
         with:
           terraform_directory: "infrastructure/cloudflare"
           terraform_version: ${{ env.TERRAFORM_VERSION }}
+          terraform_token: ${{ secrets.TF_TOKEN }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
           pr_id: ${{ steps.pr-id.outputs.PR_NUMBER }}

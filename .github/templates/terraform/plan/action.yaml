@@ -9,6 +9,9 @@ inputs:
   terraform_version: 
     description: Terraform Version
     required: true
+  terraform_token:
+    description: Terraform token for auth to TF Cloud
+    required: true
   github_token: 
     description: GitHub token for auth
     required: true
@@ -29,6 +32,7 @@ runs:
       uses: ./.github/templates/terraform/init
       with:
         terraform_directory: "infrastructure/cloudflare"
+        terraform_token: ${{ inputs.terraform_token }}
 
     - name: Terraform Plan
       id: plan
