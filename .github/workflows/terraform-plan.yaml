@@ -30,7 +30,7 @@ jobs:
       - name: Terraform Plan
         uses: ./.github/templates/terraform/plan
         with:
-          terraform_directory: "infrastructure/cloudflare"
+          terraform_directory: "infrastructure"
           terraform_version: ${{ env.TERRAFORM_VERSION }}
           terraform_token: ${{ secrets.TF_TOKEN }}
           github_token: ${{ secrets.GITHUB_TOKEN }}

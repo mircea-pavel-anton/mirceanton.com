@@ -31,7 +31,7 @@ runs:
     - name: Terraform Init
       uses: ./.github/templates/terraform/init
       with:
-        terraform_directory: "infrastructure/cloudflare"
+        terraform_directory: ${{ inputs.terraform_directory }}
         terraform_token: ${{ inputs.terraform_token }}
 
     - name: Download Plan
