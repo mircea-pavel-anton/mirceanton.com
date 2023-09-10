@@ -3,6 +3,11 @@ name: Terraform Plan
 
 on:
   pull_request:
+    paths:
+      - infrastructure/**
+      - .github/templates/terraform/**
+      - .github/workflows/terraform-apply.yaml
+      - .github/workflows/terraform-plan.yaml
 
 
 env:
