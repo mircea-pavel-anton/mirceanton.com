@@ -16,7 +16,7 @@ jobs:
           branch_name="${{ github.ref_name }}"
           IFS='/' read -ra elements <<< "$branch_name"
           formatted_branch="(${elements[0]}): ${elements[1]^}"
-          echo "$formatted_branch" >> $GITHUB_OUTPUT
+          echo "$formatted_branch"
 
       - name: Show generated branch name
         run: echo "${{ steps.generate.outputs }}"
