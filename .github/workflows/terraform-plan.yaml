@@ -4,6 +4,7 @@ name: Terraform Plan
 on:
   pull_request:
 
+
 env:
   TERRAFORM_VERSION: 1.5.7
   TF_IN_AUTOMATION: true
@@ -27,7 +28,7 @@ jobs:
           echo "PR_NUMBER=$PR_NUMBER" >> $GITHUB_OUTPUT
 
       - name: Terraform Plan
-        uses: .github/templates/terraform/plan
+        uses: ./.github/templates/terraform/plan
         with:
           terraform_directory: "infrastructure/cloudflare"
           terraform_version: ${{ env.TERRAFORM_VERSION }}

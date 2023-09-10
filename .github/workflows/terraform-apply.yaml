@@ -28,7 +28,7 @@ jobs:
           echo "PR_NUMBER=$PR_NUMBER" >> $GITHUB_OUTPUT
 
       - name: Terraform Apply
-        uses: .github/templates/terraform/apply
+        uses: ./.github/templates/terraform/apply
         with:
           terraform_directory: "infrastructure/cloudflare"
           terraform_version: ${{ env.TERRAFORM_VERSION }}
