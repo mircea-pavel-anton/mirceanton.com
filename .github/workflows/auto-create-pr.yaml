@@ -1,5 +1,5 @@
 ---
-name: Auto PR Creator
+name: "Create PR for ${{ github.ref_name }}"
 
 on:
   create
