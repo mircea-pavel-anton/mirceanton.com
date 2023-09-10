@@ -16,10 +16,10 @@ jobs:
           branch_name="${{ github.ref_name }}"
           IFS='/' read -ra elements <<< "$branch_name"
           formatted_branch="(${elements[0]}): ${elements[1]^}"
-          echo "$formatted_branch"
+          echo "$formatted_branch" >> $GITHUB_OUTPUT
 
       - name: Show generated branch name
-        run: echo "${{ steps.generate.outputs }}"
+        run: echo "${{ steps.generate.outputs.* }}"
 
       - name: Create pull request
         id: open-pr
