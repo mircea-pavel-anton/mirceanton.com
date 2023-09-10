@@ -7,7 +7,7 @@ on:
       - "main"
 
 jobs:
-  create_pr_repo_sync:
+  create_pr:
     runs-on: ubuntu-latest
     steps:
       - name: Automatically Generate The PR Name
