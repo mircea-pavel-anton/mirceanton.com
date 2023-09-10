@@ -1,10 +1,11 @@
 ---
-name: Automatically create / update pull request
+name: Auto PR Creator
+description: Automatically create a new PR when a new branch is created and assign myself as reviewer.
+
+run_name: Create a new PR for branch ${{ github.ref_name }}
 
 on:
-  push:
-    branches-ignore:
-      - "main"
+  create
 
 jobs:
   create_pr:
