@@ -1,6 +1,5 @@
 ---
 name: Auto PR Creator
-run_name: Create a new PR for branch ${{ github.ref_name }}
 
 on:
   create
