@@ -34,7 +34,7 @@ jobs:
           gh pr create \
             --base main \
             --title "${{ steps.generate_name.outputs.pr_name }}" \
+            --body-file ".github/PULL_REQUEST_TEMPLATE.md" \
             --assignee "mirceanton" \
             --reviewer "mirceanton" \
-            --template ".github/PULL_REQUEST_TEMPLATE.md" \
             --draft
