@@ -4,6 +4,9 @@ name: Automatically create PRs and assign myself as reviewer
 on:
   create
 
+permissions:
+  pull-requests: write
+
 jobs:
   create_pr:
     runs-on: ubuntu-latest
