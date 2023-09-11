@@ -3,6 +3,7 @@ name: Terraform Plan
 
 on:
   pull_request:
+    type: [ 'synchronize' ]
     paths:
       - infrastructure/**
       - .github/templates/terraform/**
@@ -35,6 +36,35 @@ jobs:
 
       - name: Terraform Plan
         uses: ./.github/templates/terraform/plan
+        env:
+          TF_VAR_cloudflare_api_token: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          TF_VAR_cloudflare_account_id: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        with:
+          terraform_directory: ${{ env.TERRAFORM_DIRECTORY }}
+          terraform_version: ${{ env.TERRAFORM_VERSION }}
+          terraform_token: ${{ secrets.TF_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          pr_id: ${{ steps.pr-id.outputs.PR_NUMBER }}
+
+  terraform_apply:
+    runs-on: ubuntu-latest
+    if: github.event.review.state == 'approved'
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Get PR ID
+        id: pr-id
+        shell: bash
+        env:
+          GITHUB_REF: ${{ inputs.github_ref }}
+        run: |
+          PR_NUMBER=$(echo $GITHUB_REF | awk 'BEGIN { FS = "/" } ; { print $3 }')
+          echo "PR_NUMBER=$PR_NUMBER" >> $GITHUB_OUTPUT
+
+      - name: Terraform Apply
+        uses: ./.github/templates/terraform/apply
         env:
           TF_VAR_cloudflare_api_token: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           TF_VAR_cloudflare_account_id: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
