@@ -1,8 +1,11 @@
 ---
-name: Create new PR
+name: Automatically create PRs and assign myself as reviewer
 
 on:
   create
+
+permissions:
+  pull-requests: write
 
 jobs:
   create_pr:
@@ -25,10 +28,13 @@ jobs:
 
       - name: Create pull request
         id: open-pr
-        uses: repo-sync/pull-request@v2
-        with:
-          destination_branch: "main"
-          pr_title: ${{ steps.generate_name.outputs.pr_name }}
-          pr_template: ".github/PULL_REQUEST_TEMPLATE.md"
-          pr_reviewer: "mirceanton"
-          pr_draft: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh pr create \
+            --base main \
+            --title "${{ steps.generate_name.outputs.pr_name }}" \
+            --body-file ".github/PULL_REQUEST_TEMPLATE.md" \
+            --assignee "mirceanton" \
+            --reviewer "mirceanton" \
+            --draft
