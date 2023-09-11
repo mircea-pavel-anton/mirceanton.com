@@ -28,6 +28,8 @@ jobs:
 
       - name: Create pull request
         id: open-pr
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           gh pr create \
             --base main \
