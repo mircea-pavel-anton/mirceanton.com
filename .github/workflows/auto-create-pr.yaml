@@ -1,5 +1,5 @@
 ---
-name: Create new PR
+name: Automatically create PRs and assign myself as reviewer
 
 on:
   create
