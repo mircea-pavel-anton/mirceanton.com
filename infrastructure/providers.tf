@@ -1,9 +1,16 @@
 terraform {
-  backend "http" {}
+  cloud {
+    organization = "mirceanton"
+
+    workspaces {
+      name = "mirceanton"
+    }
+  }
+
   required_providers {
     cloudflare = {
       source  = "cloudflare/cloudflare"
-      version = "~> 3.0"
+      version = "4.14.0"
     }
   }
 }
