@@ -10,6 +10,8 @@ on:
 env:
   TF_IN_AUTOMATION: true
   TF_TOKEN_app_terraform_io: ${{ secrets.TF_TOKEN }}
+  TF_VAR_cloudflare_api_token: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+  TF_VAR_cloudflare_account_id: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
 
 jobs:
   terraform-ci:
@@ -57,7 +59,7 @@ jobs:
         id: comment-plan
         uses: peter-evans/create-or-update-comment@v2
         with:
-          token: ${{ inputs.github_token }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           issue-number: ${{ github.event.number }}
           body: |
             #### Terraform Format and Style 🖌: `${{ steps.fmt.outcome }}`
