@@ -16,6 +16,7 @@ env:
 jobs:
   terraform-apply:
     runs-on: ubuntu-latest
+    # container: antonmircea/terraform # FIXME
     defaults:
      run:
        shell: bash
