@@ -36,3 +36,19 @@ resource "cloudflare_pages_domain" "pages_domain" {
   project_name = cloudflare_pages_project.pages_project.name
   domain       = "mirceanton.com"
 }
+
+# =================================================================================================
+# Create the CNAME for mirceanton.com -> mirceanton.pages.dev
+# =================================================================================================
+resource "cloudflare_record" "root" {
+  zone_id = cloudflare_zone.zone.id
+
+  type  = "CNAME"
+  name  = "@"
+  value = "mirceanton.pages.dev"
+
+  comment = "DNS Record for the mirceanton.com Pages Project"
+
+  proxied         = true
+  allow_overwrite = true
+}
