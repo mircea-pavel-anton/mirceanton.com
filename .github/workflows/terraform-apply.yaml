@@ -16,7 +16,7 @@ env:
 jobs:
   terraform-apply:
     runs-on: ubuntu-latest
-    container: antonmircea/gitops-toolkit:latest
+    container: hashicorp/terraform:1.4
     steps:
       - name: Terraform Init
         working-directory: ./infrastructure/
