@@ -72,5 +72,9 @@ jobs:
             ```
 
       - name: Set Pipeline Status
-        if: ${{ failure() }}
+        if: >
+          steps.fmt.outcome == 'failure' ||
+          steps.init.outcome == 'failure' ||
+          steps.validate.outcome == 'failure' ||
+          steps.plan.outcome == 'failure'
         run: exit 1
