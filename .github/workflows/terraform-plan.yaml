@@ -12,10 +12,15 @@ env:
   TF_TOKEN_app_terraform_io: ${{ secrets.TF_TOKEN }}
 
 jobs:
-  terraform-plan:
+  terraform:
     runs-on: ubuntu-latest
-    container: hashicorp/terraform:1.4
     steps:
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v2
+        with:
+          terraform_version: 1.5.7
+          terraform_wrapper: false
+
       - name: Run terraform init
         working-directory: ./infrastructure/
         run: terraform init
