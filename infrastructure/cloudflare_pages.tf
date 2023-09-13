@@ -21,6 +21,11 @@ resource "cloudflare_pages_project" "pages_project" {
       preview_branch_excludes       = ["main"]
     }
   }
+
+  build_config {
+    build_command   = "npm run build"
+    destination_dir = "public"
+  }
 }
 
 # =================================================================================================
