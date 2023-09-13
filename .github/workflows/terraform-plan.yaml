@@ -70,10 +70,6 @@ jobs:
 
           gh pr comment ${{ github.event.number }} --body-file /tmp/comment.txt
 
-     - name: Set Pipeline Status
-       if: >
-        steps.fmt.outcome == 'failure' ||
-        steps.init.outcome == 'failure' ||
-        steps.validate.outcome == 'failure' ||
-        steps.plan.outcome == 'failure'
-       run: exit 1
+      - name: Set Pipeline Status
+        if: ${{ failure() }}
+        run: exit 1
