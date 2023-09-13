@@ -43,5 +43,28 @@ jobs:
 
       - name: Plan
         id: plan
-        run: terraform plan
+        run: |
+          echo 'plan<<EOF' >> $GITHUB_OUTPUT
+          terraform plan -no-color -out=tfplan >> $GITHUB_OUTPUT
+          echo 'EOF' >> $GITHUB_OUTPUT
         continue-on-error: true
+
+      - name: Add PR Comment
+        run: |
+          cat <<EOF >> /tmp/comment.txt
+            #### Terraform Format and Style 🖌: `${{ steps.fmt.outcome }}`
+            #### Terraform Initialization ⚙️: `${{ steps.init.outcome }}`
+            #### Terraform Validation 🤖: `${{ steps.validate.outcome }}`
+            #### Terraform Plan 📖: `${{ steps.plan.outcome }}`
+
+            ```bash
+            ${{ steps.plan.outputs.plan }}
+            ```
+
+            ---
+
+            *Pushed by: @${{ github.actor }}*
+            *Action: ${{ github.event_name }}*
+          EOF
+
+          gh pr comment ${{ github.event.number }} --body-file /tmp/comment.txt
