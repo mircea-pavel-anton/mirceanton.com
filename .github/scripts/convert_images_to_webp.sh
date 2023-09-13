@@ -1,20 +1,20 @@
 #!/bin/bash
 
 convert_images() {
-  echo "Converting all images to `.webp`..."
+  echo "Converting all images to \`.webp\`..."
   cwebp-batch --in website/content/ --out website/content/ -q 100 -z 9 -lossless --short
 }
 
 delete_originals() {
-  echo "Removing `.png` files..."
+  echo "Removing \`.png\` files..."
   find website/content/ -type f -name '*.png' -exec rm {} \;
   echo "Done."
 
-  echo "Removing `.jpg` files..."
+  echo "Removing \`.jpg\` files..."
   find website/content/ -type f -name '*.jpg' -exec rm {} \;
   echo "Done."
 
-  echo "Removing `.jpeg` files..."
+  echo "Removing \`.jpeg\` files..."
   find website/content/ -type f -name '*.jpeg' -exec rm {} \;
   echo "Done."
 }
