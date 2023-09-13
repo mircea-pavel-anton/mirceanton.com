@@ -14,6 +14,11 @@ env:
 jobs:
   terraform:
     runs-on: ubuntu-latest
+    defaults:
+     run:
+       shell: bash
+       working-directory: ./terraform
+
     steps:
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v2
@@ -22,10 +27,8 @@ jobs:
           terraform_wrapper: false
 
       - name: Run terraform init
-        working-directory: ./infrastructure/
         run: terraform init
 
       - name: Run terraform plan
         id: plan
-        working-directory: ./infrastructure/
         run: terraform plan
