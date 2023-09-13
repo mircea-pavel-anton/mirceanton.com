@@ -2,45 +2,80 @@
 name: Terraform Plan
 
 on:
+  workflow_dispatch: {}
   pull_request:
     paths:
       - infrastructure/**
-      - .github/templates/terraform/**
-      - .github/workflows/terraform-apply.yaml
-      - .github/workflows/terraform-plan.yaml
-
+      - .github/workflows/terraform-*
 
 env:
-  TERRAFORM_VERSION: 1.5.7
-  TERRAFORM_DIRECTORY: infrastructure
   TF_IN_AUTOMATION: true
+  TF_TOKEN_app_terraform_io: ${{ secrets.TF_TOKEN }}
+  TF_VAR_cloudflare_api_token: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+  TF_VAR_cloudflare_account_id: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
 
 jobs:
-  terraform_plan:
+  terraform-ci:
     runs-on: ubuntu-latest
-    if: github.event.review.state != 'approved'
+    # container: antonmircea/terraform # FIXME
+    defaults:
+     run:
+       shell: bash
+       working-directory: infrastructure/
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Get PR ID
-        id: pr-id
-        shell: bash
-        env:
-          GITHUB_REF: ${{ inputs.github_ref }}
-        run: |
-          PR_NUMBER=$(echo $GITHUB_REF | awk 'BEGIN { FS = "/" } ; { print $3 }')
-          echo "PR_NUMBER=$PR_NUMBER" >> $GITHUB_OUTPUT
-
-      - name: Terraform Plan
-        uses: ./.github/templates/terraform/plan
-        env:
-          TF_VAR_cloudflare_api_token: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          TF_VAR_cloudflare_account_id: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v2
         with:
-          terraform_directory: ${{ env.TERRAFORM_DIRECTORY }}
-          terraform_version: ${{ env.TERRAFORM_VERSION }}
-          terraform_token: ${{ secrets.TF_TOKEN }}
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          pr_id: ${{ steps.pr-id.outputs.PR_NUMBER }}
+          terraform_version: 1.5.7
+          terraform_wrapper: false
+
+      - name: Verify format and style
+        id: fmt
+        run: terraform fmt -check
+        continue-on-error: true
+
+      - name: Initialize
+        id: init
+        run: terraform init
+        continue-on-error: true
+
+      - name: Validate
+        id: validate
+        run: terraform validate
+        continue-on-error: true
+
+      - name: Plan
+        id: plan
+        run: |
+          echo 'plan<<EOF' >> $GITHUB_OUTPUT
+          terraform plan -no-color -out=tfplan >> $GITHUB_OUTPUT
+          echo 'EOF' >> $GITHUB_OUTPUT
+        continue-on-error: true
+
+      - name: Comment Plan
+        id: comment-plan
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ github.event.number }}
+          body: |
+            #### Terraform Format and Style 🖌: `${{ steps.fmt.outcome }}`
+            #### Terraform Initialization ⚙️: `${{ steps.init.outcome }}`
+            #### Terraform Validation 🤖: `${{ steps.validate.outcome }}`
+            #### Terraform Plan 📖: `${{ steps.plan.outcome }}`
+
+            ```bash
+            ${{ steps.plan.outputs.plan }}
+            ```
+
+      - name: Set Pipeline Status
+        if: >
+          steps.fmt.outcome == 'failure' ||
+          steps.init.outcome == 'failure' ||
+          steps.validate.outcome == 'failure' ||
+          steps.plan.outcome == 'failure'
+        run: exit 1
