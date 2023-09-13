@@ -55,21 +55,18 @@ jobs:
 
       - name: Add PR Comment
         run: |
-          cat <<EOF >> /tmp/comment.txt
-            #### Terraform Format and Style 🖌: `${{ steps.fmt.outcome }}`
-            #### Terraform Initialization ⚙️: `${{ steps.init.outcome }}`
-            #### Terraform Validation 🤖: `${{ steps.validate.outcome }}`
-            #### Terraform Plan 📖: `${{ steps.plan.outcome }}`
-
-            ```bash
-            ${{ steps.plan.outputs.plan }}
-            ```
-
-            ---
-
-            *Pushed by: @${{ github.actor }}*
-            *Action: ${{ github.event_name }}*
-          EOF
+          echo "#### Terraform Format and Style 🖌: `${{ steps.fmt.outcome }}`" >> /tmp/comment.txt
+          echo "#### Terraform Initialization ⚙️: `${{ steps.init.outcome }}`" >> /tmp/comment.txt
+          echo "#### Terraform Validation 🤖: `${{ steps.validate.outcome }}`" >> /tmp/comment.txt
+          echo "#### Terraform Plan 📖: `${{ steps.plan.outcome }}`" >> /tmp/comment.txt
+          echo "" >> /tmp/comment.txt
+          echo "```bash" >> /tmp/comment.txt
+          echo "${{ steps.plan.outputs.plan }}" >> /tmp/comment.txt
+          echo "```" >> /tmp/comment.txt
+          echo "" >> /tmp/comment.txt
+          echo "---" >> /tmp/comment.txt
+          echo "" >> /tmp/comment.txt
+          echo "*Pushed by: @${{ github.actor }}*" >> /tmp/comment.txt
 
           gh pr comment ${{ github.event.number }} --body-file /tmp/comment.txt
 
