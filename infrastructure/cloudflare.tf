@@ -9,7 +9,7 @@ resource "cloudflare_pages_project" "pages_project" {
   production_branch = "main"
 
   source {
-    type = "github"
+    type =      "github"
     config {
       owner                         = "mirceanton"
       repo_name                     = "mirceanton.com"
