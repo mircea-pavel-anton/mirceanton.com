@@ -7,5 +7,9 @@ public/
 node_modules/
 package-lock.json
 
-# Local Netlify folder
-.netlify
+# Terraform files
+infrastructure/.terraform
+infrastructure/.terraform.lock.hcl
+infrastructure/*.tfstate
+infrastructure/*.tfstate.backup
+infrastructure/*.auto.tfvars
