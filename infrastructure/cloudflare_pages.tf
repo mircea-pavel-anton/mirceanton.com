@@ -52,3 +52,19 @@ resource "cloudflare_record" "root" {
   proxied         = true
   allow_overwrite = true
 }
+
+# =================================================================================================
+# Create the CNAME for www.mirceanton.com -> mirceanton.pages.dev
+# =================================================================================================
+resource "cloudflare_record" "www" {
+  zone_id = cloudflare_zone.zone.id
+
+  type  = "CNAME"
+  name  = "www"
+  value = "mirceanton.pages.dev"
+
+  comment = "DNS Record for the mirceanton.com Pages Project"
+
+  proxied         = true
+  allow_overwrite = true
+}
