@@ -41,3 +41,21 @@ resource "cloudflare_email_routing_rule" "gmail_forwarder" {
     value = ["mircea.pavel.anton@gmail.com"]
   }
 }
+
+# =================================================================================================
+# [DISABLED] Email Routing Rule: forward all emails to my personal gmail account
+# =================================================================================================
+resource "cloudflare_email_routing_catch_all" "catch_all" {
+  zone_id = cloudflare_zone.zone.id
+  name    = "Gmail Forwarder"
+  enabled = false
+
+  matcher {
+    type = "all"
+  }
+
+  action {
+    type  = "forward"
+    value = ["mircea.pavel.anton@gmail.com"]
+  }
+}
