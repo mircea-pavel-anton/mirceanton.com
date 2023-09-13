@@ -1,10 +1,8 @@
 ---
-name: Terraform Apply
+name: Terraform Plan
 
 on:
-  push:
-    branches:
-      - main
+  pull_request:
     paths:
       - infrastructure/**
       - .github/workflows/terraform-*
@@ -14,14 +12,15 @@ env:
   TF_TOKEN_app_terraform_io: ${{ secrets.TF_TOKEN }}
 
 jobs:
-  terraform-apply:
+  terraform-plan:
     runs-on: ubuntu-latest
     container: antonmircea/gitops-toolkit:latest
     steps:
-      - name: Terraform Init
+      - name: Run terraform init
         working-directory: ./infrastructure/
         run: terraform init
 
-      - name: Terraform Apply
+      - name: Run terraform plan
+        id: plan
         working-directory: ./infrastructure/
-        run: terraform apply
+        run: terraform plan
