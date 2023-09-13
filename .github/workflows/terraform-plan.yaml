@@ -71,10 +71,6 @@ jobs:
             ${{ steps.plan.outputs.plan }}
             ```
 
-            ---
-
-            *Pushed by: @${{ github.actor }}*
-
       - name: Set Pipeline Status
         if: ${{ failure() }}
         run: exit 1
