@@ -34,9 +34,7 @@ jobs:
 
       - name: Verify format and style
         id: fmt
-        run: |
-          terraform fmt
-          exit $?
+        run: terraform fmt -check
         continue-on-error: true
 
       - name: Initialize
