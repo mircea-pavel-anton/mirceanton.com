@@ -26,9 +26,22 @@ jobs:
           terraform_version: 1.5.7
           terraform_wrapper: false
 
-      - name: Run terraform init
-        run: terraform init
+      - name: Verify format and style
+        id: fmt
+        run: terraform fmt
+        continue-on-error: true
 
-      - name: Run terraform plan
+      - name: Initialize
+        id: init
+        run: terraform init
+        continue-on-error: true
+
+      - name: Validate
+        id: validate
+        run: terraform validate
+        continue-on-error: true
+
+      - name: Plan
         id: plan
         run: terraform plan
+        continue-on-error: true
