@@ -11,8 +11,11 @@ on:
 env:
   TF_IN_AUTOMATION: true
   TF_TOKEN_app_terraform_io: ${{ secrets.TF_TOKEN }}
-  TF_VAR_cloudflare_api_token: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+  TF_VAR_cloudflare_api_key: ${{ secrets.CLOUDFLARE_API_KEY }}
+  TF_VAR_cloudflare_email: ${{ secrets.CLOUDFLARE_EMAIL }}
   TF_VAR_cloudflare_account_id: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+  TF_VAR_brevo_dkim: ${{ secrets.BREVO_DKIM }}
+  TF_VAR_brevo_code: ${{ secrets.BREVO_CODE }}
 
 jobs:
   terraform-ci:
