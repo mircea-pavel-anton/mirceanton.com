@@ -10,8 +10,6 @@ on:
 env:
   TF_IN_AUTOMATION: true
   TF_TOKEN_app_terraform_io: ${{ secrets.TF_TOKEN }}
-  TF_VAR_cloudflare_api_token: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-  TF_VAR_cloudflare_account_id: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
 
 jobs:
   terraform-ci:
@@ -55,22 +53,25 @@ jobs:
           echo 'EOF' >> $GITHUB_OUTPUT
         continue-on-error: true
 
-      - name: Add PR Comment
-        run: |
-          echo "#### Terraform Format and Style 🖌: `${{ steps.fmt.outcome }}`" >> /tmp/comment.txt
-          echo "#### Terraform Initialization ⚙️: `${{ steps.init.outcome }}`" >> /tmp/comment.txt
-          echo "#### Terraform Validation 🤖: `${{ steps.validate.outcome }}`" >> /tmp/comment.txt
-          echo "#### Terraform Plan 📖: `${{ steps.plan.outcome }}`" >> /tmp/comment.txt
-          echo "" >> /tmp/comment.txt
-          echo "```bash" >> /tmp/comment.txt
-          echo "${{ steps.plan.outputs.plan }}" >> /tmp/comment.txt
-          echo "```" >> /tmp/comment.txt
-          echo "" >> /tmp/comment.txt
-          echo "---" >> /tmp/comment.txt
-          echo "" >> /tmp/comment.txt
-          echo "*Pushed by: @${{ github.actor }}*" >> /tmp/comment.txt
+      - name: Comment Plan
+        id: comment-plan
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          token: ${{ inputs.github_token }}
+          issue-number: ${{ github.event.number }}
+          body: |
+            #### Terraform Format and Style 🖌: `${{ steps.fmt.outcome }}`
+            #### Terraform Initialization ⚙️: `${{ steps.init.outcome }}`
+            #### Terraform Validation 🤖: `${{ steps.validate.outcome }}`
+            #### Terraform Plan 📖: `${{ steps.plan.outcome }}`
 
-          gh pr comment ${{ github.event.number }} --body-file /tmp/comment.txt
+            ```bash
+            ${{ steps.plan.outputs.plan }}
+            ```
+
+            ---
+
+            *Pushed by: @${{ github.actor }}*
 
       - name: Set Pipeline Status
         if: ${{ failure() }}
