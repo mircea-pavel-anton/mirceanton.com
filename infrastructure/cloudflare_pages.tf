@@ -1,8 +1,7 @@
-resource "cloudflare_zone" "zone" {
-  account_id = var.cloudflare_account_id
-  zone       = "mirceanton.com"
-}
-
+# =================================================================================================
+# Create the CloudFlare Pages Project and sync it to the GitHub repository
+# Configure production and preview deployments
+# =================================================================================================
 resource "cloudflare_pages_project" "pages_project" {
   account_id        = var.cloudflare_account_id
   name              = "mirceanton"
@@ -24,6 +23,9 @@ resource "cloudflare_pages_project" "pages_project" {
   }
 }
 
+# =================================================================================================
+# Assign the `mirceanton.com` custom domain to the Pages Project
+# =================================================================================================
 resource "cloudflare_pages_domain" "pages_domain" {
   account_id   = var.cloudflare_account_id
   project_name = cloudflare_pages_project.pages_project.name
