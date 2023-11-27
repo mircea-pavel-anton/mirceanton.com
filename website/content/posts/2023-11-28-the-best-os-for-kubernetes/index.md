@@ -305,11 +305,12 @@ export TALOSCONFIG=./rendered/talosconfig
 
 Either option works fine, I just personally dislike using the CLI flag as it involves too much typing 😅
 
-```bash
+{{< figure src="img/talosctl-config-contexts-1.svg" caption="`talosctl config contexts` showing localhost" >}}
+<!-- ```bash
 mike@talos-demo-ctl:~/workspace$ talosctl config contexts
 CURRENT     NAME            ENDPOINTS       NODES
 *           demo-cluster    127.0.0.1
-```
+``` -->
 
 By default it is set to `localhost`, which is not what we want. This should be the IP address or a DNS name of a load balancer that is placed in front of the Talos control-plane nodes. If you set up an external load balancer previously for your Kubernetes control-plane nodes, then you can use that here as well.
 
@@ -321,8 +322,7 @@ What we can do instead is to pass in a list of the IP addresses of our controlpl
 talosctl config endpoint 10.0.10.11 10.0.10.12 10.0.10.13
 ```
 
-{{< figure src="img/talos-config-contexts-2.svg" caption="`talosctl config contexts`" >}}
-
+{{< figure src="img/talosctl-config-contexts-2.svg" caption="`talosctl config contexts` showing node IPs" >}}
 <!-- ```bash
 mike@talos-demo-ctl:~/workspace$ talosctl config contexts
 CURRENT     NAME            ENDPOINTS                           NODES
