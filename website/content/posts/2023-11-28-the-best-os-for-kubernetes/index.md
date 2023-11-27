@@ -8,7 +8,7 @@ tags:
   - Talos Linux
 
 author: "Mircea-Pavel Anton"
-date: "2023-11-28"
+date: "2023-11-27"
 ---
 
 How quickly can you tear down and redeploy your Kubernetes cluster? What if I told you it takes me less than 5 minutes to get from ISO to `kubectl`?
