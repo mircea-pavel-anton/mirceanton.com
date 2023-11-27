@@ -385,7 +385,7 @@ This command has now created the `.kube` directory in our home directory, it has
 
 We can now issue a `kubectl get nodes` command and wait for all of the nodes to finish setting up:
 
-{{< figure src="img/kubectl-get-nodes.png" caption="`kubectl get nodes` output" >}}
+{{< figure src="img/kubectl-get-nodes.svg" caption="`kubectl get nodes` output" >}}
 
 <!-- ```bash
 mike@talos-demo-ctl:~/workspace$ kubectl get nodes
@@ -434,7 +434,7 @@ kubectl expose deployment nginx-demo --type NodePort --port 80
 
 If we run a `kubectl get pods -o wide` command, we can see that the pod is in a `Running` state and that it was scheduled on the node `talos-demo-01`:
 
-{{< figure src="img/kubectl-get-nginx-pods.png" caption="`kubectl get pods -o wide` output" >}}
+{{< figure src="img/kubectl-get-nginx-pods.svg" caption="`kubectl get pods -o wide` output" >}}
 
 <!-- ```bash
 mike@talos-demo-ctl:~/workspace$ kubectl get pods -o wide
@@ -444,7 +444,7 @@ nginx-demo-554db85f85-gl9k2     1/1     Running     0           9s      10.244.1
 
 Now that we know the node on which the pod is running on, we need to also find out the port on which the service is listening. By running a `kubectl get svc` command, we can see that our `nginx-demo` service is listening on the port `31552`.
 
-{{< figure src="img/kubectl-get-nginx-svc.png" caption="`kubectl get services` output" >}}
+{{< figure src="img/kubectl-get-nginx-svc.svg" caption="`kubectl get services` output" >}}
 
 <!-- ```bash
 mike@talos-demo-ctl:~/workspace$ kubectl get services
