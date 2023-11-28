@@ -15,6 +15,8 @@ How quickly can you tear down and redeploy your Kubernetes cluster? What if I to
 
 ## The Relic of the Past
 
+{{< figure src="img/ubuntu-old.png" caption="\"old ubuntu being old\" by [bomkii](https://www.bomkii.com/)" >}}
+
 When setting up an on-prem Kubernetes cluster, the usual process involves installing, configuring and hardening a base OS like Ubuntu or RHEL, installing a 3rd party tool to deploy kubernetes and then - finally - deploying Kubernetes. While this approach is not wrong per-se, it has plenty of drawbacks.
 
 Manual configuration is error-prone, and relying on third-party automation introduces trust issues. Ansible playbooks, terraform providers and even plain old bash scripts eventually get out of date, and then it's up to the maintainer to update them, fix bugs or add new features. More often than not, though, this doesn't happen either at all or as fast as we would need/want to.
