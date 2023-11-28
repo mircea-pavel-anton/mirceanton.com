@@ -11,7 +11,9 @@ author: "Mircea-Pavel Anton"
 date: "2023-11-28"
 ---
 
+{{< lead >}}
 How quickly can you tear down and redeploy your Kubernetes cluster? What if I told you it takes me less than 5 minutes to get from ISO to `kubectl`?
+{{< /lead >}}
 
 ## The Relic of the Past
 
