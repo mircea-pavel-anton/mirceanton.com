@@ -23,7 +23,7 @@ buildDrafts: false
 buildFuture: false
 
 # Google Analytics ID
-googleAnalytics: G-RE0K14YZ9P
+googleAnalytics:  G-6C126MZNGT
 
 sitemap:
   changefreq: daily
