@@ -485,4 +485,4 @@ mike@talos-demo-ctl:/workspace$ cowsay -T U "Happy Clustering!"
 
 ---
 
-{{< youtube id="4_U0KK-blXQ" title="The Best OS For Kubernetes" autoplay="true" >}}
+{{< youtube id="4_U0KK-blXQ" title="The Best OS For Kubernetes" >}}
