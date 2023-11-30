@@ -206,7 +206,7 @@ machine:
 And finally I will configure the virtual IP I mentioned earlier, which will act as my Kubernetes API load balancer.
 
 ```yaml
-# patches/interface-names-and-dhcp.yaml
+# patches/vip.yaml
 ---
 machine:
   network:
