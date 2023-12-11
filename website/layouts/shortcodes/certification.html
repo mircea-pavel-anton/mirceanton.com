@@ -1,8 +1,0 @@
-{{ $name := .Get "name" }}
-{{ $id := .Get "credly" }}
-
-<a href="https://www.credly.com/badges/{{ $id }}/public_url"
-   class="grid-w30 sm:grid-w30 md:grid-w30 lg:grid-w20 xl:grid-w20 2xl:grid-w15"
-   target="_blank">
-  <img src="badges/{{ $name }}.webp" alt="{{ $name }} badge">
-</a>

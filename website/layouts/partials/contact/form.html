@@ -1,8 +1,0 @@
-<form name="contact" action="/contact/submit" method="POST">
-  {{ partial "contact/form/text" (dict "id" "name" "type" "text" )}}
-  {{ partial "contact/form/text" (dict "id" "email" "type" "email" )}}
-  {{ partial "contact/form/text" (dict "id" "subject" "type" "text" )}}
-  {{ partial "contact/form/textarea" (dict "id" "message" "placeholder" "what's up?")}}
-
-  {{ partial "contact/form/button" (dict "id" "submit" )}}
-</form>
