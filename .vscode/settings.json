@@ -1,0 +1,27 @@
+{
+	"editor.bracketPairColorization.enabled": true,
+	"editor.fontFamily": "Cascadia Code",
+	"editor.fontLigatures": true,
+	"editor.guides.bracketPairs": true,
+	"editor.guides.bracketPairsHorizontal": true,
+	"editor.guides.highlightActiveBracketPair": true,
+	"editor.hover.delay": 500,
+	"editor.rulers": [ 150 ],  // matches max line length in yamllint config
+	"editor.stickyScroll.enabled": true,
+	"explorer.autoReveal": false,
+	"files.associations": {
+		"*.json5": "jsonc",
+	},
+	"files.trimTrailingWhitespace": true,
+	"material-icon-theme.files.associations": {
+		// Reference: https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/main/images/fileIcons.png
+		// =======================================================================================================
+	},
+	"material-icon-theme.folders.associations": {
+		// Reference: https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/main/images/folderIcons.png
+		// =========================================================================================================
+		// Top level
+		"workflows": "CI",
+		"websites": "Global"
+	},
+}
